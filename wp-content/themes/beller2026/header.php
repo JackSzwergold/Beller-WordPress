@@ -197,12 +197,9 @@
 		/****************************************************************************************/
 		// Set the blog name.
 		$blog_name =
-			  '<div class="h1 text-railroadgothic p-0 m-0">'
-			. '<a href="' . $url . '" class="text-offwhite">'
+			  '<div class="h1 text-georgia-regular p-0 m-0">'
+			. '<a href="' . $url . '" class="text-dark">'
 			. $blog_name
-			// . '<div class="spinner-border text-offwhite p-0 m-0 ms-2" role="status">'
-			// . '<span class="visually-hidden">Loading...</span>'
-			// . '</div>'
 			. '</a>'
 			. '</div>'
 			;
@@ -230,13 +227,13 @@
 </head>
 <body id="top" class="p-0 m-0 <?php echo $page_slugs_string; ?>">
 
-	<nav class="header p-0 m-0 px-2 bg-darkblue">
-		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-darkblue z-1">
+	<nav class="header p-0 m-0 px-2 bg-light">
+		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-light z-1">
 			<?php
 				echo $blog_name;
 			?>
 		</div>
-		<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-darkblue z-0">
+		<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-light z-0">
 			<?php
 				echo $blog_description;
 			?>
