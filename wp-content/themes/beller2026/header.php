@@ -227,13 +227,13 @@
 </head>
 <body id="top" class="p-0 m-0 <?php echo $page_slugs_string; ?>">
 
-	<nav class="header p-0 m-0 px-2 bg-light">
-		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-light z-1">
+	<nav class="header p-0 m-0 px-2 bg-white">
+		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-white z-1">
 			<?php
 				echo $blog_name;
 			?>
 		</div>
-		<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-light z-0">
+		<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-white z-0">
 			<?php
 				echo $blog_description;
 			?>
@@ -243,7 +243,7 @@
 	<!-- Content Core BEGIN -->
 	<div class="container">
 		<div class="row">
-			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4 bg-light">
+			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4 bg-white">
 
 				<div class="container">
 					<div class="row">
