@@ -63,7 +63,7 @@
       //  echo '</div>';        
       // } // if
 
-      echo '<hr class="border border-darkblue border-1 opacity-100">';
+      echo '<hr class="border border-dark border-1 opacity-100">';
 
       /********************************************************************************/
       // End the header.
