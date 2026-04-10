@@ -243,7 +243,7 @@
 	<!-- Content Core BEGIN -->
 	<div class="container">
 		<div class="row">
-			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4 bg-offwhite border border-2 border-darkblue rounded-3">
+			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4 bg-light">
 
 				<div class="container">
 					<div class="row">
