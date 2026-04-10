@@ -16,12 +16,12 @@
 body {
   font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif;
   /*background-image: linear-gradient(-45deg, #ff5858 0%, #f09819 100%);*/
-  background-color: rgb(241, 223, 113) !important;
+  /*background-color: rgb(241, 223, 113) !important;*/
 }
 
-body > * {
+/*body > * {
   color: rgb(64, 63, 123) !important;
-}
+}*/
 
 /******************************************************************************/
 /* 2026-04-03: Apparently, this is a fix for pre and code blocks not respecting width. */
