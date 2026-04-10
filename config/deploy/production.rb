@@ -31,15 +31,15 @@ set :code_root_path, "/home/jackgold"
 # Set the MySQL database paths and patterns.
 set :db_dir_local, "development_dbs/"
 set :db_dir_remote, "/home/jackgold/zzz_mysql_backups/"
-set :db_file_pattern, "szwergold_wp_db"
+set :db_file_pattern, "bellerbeller_wp_db"
 
 # Set the MySQL database stuff.
 set :mysql_host_remote, "szwergold.com"
 set :mysql_bin_mamp, "/Applications/MAMP/Library/bin/mysql"
 set :mysql_port_mamp, 8889
-set :mysql_db_mamp, "szwergold_wp_db"
+set :mysql_db_mamp, "bellerbeller_wp_db"
 set :mysqldump_bin_mamp, "/Applications/MAMP/Library/bin/mysqldump"
-set :mysqldump_db_mamp, "szwergold_wp_db"
+set :mysqldump_db_mamp, "bellerbeller_wp_db"
 
 # Set the files and content path stuff.
 set :files_host_remote, "szwergold.com"
