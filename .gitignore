@@ -1,0 +1,37 @@
+# Ignore OS specific cruft.
+.DS_Store
+*/.DS_Store
+*/*/.DS_Store
+*/*/*/.DS_Store
+Thumbs.db
+*/Thumbs.db
+*/*/Thumbs.db
+*/*/*/Thumbs.db
+
+# Ignoring MySQL database dumps in the 'development_dbs'.
+development_dbs/*.sql.gz
+development_dbs/*.sql
+
+# Ignore the main WordPress config.
+wp-config.php
+
+# Other stuff to ignore.
+awstats-icon
+awstatsicons
+icon/
+stats/
+*.log
+upgrade
+*/upgrade
+*/*/upgrade
+*/*/*/upgrade
+uploads
+*/uploads
+*/*/uploads
+*/*/*/uploads
+php_errorlog
+*/php_errorlog
+*/*/php_errorlog
+*/*/*/php_errorlog
+wp-content/databases
+

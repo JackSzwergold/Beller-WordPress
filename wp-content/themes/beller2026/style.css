@@ -1,0 +1,321 @@
+/*
+ Theme Name: Beller (2026)
+ Theme URI: https://szwergold.com
+ Author: Jack Szwergold
+ Author URI: https://szwergold.com
+ Description: Beller (2026)
+ Version: 1.0
+ License: GNU General Public License v2 or later
+ License URI: https://www.gnu.org/licenses/gpl-2.0.html
+ Text Domain: beller2026
+
+ This theme, like WordPress, is licensed under the GPL.
+ Use it to make something cool, have fun, and share what you've learned with others.
+ */
+
+body {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif;
+  /*background-image: linear-gradient(-45deg, #ff5858 0%, #f09819 100%);*/
+  background-color: rgb(241, 223, 113) !important;
+}
+
+body > * {
+  color: rgb(64, 63, 123) !important;
+}
+
+/******************************************************************************/
+/* 2026-04-03: Apparently, this is a fix for pre and code blocks not respecting width. */
+/* Source: https://weblog.west-wind.com/posts/2016/feb/15/flexbox-containers-pre-tags-and-managing-overflow */
+div {
+    min-width: 0; 
+}
+
+/******************************************************************************/
+
+.bg-darkblue {
+  background-color: rgb(64, 63, 123) !important;
+}
+
+.text-darkblue {
+  color: rgb(64, 63, 123) !important;
+}
+
+.border.border-darkblue,
+.border-bottom.border-darkblue {
+  border-color: rgb(64, 63, 123) !important;
+}
+
+/******************************************************************************/
+
+.bg-offwhite {
+  background-color: rgb(239, 232, 219) !important;
+}
+
+.text-offwhite {
+  color: rgb(239, 232, 219) !important;
+}
+
+/******************************************************************************/
+a,
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+  color: #000000;
+  transition: all 600ms ease;
+}
+
+/******************************************************************************/
+/* 2026-04-03: Something is wonky here; I think? */
+pre {
+  background: #212529 !important;
+  color: #00ff00 !important;
+  padding: 1rem !important;
+  font-size: 0.75rem !important;
+}
+
+pre > code {
+  padding: 0.125rem 0.125rem 0.125rem 0 !important;
+}
+
+/******************************************************************************/
+
+.h1, h1 {
+  /*font-size: calc(1.375rem + 1.5vw); */
+  font-size: 2.875rem !important;
+}
+
+.h2, h2 {
+  /*font-size: calc(1.325rem + .9vw) */
+  font-size: 2.225rem !important;
+}
+
+.h3, h3 {
+  /*font-size: calc(1.3rem + .6vw); */
+  font-size: 1.9rem !important;
+}
+
+.h4, h4 {
+  /*font-size: calc(1.275rem + .3vw); */
+  font-size: 1.575rem !important;
+}
+
+.h5, h5 {
+  font-size: 1.25rem;
+}
+
+.h6, h6 {
+  font-size: 1rem;
+}
+
+/******************************************************************************/
+/* Tab related stuff.
+/******************************************************************************/
+
+.nav-tabs .nav-link {
+  background-color: revert;
+}
+
+/******************************************************************************/
+/* The background code stuff.
+/******************************************************************************/
+
+.bg-code {
+  background: #212529 !important;
+}
+
+.bg-szwergold {
+  background: #efe0cd !important;
+}
+
+/******************************************************************************/
+/* Article column list breaks.
+/******************************************************************************/
+
+main > article div.column_list ul,
+main > article div.column_list ol {
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+  clear: both;
+  column-count: 3;
+  column-gap: 1rem;
+}
+
+/******************************************************************************/
+/* Article list style none.
+/******************************************************************************/
+
+/*main > article div.list_style_none ul,
+main > article div.list_style_none ol {
+  margin: 0;
+  padding: 0 1rem 0 1rem;
+  list-style: none;
+}*/
+
+/******************************************************************************/
+
+main h1,
+main h2,
+main h3,
+main h4,
+main h5,
+main h6 {
+  /*font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif;*/
+  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
+  color: rgb(64, 63, 123);
+}
+
+main h1 a,
+main h1 a:link,
+main h1 a:visited,
+main h1 a:hover,
+main h1 a:active,
+main h2 a,
+main h2 a:link,
+main h2 a:visited,
+main h2 a:hover,
+main h2 a:active,
+main h3 a,
+main h3 a:link,
+main h3 a:visited,
+main h3 a:hover,
+main h3 a:active,
+main h4 a,
+main h4 a:link,
+main h4 a:visited,
+main h4 a:hover,
+main h4 a:active,
+main h5 a,
+main h5 a:link,
+main h5 a:visited,
+main h5 a:hover,
+main h5 a:active,
+main h6 a,
+main h6 a:link,
+main h6 a:visited,
+main h6 a:hover,
+main h6 a:active {
+  color: rgb(64, 63, 123);
+}
+
+/******************************************************************************/
+
+main a,
+main a:link,
+main a:visited,
+main a:hover,
+main a:active {
+  color: rgb(64, 63, 123);
+}
+
+main article a,
+main article a:link,
+main article a:visited,
+main article a:hover,
+main article a:active {
+  color: rgb(64, 63, 123);
+  background-image: linear-gradient(#333333 50%, #333333 50%);
+  background-repeat: repeat-x;
+  background-position: 0 90%;
+  background-size: 1px 1px;
+}
+
+/******************************************************************************/
+
+.nav-link {
+  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+  color: rgb(239, 232, 219) !important;
+  background-color: rgb(64, 63, 123) !important;
+}
+
+.nav-link.active {
+  color: rgb(64, 63, 123) !important;
+  background-color: rgb(239, 232, 219) !important;
+}
+
+/******************************************************************************/
+/* Setting columns for the category sidebar. */
+ul.categories_sidebar,
+ul.archives_sidebar {
+  column-count: 2;
+  column-width: auto;
+}
+
+/******************************************************************************/
+/*
+/*  __  __          _ _          ___                  _
+/* |  \/  | ___  __| (_) __ _   / _ \ _   _  ___ _ __(_) ___  ___
+/* | |\/| |/ _ \/ _` | |/ _` | | | | | | | |/ _ \ '__| |/ _ \/ __|
+/* | |  | |  __/ (_| | | (_| | | |_| | |_| |  __/ |  | |  __/\__ \
+/* |_|  |_|\___|\__,_|_|\__,_|  \__\_\\__,_|\___|_|  |_|\___||___/
+/*
+/******************************************************************************/
+@media (min-width: 576px) {
+  ul.categories_sidebar,
+  ul.archives_sidebar {
+    column-count: 3;
+  }
+  div.archive_content {
+    column-gap: 1em;
+    column-count: 1;
+  }
+  body.hello main article,
+  body.resume main article,
+  body.bookmarks main article ul {
+    column-gap: 1em;
+    column-count: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  ul.categories_sidebar,
+  ul.archives_sidebar {
+    column-count: 5;
+  }
+  div.archive_content {
+    column-gap: 1em;
+    column-count: 2;
+  }
+  body.hello main article,
+  body.resume main article,
+  body.bookmarks main article ul {
+    column-gap: 1em;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 992px) {
+  ul.categories_sidebar,
+  ul.archives_sidebar {
+    column-count: 6;
+  }
+  div.archive_content {
+    column-gap: 1em;
+    column-count: 3;
+  }
+  body.hello main article,
+  body.resume main article,
+  body.bookmarks main article ul {
+    column-gap: 1em;
+    column-count: 2;
+  }
+}
+
+@media (min-width: 1200px) {
+  ul.categories_sidebar,
+  ul.archives_sidebar {
+    column-count: 7;
+  }
+  div.archive_content {
+    column-gap: 1em;
+    column-count: 4;
+  }
+  body.hello main article,
+  body.resume main article,
+  body.bookmarks main article ul {
+    column-gap: 1em;
+    column-count: 2;
+  }
+}

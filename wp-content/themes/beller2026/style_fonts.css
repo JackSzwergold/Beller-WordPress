@@ -1,0 +1,381 @@
+/******************************************************************************/
+/*
+/*  _____           _
+/* |  ___|__  _ __ | |_ ___
+/* | |_ / _ \| '_ \| __/ __|
+/* |  _| (_) | | | | |_\__ \
+/* |_|  \___/|_| |_|\__|___/
+/*
+/******************************************************************************/
+@font-face {
+    font-family: 'WindsorProBold';
+    src: url('fonts/WindsorPro/WindsorProBold.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProBold.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProElongated';
+    src: url('fonts/WindsorPro/WindsorProElongated.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProElongated.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProElongated.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProRegular';
+    src: url('fonts/WindsorPro/WindsorProRg.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProRg.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProRg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProUltraHeavy';
+    src: url('fonts/WindsorPro/WindsorProUltHv.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProUltHv.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProUltHv.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProXBoldCn';
+    src: url('fonts/WindsorPro/WindsorProXBoldCn.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProXBoldCn.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProXBoldCn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************/
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('fonts/ChunkFive/chunkfive-webfont.woff2') format('woff2'),
+         url('fonts/ChunkFive/chunkfive-webfont.woff') format('woff'),
+         url('fonts/ChunkFive/chunkfive-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************/
+
+@font-face {
+    font-family: 'RailroadGothic';
+    src: url('fonts/RailroadGothic/railroadgothic-webfont.woff2') format('woff2'),
+         url('fonts/RailroadGothic/railroadgothic-webfont.woff') format('woff'),
+         url('fonts/RailroadGothic/railroadgothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************/
+/* Setting WindsorPro tags.
+/******************************************************************************/
+.text-windsorpro-regular {
+  font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-windsorpro-bold {
+  font-family: "WindsorProBold", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+/******************************************************************************/
+/* Setting ChunkFive tags.
+/******************************************************************************/
+.text-chunkfive {
+  font-family: "ChunkFive", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+/******************************************************************************/
+/* Setting RailroadGothic tags.
+/******************************************************************************/
+.text-railroadgothic {
+  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+/******************************************************************************/
+/* Setting Arial tags.
+/******************************************************************************/
+.text-arial-light {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.text-arial-regular {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.text-arial-bold {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.text-arial-black {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.text-arial-light {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.text-arial-regular {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.text-arial-bold {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.text-arial-black {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 900 !important;
+}
+
+/******************************************************************************/
+/* Setting Georgia tags.
+/******************************************************************************/
+.text-georgia-light {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 100 !important;
+}
+
+.text-georgia-regular {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-georgia-bold {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+.text-georgia-black {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
+}
+
+.text-georgia-light {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 100 !important;
+}
+
+.text-georgia-regular {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-georgia-bold {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+.text-georgia-black {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
+}/******************************************************************************/
+/*
+/*  _____           _
+/* |  ___|__  _ __ | |_ ___
+/* | |_ / _ \| '_ \| __/ __|
+/* |  _| (_) | | | | |_\__ \
+/* |_|  \___/|_| |_|\__|___/
+/*
+/******************************************************************************/
+@font-face {
+    font-family: 'WindsorProBold';
+    src: url('fonts/WindsorPro/WindsorProBold.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProBold.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProElongated';
+    src: url('fonts/WindsorPro/WindsorProElongated.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProElongated.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProElongated.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProRegular';
+    src: url('fonts/WindsorPro/WindsorProRg.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProRg.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProRg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProUltraHeavy';
+    src: url('fonts/WindsorPro/WindsorProUltHv.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProUltHv.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProUltHv.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'WindsorProXBoldCn';
+    src: url('fonts/WindsorPro/WindsorProXBoldCn.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProXBoldCn.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProXBoldCn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************/
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('fonts/ChunkFive/chunkfive-webfont.woff2') format('woff2'),
+         url('fonts/ChunkFive/chunkfive-webfont.woff') format('woff'),
+         url('fonts/ChunkFive/chunkfive-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************/
+
+@font-face {
+    font-family: 'RailroadGothic';
+    src: url('fonts/RailroadGothic/railroadgothic-webfont.woff2') format('woff2'),
+         url('fonts/RailroadGothic/railroadgothic-webfont.woff') format('woff'),
+         url('fonts/RailroadGothic/railroadgothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/******************************************************************************/
+/* Setting WindsorPro tags.
+/******************************************************************************/
+.text-windsorpro-regular {
+  font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-windsorpro-bold {
+  font-family: "WindsorProBold", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+/******************************************************************************/
+/* Setting ChunkFive tags.
+/******************************************************************************/
+.text-chunkfive {
+  font-family: "ChunkFive", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+/******************************************************************************/
+/* Setting RailroadGothic tags.
+/******************************************************************************/
+.text-railroadgothic {
+  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+/******************************************************************************/
+/* Setting Arial tags.
+/******************************************************************************/
+.text-arial-light {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.text-arial-regular {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.text-arial-bold {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.text-arial-black {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 900 !important;
+}
+
+.text-arial-light {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 100 !important;
+}
+
+.text-arial-regular {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.text-arial-bold {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.text-arial-black {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 900 !important;
+}
+
+/******************************************************************************/
+/* Setting Georgia tags.
+/******************************************************************************/
+.text-georgia-light {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 100 !important;
+}
+
+.text-georgia-regular {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-georgia-bold {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+.text-georgia-black {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
+}
+
+.text-georgia-light {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 100 !important;
+}
+
+.text-georgia-regular {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-georgia-bold {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+.text-georgia-black {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
+}
