@@ -162,7 +162,8 @@ main h4,
 main h5,
 main h6 {
   /*font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif;*/
-  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
+  /*font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;*/
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
   color: rgb(64, 63, 123);
 }
 
