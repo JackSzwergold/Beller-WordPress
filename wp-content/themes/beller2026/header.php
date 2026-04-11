@@ -227,7 +227,7 @@
 </head>
 <body id="top" class="p-0 m-0 <?php echo $page_slugs_string; ?>">
 
-	<nav class="header p-0 m-0 px-2 bg-white">
+	<nav class="header text-center p-0 m-0 px-2 bg-white">
 		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-white z-1">
 			<?php
 				echo $blog_name;
