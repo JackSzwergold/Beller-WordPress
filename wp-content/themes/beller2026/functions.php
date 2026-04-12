@@ -108,47 +108,11 @@ function szwergold_widgets_init() {
 		'name'          => __('Home Featured 1'),
 		'id'            => 'home-featured-1',
 		'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
-		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 pe-md-3 bg-warning">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3 bg-warning">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="h3 text-georgia-regular col col-12 p-0 m-0 mb-1">',
+		'before_title'  => '<div class="h4 text-georgia-bold col col-12 p-0 m-0 mb-1">',
 		'after_title'   => '</div>',
 	));
-	// register_sidebar(array(
-	// 	'name'          => __('Home Featured 2'),
-	// 	'id'            => 'home-featured-2',
-	// 	'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
-	// 	'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 pe-md-3 bg-warning">',
-	// 	'after_widget'  => '</div>',
-	// 	'before_title'  => '<div class="h3 text-georgia-regular  col col-12 p-0 m-0 mb-1">',
-	// 	'after_title'   => '</div>',
-	// ));
-	// register_sidebar(array(
-	// 	'name'          => __('Home Featured 3'),
-	// 	'id'            => 'home-featured-3',
-	// 	'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
-	// 	'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 pe-md-3 bg-warning">',
-	// 	'after_widget'  => '</div>',
-	// 	'before_title'  => '<div class="h3 text-georgia-regular col col-12 p-0 m-0 mb-1">',
-	// 	'after_title'   => '</div>',
-	// ));
-	// register_sidebar(array(
-	// 	'name'          => __('Home Featured 4'),
-	// 	'id'            => 'home-featured-4',
-	// 	'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
-	// 	'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 pe-md-3 bg-warning">',
-	// 	'after_widget'  => '</div>',
-	// 	'before_title'  => '<div class="h3 text-georgia-regular col col-12 p-0 m-0 mb-1">',
-	// 	'after_title'   => '</div>',
-	// ));
-	// register_sidebar(array(
-	// 	'name'          => __('Home Featured 5'),
-	// 	'id'            => 'home-featured-5',
-	// 	'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
-	// 	'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 pe-md-3 bg-warning">',
-	// 	'after_widget'  => '</div>',
-	// 	'before_title'  => '<div class="h3 text-georgia-regular col col-12 p-0 m-0 mb-1">',
-	// 	'after_title'   => '</div>',
-	// ));
 } // szwergold_widgets_init
 add_action('widgets_init', 'szwergold_widgets_init');
 
