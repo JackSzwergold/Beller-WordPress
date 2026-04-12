@@ -59,11 +59,11 @@
         // Header stuff.
         if (get_the_title() && $instance['show_title']) {
           $header =
-              '<span class="text-railroadgothic" id="home_featured_' . $the_ID . '">'
-            . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-darkblue">'
+              '<div class="text-georgia-bold" id="home_featured_' . $the_ID . '">'
+            . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $title
             . '</a>'
-            . '</span>'
+            . '</div>'
             ;
         } // if
 
@@ -75,7 +75,7 @@
             $excerpt = substr($excerpt, 0, -3);
           } // if
           $content .=
-              '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-darkblue">'
+              '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $excerpt
             . '</a>'
             ;
@@ -88,10 +88,10 @@
 
         /******************************************************************************/
         // Set the divider.
-        $divider = null;
-        if (!empty($title) && !empty($excerpt)) {
-          $divider = '<span class="text-railroadgothic">: </span>';
-        } // if
+        // $divider = null;
+        // if (!empty($title) && !empty($excerpt)) {
+        //   $divider = '<span class="text-georgia-regular">: </span>';
+        // } // if
 
         /******************************************************************************/
         // Custom cointainer begins.
