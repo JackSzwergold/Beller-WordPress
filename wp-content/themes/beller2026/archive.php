@@ -10,22 +10,22 @@
 
 	/******************************************************************************/
 	// Header begins.
-	echo '<div class="h1 text-railroadgothic p-0 m-0">';
-	echo 'Posts for the ';
+	echo '<div class="h1 text-georgia-bold p-0 m-0">';
+	// echo 'Posts for the ';
 	if (is_archive()) {
-		echo '&ldquo;';
+		// echo '&ldquo;';
 		echo get_the_archive_title();
-		echo '&rdquo;';
+		// echo '&rdquo;';
 	} // if
 	else if (is_category()) {
-		echo '&ldquo;';
+		// echo '&ldquo;';
 		single_cat_title();
-		echo '&rdquo;';
+		// echo '&rdquo;';
 	}  // else if
 	else if (is_tag()) {
-		echo '&ldquo;';
+		// echo '&ldquo;';
 		echo single_tag_title();
-		echo '&rdquo;';
+		// echo '&rdquo;';
 	} // else if
 	else if (is_year()) {
 		the_time('Y');
@@ -36,12 +36,12 @@
 	else if (is_day()) {
 		the_time('l, F j, Y');
 	} // else if
-	echo ' category&hellip;</div>';
-	echo '<hr class="p-0 m-0 mb-2 border border-darkblue border-1 opacity-100">';
+	// echo ' category&hellip;</div>';
+	echo '<hr class="p-0 m-0 border border-dark border-1 opacity-100">';
 
 	/******************************************************************************/
 	// Header ends
-	echo '<div class="h4 text-georgia-regular py-1">';
+	echo '<div class="h4 text-georgia-regular">';
 	if ($page_description = get_the_archive_description()) {
 		echo strip_tags($page_description);
 	} // if
@@ -49,38 +49,38 @@
 	else if ($page_description = category_description()) {
 		echo strip_tags($page_description);
 	} // else if
-	else {
-		echo 'You are currently browsing posts about <strong>';
-		if (is_category()) {
-			echo '&ldquo;';
-			single_cat_title();
-			echo '.&rdquo;';
-		} // if
-		else if (is_tag()) {
-			echo '&ldquo;';
-			echo single_tag_title();
-			echo '.&rdquo;';
-		} // else if
-		else if (is_year()) {
-			the_time('Y');
-			echo '.';
-		} // else if
-		else if (is_month()) {
-			the_time('F Y');
-			echo '.';
-		} // else if
-		else if (is_day()) {
-			the_time('l, F j, Y');
-			echo '.';
-		} // else if
-		echo '</strong>';
-	} // else
+	// else {
+	// 	echo 'You are currently browsing posts about <strong>';
+	// 	if (is_category()) {
+	// 		echo '&ldquo;';
+	// 		single_cat_title();
+	// 		echo '.&rdquo;';
+	// 	} // if
+	// 	else if (is_tag()) {
+	// 		echo '&ldquo;';
+	// 		echo single_tag_title();
+	// 		echo '.&rdquo;';
+	// 	} // else if
+	// 	else if (is_year()) {
+	// 		the_time('Y');
+	// 		echo '.';
+	// 	} // else if
+	// 	else if (is_month()) {
+	// 		the_time('F Y');
+	// 		echo '.';
+	// 	} // else if
+	// 	else if (is_day()) {
+	// 		the_time('l, F j, Y');
+	// 		echo '.';
+	// 	} // else if
+	// 	echo '</strong>';
+	// } // else
 	echo '</div>';
 
 	/******************************************************************************/
 	// End the archive info area.
 	echo '</div>';
-	echo '<hr class="p-0 m-0 mt-1 mb-2 border border-darkblue border-1 opacity-100">';
+	// echo '<hr class="p-0 m-0 mt-1 mb-2 border border-dark border-1 opacity-100">';
 
 	/******************************************************************************/
 	/******************************************************************************/
@@ -333,11 +333,11 @@
 			// Set the title.
 			if (!empty($permalink) && !empty($title) && !empty($title_attribute)) {
 				$title =
-					  '<span class="text-railroadgothic">'
-					. '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-decoration-none text-darkblue">'
+					  '<div class="text-georgia-bold">'
+					. '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-decoration-none text-dark">'
 					. $title
 					. '</a>'
-					. '</span>'
+					. '</div>'
 					;
 			} // if
 
@@ -345,7 +345,7 @@
 			// Link the excerpt.
 			if (!empty($permalink) && !empty($excerpt) && !empty($title_attribute)) {
 				$excerpt =
-					  '<a href="' . $permalink . '" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-decoration-none text-darkblue">'
+					  '<a href="' . $permalink . '" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-decoration-none text-dark">'
 					. $excerpt
 					. '</a>'
 					;
@@ -369,9 +369,9 @@
 			/**********************************************************************/
 			// Set the divider.
 			$divider = null;
-			if (!empty($title) && !empty($excerpt)) {
-				$divider = '<span class="text-railroadgothic">: </span>';
-			} // if
+			// if (!empty($title) && !empty($excerpt)) {
+			// 	$divider = '<span class="text-railroadgothic">: </span>';
+			// } // if
 
 			/**********************************************************************/
 			// Set the final row.

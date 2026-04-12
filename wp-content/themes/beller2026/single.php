@@ -50,8 +50,8 @@
 
 			/**********************************************************************/
 			// Show the title.
-			echo '<div class="h1 p-0 m-0 text-railroadgothic">';
-			echo '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-darkblue text-decoration-none">';
+			echo '<div class="h1 p-0 m-0 text-georgia-bold">';
+			echo '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">';
 			echo $title;
 			echo '</a>';
 			echo '</div>';
@@ -59,9 +59,9 @@
 			/**********************************************************************/
 			// Show the author, date and time.
 			if (!empty($the_author)) {
-				echo '<div class="h5 p-0 m-0 text-georgia-regular">';
-				echo 'By ' . $the_author;
-				echo '</div>';
+				// echo '<div class="h5 p-0 m-0 text-georgia-regular">';
+				// echo 'By ' . $the_author;
+				// echo '</div>';
 				if (!empty($update_date)) {
 					echo '<div class="h6 p-0 m-0 mt-1 text-georgia-regular">';
 					echo '<span class="me-2 fa fa-calendar"></span>';
@@ -73,7 +73,7 @@
 				} // if
 			} // if
 
-			echo '<hr class="p-0 m-0 my-2 border border-darkblue border-1 opacity-100">';
+			echo '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">';
 
 			/**********************************************************************/
 			// End the header.
