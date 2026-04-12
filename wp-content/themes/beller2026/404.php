@@ -13,7 +13,6 @@
 		<hr class="p-0 m-0 mt-2 mb-2 border border-darkblue border-1 opacity-100">
 </header>
 
-
 <main class="col col-12 p-0 m-0">
 	<article class="col col-12 p-0 m-0">
 		<div class="text-georgia-regular">
