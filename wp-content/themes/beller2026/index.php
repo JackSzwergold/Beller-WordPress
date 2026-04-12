@@ -6,7 +6,7 @@
 
   /**********************************************************************/
   // Set the post content if we have post content.
-  if (have_posts()) {
+  if (FALSE && have_posts()) {
     while (have_posts()) {
 
       /********************************************************************/
@@ -100,30 +100,6 @@
   // If we have a 'home-featured-1' widget, show the 'home-featured-1' widget.
   if (is_active_sidebar('home-featured-1')) {
     dynamic_sidebar('home-featured-1');
-  } // if
-
-  /**********************************************************************/
-  // If we have a 'home-featured-2' widget, show the 'home-featured-2' widget.
-  if (is_active_sidebar('home-featured-2')) {
-    dynamic_sidebar('home-featured-2');
-  } // if
-
-  /**********************************************************************/
-  // If we have a 'home-featured-3' widget, show the 'home-featured-3' widget.
-  if (is_active_sidebar('home-featured-3')) {
-    dynamic_sidebar('home-featured-3');
-  } // if
-
-  /**********************************************************************/
-  // If we have a 'home-featured-4' widget, show the 'home-featured-4' widget.
-  if (is_active_sidebar('home-featured-4')) {
-    dynamic_sidebar('home-featured-4');
-  } // if
-
-  /**********************************************************************/
-  // If we have a 'home-featured-5' widget, show the 'home-featured-5' widget.
-  if (is_active_sidebar('home-featured-5')) {
-    dynamic_sidebar('home-featured-5');
   } // if
 
   /**********************************************************************/
