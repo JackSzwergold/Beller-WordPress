@@ -240,6 +240,55 @@
 		</div>
 	</nav>
 
+<?php
+
+  /**************************************************************************************************/
+  // Set the footer array items.
+  $header_items_array = array();
+  // $header_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
+  $header_items_array[] = '<a href="/books" title="Books" class="text-dark m-0 p-0">Books</a>';
+  $header_items_array[] = '<a href="/events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $header_items_array[] = '<a href="/editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
+  $header_items_array[] = '<a href="/articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
+  $header_items_array[] = '<a href="/resume" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+
+  /**************************************************************************************************/
+  // Set the footer divider item.
+  $header_divider = '<span class="text-dark m-0 p-0 px-2">&bull;</span>';
+
+  /**************************************************************************************************/
+  // Set the footer array items.
+  foreach ($header_items_array as $key => $value) {
+    $header_items_array[$key] =
+        '<li class="list-inline-item text-nowrap p-0 m-0">'
+      . '<span class="fst-italic d-none d-md-block">'
+      . $value
+      . '</span>'
+      . '<span class="small fst-italic d-md-none">'
+      . $value
+      . '</span>'
+      . '</li>'
+      ;
+  } // foreach
+
+  /**************************************************************************************************/
+  // Set the footer string.
+  $header_items_string = implode($header_divider, $header_items_array);
+
+?>
+
+	<header class="footer p-0 m-0 px-3 bg-white">
+		<div class="col col-12 p-0 m-0 px-2 py-31">
+			<div class="h6 text-georgia-regular text-center p-0 m-0">
+				<ul id="footer_links" class="footer_links list-inline p-0 m-0">
+					<?php
+						echo $header_items_string;
+					?>
+				</ul>
+			</div>
+		</div>
+	</header>
+
 	<!-- Content Core BEGIN -->
 	<div class="container">
 		<div class="row">

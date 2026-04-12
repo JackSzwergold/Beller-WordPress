@@ -30,7 +30,7 @@
   /**************************************************************************************************/
   // Set the footer array items.
   $footer_items_array = array();
-  $footer_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
+  // $footer_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
   $footer_items_array[] = '<a href="/books" title="Books" class="text-dark m-0 p-0">Books</a>';
   $footer_items_array[] = '<a href="/events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
   $footer_items_array[] = '<a href="/editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
