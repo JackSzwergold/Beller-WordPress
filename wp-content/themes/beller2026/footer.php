@@ -35,7 +35,7 @@
   $footer_items_array[] = '<a href="/events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
   $footer_items_array[] = '<a href="/editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
   $footer_items_array[] = '<a href="/articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $footer_items_array[] = '<a href="/resume" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  $footer_items_array[] = '<a href="/newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
   // $footer_items_array[] = '<a href="#" title="top of page" class="text-dark m-0 p-0">Top of Page</a>';
   $footer_items_array[] = '<span class="text-dark m-0 p-0">Site contents &copy; ' . date('Y') . ' Elizabeth Beller</span>';
 

@@ -250,7 +250,7 @@
   $header_items_array[] = '<a href="/events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
   $header_items_array[] = '<a href="/editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
   $header_items_array[] = '<a href="/articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $header_items_array[] = '<a href="/resume" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  $header_items_array[] = '<a href="/newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
 
   /**************************************************************************************************/
   // Set the footer divider item.
