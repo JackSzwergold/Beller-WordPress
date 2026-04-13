@@ -34,11 +34,11 @@
   /**************************************************************************************************/
   // Anchor links for the homepage and regular links for other pages.
   $site_url = is_front_page() ? $site_url . '#' : $site_url . '/';
-  
+
   /**************************************************************************************************/
   // Set the footer array items.
   $footer_items_array = array();
-  // $footer_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
+  // $footer_items_array[] = '<a href="' . $site_url . '" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
   $footer_items_array[] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
   $footer_items_array[] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
   $footer_items_array[] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
