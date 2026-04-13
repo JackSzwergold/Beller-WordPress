@@ -31,11 +31,11 @@
   // Set the footer array items.
   $footer_items_array = array();
   // $footer_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
-  $footer_items_array[] = '<a href="/books" title="Books" class="text-dark m-0 p-0">Books</a>';
-  $footer_items_array[] = '<a href="/events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
-  $footer_items_array[] = '<a href="/editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
-  $footer_items_array[] = '<a href="/articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $footer_items_array[] = '<a href="/newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  $footer_items_array[] = '<a href="#books" title="Books" class="text-dark m-0 p-0">Books</a>';
+  $footer_items_array[] = '<a href="#events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $footer_items_array[] = '<a href="#editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
+  $footer_items_array[] = '<a href="#articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
+  $footer_items_array[] = '<a href="#newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
   // $footer_items_array[] = '<a href="#" title="top of page" class="text-dark m-0 p-0">Top of Page</a>';
   $footer_items_array[] = '<span class="text-dark m-0 p-0">Site contents &copy; ' . date('Y') . ' Elizabeth Beller</span>';
 
@@ -64,10 +64,10 @@
 
 ?>
 
-  <footer class="footer fixed-bottom p-0 m-0 px-3 bg-white">
+  <footer class="fixed-bottom p-0 m-0 px-3 bg-white">
     <div class="col col-12 p-0 m-0 px-2 py-3">
       <div class="h6 text-georgia-regular text-center p-0 m-0">
-        <ul id="footer_links" class="footer_links list-inline p-0 m-0">
+        <ul class="list-inline p-0 m-0">
           <?php
             echo $footer_items_string;
           ?>
