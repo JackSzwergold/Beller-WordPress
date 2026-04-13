@@ -64,11 +64,11 @@
         if ($instance['show_thumbnail']) {
           $article_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
-
+        $header .= $permalink;
         /******************************************************************************/
         // Header stuff.
         if (get_the_title() && $instance['show_title']) {
-          $header =
+          $header .=
               '<div class="text-georgia-bold" id="home_featured_' . $the_ID . '">'
             . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $title
