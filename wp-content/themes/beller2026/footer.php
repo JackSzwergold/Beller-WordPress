@@ -32,14 +32,18 @@
   $site_url = get_site_url();
 
   /**************************************************************************************************/
+  // Anchor links for the homepage and regular links for other pages.
+  $site_url = is_front_page() ? $site_url . '#' : $site_url . '/';
+  
+  /**************************************************************************************************/
   // Set the footer array items.
   $footer_items_array = array();
   // $footer_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
-  $footer_items_array[] = '<a href="' . $site_url . '#books" title="Books" class="text-dark m-0 p-0">Books</a>';
-  $footer_items_array[] = '<a href="' . $site_url . '#events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
-  $footer_items_array[] = '<a href="' . $site_url . '#editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
-  $footer_items_array[] = '<a href="' . $site_url . '#articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $footer_items_array[] = '<a href="' . $site_url . '#newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  $footer_items_array[] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
+  $footer_items_array[] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $footer_items_array[] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
+  $footer_items_array[] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
+  $footer_items_array[] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
   // $footer_items_array[] = '<a href="#" title="top of page" class="text-dark m-0 p-0">Top of Page</a>';
   $footer_items_array[] = '<span class="text-dark m-0 p-0">Site contents &copy; ' . date('Y') . ' Elizabeth Beller</span>';
 

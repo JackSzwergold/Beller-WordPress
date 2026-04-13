@@ -247,14 +247,18 @@
 	$site_url = get_site_url();
 
   /**************************************************************************************************/
+  // Anchor links for the homepage and regular links for other pages.
+	$site_url = is_front_page() ? $site_url . '#' : $site_url . '/';
+
+  /**************************************************************************************************/
   // Set the footer array items.
   $header_items_array = array();
   // $header_items_array[] = '<a href="/" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
-  $header_items_array[] = '<a href="' . $site_url . '#books" title="Books" class="text-dark m-0 p-0">Books</a>';
-  $header_items_array[] = '<a href="' . $site_url . '#events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
-  $header_items_array[] = '<a href="' . $site_url . '#editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
-  $header_items_array[] = '<a href="' . $site_url . '#articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $header_items_array[] = '<a href="' . $site_url . '#newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  $header_items_array[] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
+  $header_items_array[] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $header_items_array[] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
+  $header_items_array[] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
+  $header_items_array[] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
 
   /**************************************************************************************************/
   // Set the footer divider item.
