@@ -49,6 +49,16 @@
         $tags = get_the_term_list($post->ID, 'post_tag', '', ', ');
 
         /******************************************************************************/
+        // Get the category.
+        $category_object = get_the_category($post->ID);
+        $category = null;
+        $category_slug = null;
+        if (!empty($category_object)) {
+          $category = array_shift($category_object);
+          $category_slug = $category->slug;
+        } // if
+
+        /******************************************************************************/
         // The article image stuff.
         $article_image = null;
         if ($instance['show_thumbnail']) {
@@ -97,7 +107,7 @@
         // Custom cointainer begins.
         $final[] =
             '<div class="col col-12 m-0 p-0 pe-md-3 pe-xl-0">'
-          . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
+          . '<div id="' . $category_slug . '" class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
           . $divider
           . $content
