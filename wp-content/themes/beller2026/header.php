@@ -285,7 +285,7 @@
 
 ?>
 
-	<header class="p-0 m-0 px-3 bg-white">
+	<header class="sticky-top p-0 m-0 px-3 bg-white">
 		<div class="col col-12 p-0 m-0 px-2 py-31">
 			<div class="h6 text-georgia-regular text-center p-0 m-0">
 				<ul class="list-inline p-0 m-0">
