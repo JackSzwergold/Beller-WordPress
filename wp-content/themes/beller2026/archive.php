@@ -10,7 +10,7 @@
 
 	/******************************************************************************/
 	// Header begins.
-	echo '<div class="h1 text-georgia-bold p-0 m-0">';
+	echo '<div class="h1 text-georgia-regular p-0 m-0">';
 	// echo 'Posts for the ';
 	if (is_archive()) {
 		// echo '&ldquo;';
@@ -397,19 +397,19 @@
 		/**************************************************************************/
 		// Wrap the category block value.
 		$category_block = implode('', $temp);
-		if (!empty($category_name)) {
-			$category_block  =
-			      '<div class="col col-12 p-0 m-0">'
-				. '<div class="h3 text-railroadgothic col col-12 p-0 m-0 mb-1">'
-				. '<a href="' . $category_link . '" title="Go to the &ldquo;' . $category_name . '&rdquo; category." class="text-decoration-none text-darkblue">'
-				. $category_name
-				. '</a>'
-				. '</div>'
-				. $category_block
-				. '</div>'
-				. '<hr class="p-0 m-0 mt-1 mb-2 border border-darkblue border-1 opacity-100">'
-				;
-		} // if
+		// if (!empty($category_name)) {
+		// 	$category_block  =
+		// 	      '<div class="col col-12 p-0 m-0">'
+		// 		. '<div class="h3 text-railroadgothic col col-12 p-0 m-0 mb-1">'
+		// 		. '<a href="' . $category_link . '" title="Go to the &ldquo;' . $category_name . '&rdquo; category." class="text-decoration-none text-darkblue">'
+		// 		. $category_name
+		// 		. '</a>'
+		// 		. '</div>'
+		// 		. $category_block
+		// 		. '</div>'
+		// 		. '<hr class="p-0 m-0 mt-1 mb-2 border border-darkblue border-1 opacity-100">'
+		// 		;
+		// } // if
 
 		/**************************************************************************/
 		// Set the final array value.
