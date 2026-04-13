@@ -64,7 +64,11 @@
         if ($instance['show_thumbnail']) {
           $article_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
-        $header .= $permalink;
+        echo '<pre>';
+        print_r($post);
+        echo '</pre>';
+
+        // $header .= $post->post_name . ' | ' . $category_slug . ' | ' . $permalink;
         /******************************************************************************/
         // Header stuff.
         if (get_the_title() && $instance['show_title']) {
