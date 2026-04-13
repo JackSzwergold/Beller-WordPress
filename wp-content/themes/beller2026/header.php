@@ -306,18 +306,3 @@
 					<div class="row">
 						<div class="col py-3 py-md-4 text-left">
 
-							<?php
-
-								/**********************************************************************************************/
-								// If we have a widget header, show the widget header.
-								if (is_active_sidebar('header-1')) {
-									dynamic_sidebar('header-1');
-								} // if
-
-								/**********************************************************************************************/
-								// If we have a widget header, show the widget header.
-								if (is_active_sidebar('header-2')) {
-									dynamic_sidebar('header-2');
-								} // if
-
-							?>
