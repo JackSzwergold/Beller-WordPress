@@ -139,17 +139,6 @@ function single_post () {
 	} // if
 
 	/**************************************************************************/
-	// Set the text CSS.
-	$text_css = null;
-	if (!empty($page_category_slug) && in_array($page_category_slug, array('notes'))) {
-		$text_css = 'fs-3 lh-base fst-italic';
-	} // if
-
-	/**************************************************************************/
-	// Begin the header.
-	$header .= '<header class="col col-12 p-0 m-0 pb-2">';
-
-	/**************************************************************************/
 	// Show the title.
 	$header .= '<div class="h1 p-0 m-0 text-georgia-bold">'
 			  . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
@@ -177,29 +166,9 @@ function single_post () {
 		} // if
 	} // if
 
-	// $header .= '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">';
-
-	/**************************************************************************/
-	// End the header.
-	$header .= '</header>';
-
-	/**************************************************************************/
-	// Begin the main area.
-	$content .= '<main class="col col-12 p-0 m-0">'
-			  . '<article class="col col-12 p-0 m-0">'
-			  . '<div class="text-georgia-regular ' . $text_css . '">'
-			  ;
-
 	/**************************************************************************/
 	// Get the content.
 	$content .= get_the_content();
-
-	/**************************************************************************/
-	// End the main area.
-	$content .= '</div>'
-			  . '</article>'
-			  . '</main>'
-			  ;
 
     /**************************************************************************/
     // Return the final value.
