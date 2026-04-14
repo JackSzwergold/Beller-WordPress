@@ -159,17 +159,18 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the author, date and time.
-	if (!empty($the_author)) {
-		// echo '<div class="h5 p-0 m-0 text-georgia-regular">';
-		// echo 'By ' . $the_author;
-		// echo '</div>';
+	if (!empty($the_author) || !empty($update_date)) {
+		// $ret .= '<div class="h5 p-0 m-0 text-georgia-regular">'
+		// 	  . 'By ' . $the_author
+		// 	  . '</div>'
+		// 	  ;
 		if (!empty($update_date)) {
 			$ret .= '<div class="h6 p-0 m-0 mt-1 text-georgia-regular">'
 				  . '<span class="me-2 fa fa-calendar"></span>'
 				  . $update_date
 				  ;
 			// if (!empty($update_time)) {
-			// 	echo ' at ' . $update_time;
+			// 	$ret .= ' at ' . $update_time;
 			// } // if
 			$ret .= '</div>';
 		} // if
@@ -182,18 +183,18 @@ function single_post () {
 	$ret .= '</header>';
 
 	/**************************************************************************/
-	// Show the main area.
+	// Begin the main area.
 	$ret .= '<main class="col col-12 p-0 m-0">'
 		  . '<article class="col col-12 p-0 m-0">'
 		  . '<div class="text-georgia-regular ' . $text_css . '">'
 		  ;
 
 	/**************************************************************************/
-	// Show the content.
+	// Get the content.
 	$ret .= get_the_content();
 
 	/**************************************************************************/
-	// End the header.
+	// End the main area.
 	$ret .= '</div>'
 		  . '</article>'
 		  . '</main>'
