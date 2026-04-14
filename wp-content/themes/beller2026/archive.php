@@ -246,7 +246,7 @@
 			} // if
 			$query_vars['orderby']['title'] = 'ASC';
 			$archive_content = render_archive_items($query_vars);
-			if (isset($archive_content[$category_slug])) {
+			if (!empty($archive_content) && isset($archive_content[$category_slug])) {
 				$content[$category_slug] = $archive_content[$category_slug];
 			} // if
 		} // foreach
@@ -259,7 +259,9 @@
 		$query_vars['orderby']['date'] = 'DESC';
 		$query_vars['orderby']['title'] = 'ASC';
 		$archive_content = render_archive_items($query_vars);
-		$content = array_replace($content, $archive_content);
+		if (!empty($archive_content)) {
+			$content = array_replace($content, $archive_content);	
+		} // if
 
 	} // else
 
