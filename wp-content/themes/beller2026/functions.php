@@ -107,7 +107,8 @@ function single_post () {
 
     /**************************************************************************/
     // Init variables.
-    $ret = null;
+    $header = null;
+    $content = null;
 
 	/**************************************************************************/
 	// Get the post.
@@ -146,63 +147,63 @@ function single_post () {
 
 	/**************************************************************************/
 	// Begin the header.
-	$ret .= '<header class="col col-12 p-0 m-0 pb-2">';
+	$header .= '<header class="col col-12 p-0 m-0 pb-2">';
 
 	/**************************************************************************/
 	// Show the title.
-	$ret .= '<div class="h1 p-0 m-0 text-georgia-bold">'
-		  . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
-		  . $title
-		  . '</a>'
-		  . '</div>'
-		  ;
+	$header .= '<div class="h1 p-0 m-0 text-georgia-bold">'
+			  . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
+			  . $title
+			  . '</a>'
+			  . '</div>'
+			  ;
 
 	/**************************************************************************/
 	// Show the author, date and time.
 	if (!empty($the_author) || !empty($update_date)) {
-		// $ret .= '<div class="h5 p-0 m-0 text-georgia-regular">'
-		// 	  . 'By ' . $the_author
-		// 	  . '</div>'
-		// 	  ;
+		// $header .= '<div class="h5 p-0 m-0 text-georgia-regular">'
+		// 		 . 'By ' . $the_author
+		// 		 . '</div>'
+		// 		 ;
 		if (!empty($update_date)) {
-			$ret .= '<div class="h6 p-0 m-0 mt-1 text-georgia-regular">'
-				  . '<span class="me-2 fa fa-calendar"></span>'
-				  . $update_date
-				  ;
+			$header .= '<div class="h6 p-0 m-0 mt-1 text-georgia-regular">'
+					 . '<span class="me-2 fa fa-calendar"></span>'
+					 . $update_date
+					 ;
 			// if (!empty($update_time)) {
-			// 	$ret .= ' at ' . $update_time;
+			// 	$header .= ' at ' . $update_time;
 			// } // if
-			$ret .= '</div>';
+			$header .= '</div>';
 		} // if
 	} // if
 
-	$ret .= '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">';
+	// $header .= '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">';
 
 	/**************************************************************************/
 	// End the header.
-	$ret .= '</header>';
+	$header .= '</header>';
 
 	/**************************************************************************/
 	// Begin the main area.
-	$ret .= '<main class="col col-12 p-0 m-0">'
-		  . '<article class="col col-12 p-0 m-0">'
-		  . '<div class="text-georgia-regular ' . $text_css . '">'
-		  ;
+	$content .= '<main class="col col-12 p-0 m-0">'
+			  . '<article class="col col-12 p-0 m-0">'
+			  . '<div class="text-georgia-regular ' . $text_css . '">'
+			  ;
 
 	/**************************************************************************/
 	// Get the content.
-	$ret .= get_the_content();
+	$content .= get_the_content();
 
 	/**************************************************************************/
 	// End the main area.
-	$ret .= '</div>'
-		  . '</article>'
-		  . '</main>'
-		  ;
+	$content .= '</div>'
+			  . '</article>'
+			  . '</main>'
+			  ;
 
     /**************************************************************************/
     // Return the final value.
-    return $ret;
+    return array($header, $content);
 
 } // single_post
 

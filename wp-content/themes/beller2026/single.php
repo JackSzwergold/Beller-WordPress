@@ -10,8 +10,13 @@
 		while (have_posts()) {
 
 			/**********************************************************************/
-			// Render a single post.
-			echo single_post();
+			// Get the single post content.
+			list($header, $content) = single_post();
+
+			/**********************************************************************/
+			// Render the single post content.
+			echo $header;
+			echo $content;
 
 		} // while
 
