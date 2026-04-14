@@ -190,13 +190,18 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the content.
-	the_content();
+	$ret .= get_the_content();
 
 	/**************************************************************************/
 	// End the header.
-	$ret .= '</div>';
-	echo '</article>';
-	echo '</main>';
+	$ret .= '</div>'
+		  . '</article>'
+		  . '</main>'
+		  ;
+
+    /**************************************************************************/
+    // Return the final value.
+    return $ret;
 
 } // single_post
 

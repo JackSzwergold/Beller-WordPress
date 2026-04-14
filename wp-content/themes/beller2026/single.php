@@ -11,7 +11,7 @@
 
 			/**********************************************************************/
 			// Render a single post.
-			single_post();
+			echo single_post();
 
 		} // while
 
