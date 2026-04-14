@@ -203,7 +203,7 @@ function single_post () {
 
     /**************************************************************************/
     // Return the final value.
-    return array($header, $content);
+    return array($header, $content, $page_category_slug);
 
 } // single_post
 

@@ -11,7 +11,7 @@
 
 			/**********************************************************************/
 			// Get the single post content.
-			list($header, $content) = single_post();
+			list($header, $content, $page_category_slug) = single_post();
 
 			/**********************************************************************/
 			// Render the single post content.
