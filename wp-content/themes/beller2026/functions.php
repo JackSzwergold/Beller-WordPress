@@ -135,19 +135,17 @@ function archive_page_header () {
 	else if (is_day()) {
 		the_time('l, F j, Y');
 	} // else if
-	$ret .= ' category&hellip;</div>'
-		  . '<hr class="p-0 m-0 border border-dark border-1 opacity-100">'
-		  ;
+	// $ret .= ' category&hellip;</div>';
+	// $ret .= '<hr class="p-0 m-0 border border-dark border-1 opacity-100">';
 
 	/******************************************************************************/
 	// Header ends
-	echo '<div class="h4 text-georgia-regular">';
+	$ret .= '<div class="h4 text-georgia-regular">';
 	if ($page_description = get_the_archive_description()) {
-		echo strip_tags($page_description);
+		$ret .= strip_tags($page_description);
 	} // if
-
 	else if ($page_description = category_description()) {
-		echo strip_tags($page_description);
+		$ret .= strip_tags($page_description);
 	} // else if
 	// else {
 	// 	echo 'You are currently browsing posts about <strong>';
@@ -175,13 +173,16 @@ function archive_page_header () {
 	// 	} // else if
 	// 	echo '</strong>';
 	// } // else
-	echo '</div>';
+	$ret .= '</div>';
 
 	/******************************************************************************/
 	// End the archive info area.
-	echo '</div>';
-	// echo '<hr class="p-0 m-0 mt-1 mb-2 border border-dark border-1 opacity-100">';
+	$ret .= '</div>';
+	// $ret .= '<hr class="p-0 m-0 mt-1 mb-2 border border-dark border-1 opacity-100">';
 
+    /**************************************************************************/
+    // Return the final value.
+    return $ret;
 
 } // archive_page_header
 
