@@ -105,6 +105,82 @@ add_filter('render_block', 'adjust_block_heading_css', 10, 2 );
 // 2026-04-15: Setting a standalone 'archive page eader' function for ease of reuse.
 function archive_page_header () {
 
+    /**************************************************************************/
+    // Init variables.
+    $ret = null;
+
+	/******************************************************************************/
+	// Begin the archive info area.
+	$ret .= '<div class="post_nav col col-12 p-0 m-0">';
+
+	/******************************************************************************/
+	// Header begins.
+	$ret .= '<div class="h1 text-georgia-regular p-0 m-0">';
+	// echo 'Posts for the ';
+	if (is_archive()) {
+		$ret .= get_the_archive_title();
+	} // if
+	else if (is_category()) {
+		single_cat_title();
+	}  // else if
+	else if (is_tag()) {
+		$ret .= single_tag_title();
+	} // else if
+	else if (is_year()) {
+		getthe_time('Y');
+	} // else if
+	else if (is_month()) {
+		the_time('F Y');
+	} // else if
+	else if (is_day()) {
+		the_time('l, F j, Y');
+	} // else if
+	$ret .= ' category&hellip;</div>'
+		  . '<hr class="p-0 m-0 border border-dark border-1 opacity-100">'
+		  ;
+
+	/******************************************************************************/
+	// Header ends
+	echo '<div class="h4 text-georgia-regular">';
+	if ($page_description = get_the_archive_description()) {
+		echo strip_tags($page_description);
+	} // if
+
+	else if ($page_description = category_description()) {
+		echo strip_tags($page_description);
+	} // else if
+	// else {
+	// 	echo 'You are currently browsing posts about <strong>';
+	// 	if (is_category()) {
+	// 		echo '&ldquo;';
+	// 		single_cat_title();
+	// 		echo '.&rdquo;';
+	// 	} // if
+	// 	else if (is_tag()) {
+	// 		echo '&ldquo;';
+	// 		echo single_tag_title();
+	// 		echo '.&rdquo;';
+	// 	} // else if
+	// 	else if (is_year()) {
+	// 		the_time('Y');
+	// 		echo '.';
+	// 	} // else if
+	// 	else if (is_month()) {
+	// 		the_time('F Y');
+	// 		echo '.';
+	// 	} // else if
+	// 	else if (is_day()) {
+	// 		the_time('l, F j, Y');
+	// 		echo '.';
+	// 	} // else if
+	// 	echo '</strong>';
+	// } // else
+	echo '</div>';
+
+	/******************************************************************************/
+	// End the archive info area.
+	echo '</div>';
+	// echo '<hr class="p-0 m-0 mt-1 mb-2 border border-dark border-1 opacity-100">';
 
 
 } // archive_page_header
