@@ -13,7 +13,7 @@
 	$archive_page_header = archive_page_header();
 
 	/******************************************************************************/
-	// Render the archive page header.
+	// Get the archive page header.
 	echo $archive_page_header;
 
 	/******************************************************************************/

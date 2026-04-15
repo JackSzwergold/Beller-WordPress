@@ -109,11 +109,23 @@ function archive_page_header () {
     // Init variables.
     $ret = null;
 
-	/******************************************************************************/
+	$category = get_the_category();
+
+	/**************************************************************************/
+	// Get the current selected category slug.
+	$page_category = get_the_category();
+	$page_category_shifted = null;
+	$page_category_slug = null;
+	if (!empty($page_category)) {
+		$page_category_shifted = array_shift($page_category);
+		$page_category_name = $page_category_shifted->name;				
+	} // if
+
+	/**************************************************************************/
 	// Begin the archive info area.
 	$ret .= '<div class="post_nav col col-12 p-0 m-0">';
 
-	/******************************************************************************/
+	/**************************************************************************/
 	// Header begins.
 	$ret .= '<div class="h1 text-georgia-regular p-0 m-0">';
 	// echo 'Posts for the ';
@@ -121,7 +133,7 @@ function archive_page_header () {
 		$ret .= get_the_archive_title();
 	} // if
 	else if (is_category()) {
-		single_cat_title();
+		$ret .= $page_category_name;
 	}  // else if
 	else if (is_tag()) {
 		$ret .= single_tag_title();
@@ -138,7 +150,7 @@ function archive_page_header () {
 	// $ret .= ' category&hellip;</div>';
 	// $ret .= '<hr class="p-0 m-0 border border-dark border-1 opacity-100">';
 
-	/******************************************************************************/
+	/**************************************************************************/
 	// Header ends
 	$ret .= '<div class="h4 text-georgia-regular">';
 	if ($page_description = get_the_archive_description()) {
@@ -175,7 +187,7 @@ function archive_page_header () {
 	// } // else
 	$ret .= '</div>';
 
-	/******************************************************************************/
+	/**************************************************************************/
 	// End the archive info area.
 	$ret .= '</div>';
 	// $ret .= '<hr class="p-0 m-0 mt-1 mb-2 border border-dark border-1 opacity-100">';
@@ -186,7 +198,7 @@ function archive_page_header () {
 
 } // archive_page_header
 
-/********************************************************************************/
+/******************************************************************************/
 // 2026-04-14: Setting a standalone 'single post' function for ease of reuse.
 function single_post () {
 
