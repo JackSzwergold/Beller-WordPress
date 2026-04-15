@@ -102,6 +102,14 @@ function adjust_block_heading_css($content, $block) {
 add_filter('render_block', 'adjust_block_heading_css', 10, 2 );
 
 /********************************************************************************/
+// 2026-04-15: Setting a standalone 'archive page eader' function for ease of reuse.
+function archive_page_header () {
+
+
+
+} // archive_page_header
+
+/********************************************************************************/
 // 2026-04-14: Setting a standalone 'single post' function for ease of reuse.
 function single_post () {
 
