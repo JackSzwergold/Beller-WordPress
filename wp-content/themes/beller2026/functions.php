@@ -362,7 +362,7 @@ function szwergold_widgets_init() {
 		'id'            => 'home-featured-1',
 		'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
 		// 'before_widget' => '<div id="%1$s" class="widget %2$s sticky-top col col-12 p-0 m-0 mb-3 bg-warning">',
-		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3 bg-warning">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3">',
 		'after_widget'  => '</div>',
 		'before_title'  => '<div class="h4 text-georgia-bold col col-12 p-0 m-0 mb-1">',
 		'after_title'   => '</div>',
