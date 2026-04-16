@@ -8,55 +8,55 @@
 	/******************************************************************************/
 	/******************************************************************************/
 
+	// /******************************************************************************/
+	// // Get the archive page header.
+	// $archive_page_header = archive_page_header();
+
+	// /******************************************************************************/
+	// // Get the archive page header.
+	// echo $archive_page_header;
+
 	/******************************************************************************/
-	// Get the archive page header.
-	$archive_page_header = archive_page_header();
-
-	/******************************************************************************/
-	// Get the archive page header.
-	echo $archive_page_header;
-
-	/******************************************************************************/
 	/******************************************************************************/
 	/******************************************************************************/
 
-	// /******************************************************************************/
-	// // Get the single post content.
-	// list($header, $content, $page_category_slug) = single_post();
+	/******************************************************************************/
+	// Get the single post content.
+	list($header, $content, $page_category_slug) = single_post();
 
-	// /******************************************************************************/
-	// // Set the text CSS.
-	// $text_css = null;
-	// if (!empty($page_category_slug) && in_array($page_category_slug, array('notes'))) {
-	// 	$text_css = 'fs-3 lh-base fst-italic';
-	// } // if
+	/******************************************************************************/
+	// Set the text CSS.
+	$text_css = null;
+	if (!empty($page_category_slug) && in_array($page_category_slug, array('notes'))) {
+		$text_css = 'fs-3 lh-base fst-italic';
+	} // if
 
-	// /******************************************************************************/
-	// // Wrap the header.
-	// $header = '<header class="col col-12 p-0 m-0 pb-2">'
-	// 		. $header
-	// 		. '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">'
-	// 		. '</header>'
-	// 		;
+	/******************************************************************************/
+	// Wrap the header.
+	$header = '<header class="col col-12 p-0 m-0 pb-2">'
+			. $header
+			. '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">'
+			. '</header>'
+			;
 
-	// /******************************************************************************/
-	// // Render the header.
-	// echo $header;
+	/******************************************************************************/
+	// Render the header.
+	echo $header;
 
-	// /******************************************************************************/
-	// // Wrap the content.
-	// $content = '<main class="col col-12 p-0 m-0">'
-	// 		 . '<article class="col col-12 p-0 m-0">'
-	// 		 . '<div class="text-georgia-regular ' . $text_css . '">'
-	// 		 . $content
-	// 		 . '</div>'
-	// 		 . '</article>'
-	// 		 . '</main>'
-	// 		 ;
+	/******************************************************************************/
+	// Wrap the content.
+	$content = '<main class="col col-12 p-0 m-0">'
+			 . '<article class="col col-12 p-0 m-0">'
+			 . '<div class="text-georgia-regular ' . $text_css . '">'
+			 . $content
+			 . '</div>'
+			 . '</article>'
+			 . '</main>'
+			 ;
 
-	// /******************************************************************************/
-	// // Render the content.
-	// echo $content;
+	/******************************************************************************/
+	// Render the content.
+	echo $content;
 
 	/******************************************************************************/
 	/******************************************************************************/
