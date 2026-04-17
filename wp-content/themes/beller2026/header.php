@@ -251,7 +251,7 @@
 	$site_url = is_front_page() ? $site_url . '#' : $site_url . '/';
 
   /**************************************************************************************************/
-  // Set the footer array items.
+  // Set the header array items.
   $header_items_array = array();
   // $header_items_array[] = '<a href="' . $site_url . '" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
   $header_items_array['books'] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
@@ -261,15 +261,15 @@
   $header_items_array['newsletter'] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
 
   /**************************************************************************************************/
-  // Set the footer divider item.
+  // Set the header divider item.
   $header_divider = '<span class="text-dark m-0 p-0 px-2">&bull;</span>';
 
   /**************************************************************************************************/
-  // Set the footer array items.
+  // Set the header array items.
   foreach ($header_items_array as $key => $value) {
     $header_items_array[$key] =
         '<li class="list-inline-item text-nowrap p-0 m-0">'
-      . '<span class="d-none d-md-block">'
+      . '<span class="d-none d-md-block h5 text-clashgrotesk-regular p-0 m-0">'
       . $value
       . '</span>'
       . '<span class="small d-md-none">'
