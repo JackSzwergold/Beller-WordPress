@@ -237,7 +237,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the title.
-	$header .= '<div class="h1 p-0 m-0 text-georgia-bold">'
+	$header .= '<div class="h1 p-0 m-0 text-literata-regular">'
 			  . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
 			  . $title
 			  . '</a>'
@@ -364,7 +364,7 @@ function szwergold_widgets_init() {
 		// 'before_widget' => '<div id="%1$s" class="widget %2$s sticky-top col col-12 p-0 m-0 mb-3 bg-warning">',
 		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="h4 text-georgia-bold col col-12 p-0 m-0 mb-1">',
+		'before_title'  => '<div class="h4 text-clashgrotesk-regular col col-12 p-0 m-0 mb-1">',
 		'after_title'   => '</div>',
 	));
 } // szwergold_widgets_init

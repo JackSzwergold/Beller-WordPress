@@ -74,7 +74,7 @@
 
   <footer class="fixed-bottom p-0 m-0 px-3 bg-white">
     <div class="col col-12 p-0 m-0 px-2 py-3">
-      <div class="h6 text-georgia-regular text-center p-0 m-0">
+      <div class="h6 text-literata-regular text-center p-0 m-0">
         <ul class="list-inline p-0 m-0">
           <?php
             echo $footer_items_string;
