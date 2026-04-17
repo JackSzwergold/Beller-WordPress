@@ -416,7 +416,7 @@ function render_navigation_items() {
 	/**************************************************************************/
 	// Set the navigaton array items.
 	foreach ($nav_items_array as $item_key => $item_value) {
-	$css_font_weight = ($page_category_slug) == $item_key ? 'text-clashgrotesk-medium' : 'text-clashgrotesk-regular';
+	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-clashgrotesk-medium' : 'text-clashgrotesk-regular';
 	$css_string = $item_key . ' ' . $css_font_weight;
 	$nav_items_array[$item_key] =
 	    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
