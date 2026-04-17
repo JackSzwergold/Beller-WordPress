@@ -238,8 +238,28 @@
 /******************************************************************************/
 /* Setting ClashGrotesk-Regular tags.
 /******************************************************************************/
+.text-clashgrotesk-extralight {
+  font-family: ClashGrotesk-ExtraLight, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-light {
+  font-family: ClashGrotesk-Light, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
 .text-clashgrotesk-regular {
   font-family: ClashGrotesk-Regular, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-medium {
+  font-family: ClashGrotesk-Medium, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-semibold {
+  font-family: ClashGrotesk-Semibold, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-bold {
+  font-family: ClashGrotesk-Bold, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
 }
 
 /******************************************************************************/

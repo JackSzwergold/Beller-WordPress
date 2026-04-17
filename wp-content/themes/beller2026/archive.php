@@ -230,7 +230,7 @@
 			// Set the title.
 			if (!empty($permalink) && !empty($title) && !empty($title_attribute)) {
 				$title =
-					  '<div class="text-literata-regular">'
+					  '<div class="h4 text-clashgrotesk-medium p-0 m-0">'
 					. '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-decoration-none text-dark">'
 					. $title
 					. '</a>'

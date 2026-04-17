@@ -127,7 +127,7 @@ function archive_page_header () {
 
 	/**************************************************************************/
 	// Header begins.
-	$ret .= '<div class="h1 text-clashgrotesk-regular p-0 m-0">';
+	$ret .= '<div class="h1 text-clashgrotesk-semibold p-0 m-0">';
 	// echo 'Posts for the ';
 	if (is_archive()) {
 		$ret .= get_the_archive_title();
@@ -152,7 +152,7 @@ function archive_page_header () {
 
 	/**************************************************************************/
 	// Header ends
-	$ret .= '<div class="h4 text-clashgrotesk-regular">';
+	$ret .= '<div class="h4 text-clashgrotesk-semibold">';
 	if ($page_description = get_the_archive_description()) {
 		$ret .= strip_tags($page_description);
 	} // if
@@ -237,12 +237,12 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the title.
-	$header .= '<div class="h1 p-0 m-0 text-clashgrotesk-regular">'
-			  . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
-			  . $title
-			  . '</a>'
-			  . '</div>'
-			  ;
+	$header .= '<div class="h1 p-0 m-0 text-clashgrotesk-medium">'
+			 . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
+			 . $title
+			 . '</a>'
+			 . '</div>'
+			 ;
 
 	/**************************************************************************/
 	// Show the author, date and time.
@@ -364,7 +364,7 @@ function szwergold_widgets_init() {
 		// 'before_widget' => '<div id="%1$s" class="widget %2$s sticky-top col col-12 p-0 m-0 mb-3 bg-warning">',
 		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="h4 text-clashgrotesk-regular col col-12 p-0 m-0 mb-1">',
+		'before_title'  => '<div class="h4 text-clashgrotesk-medium col col-12 p-0 m-0">',
 		'after_title'   => '</div>',
 	));
 } // szwergold_widgets_init
