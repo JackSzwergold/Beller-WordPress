@@ -127,7 +127,7 @@ function archive_page_header () {
 
 	/**************************************************************************/
 	// Header begins.
-	$ret .= '<div class="h1 text-georgia-regular p-0 m-0">';
+	$ret .= '<div class="h1 text-clashgrotesk-regular p-0 m-0">';
 	// echo 'Posts for the ';
 	if (is_archive()) {
 		$ret .= get_the_archive_title();
@@ -152,7 +152,7 @@ function archive_page_header () {
 
 	/**************************************************************************/
 	// Header ends
-	$ret .= '<div class="h4 text-georgia-regular">';
+	$ret .= '<div class="h4 text-clashgrotesk-regular">';
 	if ($page_description = get_the_archive_description()) {
 		$ret .= strip_tags($page_description);
 	} // if
@@ -237,7 +237,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the title.
-	$header .= '<div class="h1 p-0 m-0 text-literata-regular">'
+	$header .= '<div class="h1 p-0 m-0 text-clashgrotesk-regular">'
 			  . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
 			  . $title
 			  . '</a>'
@@ -247,12 +247,12 @@ function single_post () {
 	/**************************************************************************/
 	// Show the author, date and time.
 	if (!empty($the_author) || !empty($update_date)) {
-		// $header .= '<div class="h5 p-0 m-0 text-georgia-regular">'
+		// $header .= '<div class="h5 p-0 m-0 text-clashgrotesk-regular">'
 		// 		 . 'By ' . $the_author
 		// 		 . '</div>'
 		// 		 ;
 		if (!empty($update_date)) {
-			$header .= '<div class="h6 p-0 m-0 mt-1 text-georgia-regular">'
+			$header .= '<div class="h6 p-0 m-0 mt-1 text-clashgrotesk-regular">'
 					 . '<span class="me-2 fa fa-calendar"></span>'
 					 . $update_date
 					 ;

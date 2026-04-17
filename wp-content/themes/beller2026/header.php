@@ -269,10 +269,10 @@
   foreach ($header_items_array as $key => $value) {
     $header_items_array[$key] =
         '<li class="list-inline-item text-nowrap p-0 m-0">'
-      . '<span class="fst-italic d-none d-md-block">'
+      . '<span class="d-none d-md-block">'
       . $value
       . '</span>'
-      . '<span class="small fst-italic d-md-none">'
+      . '<span class="small d-md-none">'
       . $value
       . '</span>'
       . '</li>'

@@ -56,10 +56,10 @@
   foreach ($footer_items_array as $key => $value) {
     $footer_items_array[$key] =
         '<li class="list-inline-item text-nowrap p-0 m-0">'
-      . '<span class="fst-italic d-none d-md-block">'
+      . '<span class="d-none d-md-block">'
       . $value
       . '</span>'
-      . '<span class="small fst-italic d-md-none">'
+      . '<span class="small d-md-none">'
       . $value
       . '</span>'
       . '</li>'
@@ -74,7 +74,7 @@
 
   <footer class="fixed-bottom p-0 m-0 px-3 bg-white">
     <div class="col col-12 p-0 m-0 px-2 py-3">
-      <div class="h6 text-literata-regular text-center p-0 m-0">
+      <div class="h6 text-clashgrotesk-regular text-center p-0 m-0">
         <ul class="list-inline p-0 m-0">
           <?php
             echo $footer_items_string;
