@@ -254,11 +254,11 @@
   // Set the footer array items.
   $header_items_array = array();
   // $header_items_array[] = '<a href="' . $site_url . '" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
-  $header_items_array[] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
-  $header_items_array[] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
-  $header_items_array[] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
-  $header_items_array[] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $header_items_array[] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  $header_items_array['books'] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
+  $header_items_array['tour'] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $header_items_array['editoral'] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
+  $header_items_array['articles'] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
+  $header_items_array['newsletter'] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
 
   /**************************************************************************************************/
   // Set the footer divider item.
