@@ -92,14 +92,13 @@
           if ($instance['show_readmore']) {
             $excerpt = substr($excerpt, 0, -3);
           } // if
-          // $excerpt_readmore = null;
-          // if ($instance['excerpt_readmore']) {
-          //   $excerpt_readmore = '<span class="m-0 p-0 ms-1">' . $instance['excerpt_readmore'] . '</span>';
-          // } // if
+          $excerpt_readmore = null;
+          if ($instance['excerpt_readmore']) {
+            $excerpt_readmore = '<span class="text-clashgrotesk-medium m-0 p-0 ms-1">' . $instance['excerpt_readmore'] . '</span>';
+          } // if
           $content .=
               '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
-            . $excerpt
-            // . $excerpt . $excerpt_readmore
+            . $excerpt . $excerpt_readmore
             . '</a>'
             ;
           $content =

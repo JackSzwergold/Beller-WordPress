@@ -255,7 +255,7 @@
   $header_items_array = array();
   // $header_items_array[] = '<a href="' . $site_url . '" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
   $header_items_array['books'] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
-  $header_items_array['tour'] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $header_items_array['events'] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
   $header_items_array['editoral'] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
   $header_items_array['articles'] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
   $header_items_array['newsletter'] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
@@ -266,14 +266,16 @@
 
   /**************************************************************************************************/
   // Set the header array items.
-  foreach ($header_items_array as $key => $value) {
-    $header_items_array[$key] =
-        '<li class="list-inline-item text-nowrap p-0 m-0">'
-      . '<span class="d-none d-md-block h5 text-clashgrotesk-regular p-0 m-0">'
-      . $value
+  foreach ($header_items_array as $item_key => $item_value) {
+  	$css_font_weight = ($page_category_slug) == $item_key ? 'text-clashgrotesk-medium' : 'text-clashgrotesk-regular';
+  	$css_string = $item_key . ' ' . $css_font_weight;
+    $header_items_array[$item_key] =
+        '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
+      . '<span class="d-none d-md-block h5 p-0 m-0 ' . $css_string . '">'
+      . $item_value
       . '</span>'
       . '<span class="small d-md-none">'
-      . $value
+      . $item_value
       . '</span>'
       . '</li>'
       ;
