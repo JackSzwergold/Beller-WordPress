@@ -27,6 +27,35 @@
 
 <?php
 
+  /**********************************************************************/
+  // Get the current selected category info.
+  // if (is_archive() || is_single()) {
+  if (is_single()) {
+    $page_category = get_the_category();
+    $page_category_shifted = array();
+    $page_category_parent_ID = null;
+    $page_category_slug = null;
+    $page_category_name = null;
+    if (!empty($page_category)) {
+      $page_category = array_shift($page_category);
+      $page_category_parent_ID = isset($page_category->parent) ? $page_category->parent : null;
+      $page_category_slug = isset($page_category->slug) ? $page_category->slug : null;
+      $page_category_name = isset($page_category->name) ? $page_category->name : null;
+    } // if
+  } // if
+  else {
+    $page_category_ID = get_query_var('cat');
+    $page_category = get_category($page_category_ID);
+    $page_category_parent_ID = null;
+    $page_category_slug = null;
+    $page_category_name = null;
+    if (!empty($page_category)) {
+      $page_category_parent_ID = isset($page_category->parent) ? $page_category->parent : null;
+      $page_category_slug = isset($page_category->slug) ? $page_category->slug : null;
+      $page_category_name = isset($page_category->name) ? $page_category->name : null;
+    } // if
+  } // else
+
   /**************************************************************************************************/
   // Get the site URL.
   $site_url = get_site_url();
@@ -36,37 +65,39 @@
   $site_url = is_front_page() ? $site_url . '#' : $site_url . '/';
 
   /**************************************************************************************************/
-  // Set the footer array items.
-  $footer_items_array = array();
-  // $footer_items_array[] = '<a href="' . $site_url . '" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
-  $footer_items_array['books'] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
-  $footer_items_array['tour'] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
-  $footer_items_array['editoral'] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
-  $footer_items_array['articles'] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
-  $footer_items_array['newsletter'] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
+  // Set the navigaton array items.
+  $nav_items_array = array();
+  // $nav_items_array[] = '<a href="' . $site_url . '" title="Home" class="text-dark m-0 p-0"><span property="name" class="text-dark fa fa-home"></span></a>';
+  $nav_items_array['books'] = '<a href="' . $site_url . 'books" title="Books" class="text-dark m-0 p-0">Books</a>';
+  $nav_items_array['events'] = '<a href="' . $site_url . 'events" title="Tour/Events" class="text-dark m-0 p-0">Tour/Events</a>';
+  $nav_items_array['editoral'] = '<a href="' . $site_url . 'editoral" title="Editoral Services" class="text-dark m-0 p-0">Editoral Services</a>';
+  $nav_items_array['articles'] = '<a href="' . $site_url . 'articles" title="Articles" class="text-dark m-0 p-0">Articles</a>';
+  $nav_items_array['newsletter'] = '<a href="' . $site_url . 'newsletter" title="Newsletter" class="text-dark m-0 p-0">Newsletter</a>';
 
   /**************************************************************************************************/
-  // Set the footer divider item.
-  $footer_divider = '<span class="text-dark m-0 p-0 px-2">&bull;</span>';
+  // Set the navigaton divider item.
+  $nav_item_divider = '<span class="text-dark m-0 p-0 px-2">&bull;</span>';
 
   /**************************************************************************************************/
-  // Set the footer array items.
-  foreach ($footer_items_array as $key => $value) {
-    $footer_items_array[$key] =
-        '<li class="list-inline-item text-nowrap p-0 m-0">'
-      . '<span class="d-none d-md-block h5 text-clashgrotesk-regular p-0 m-0">'
-      . $value
+  // Set the navigaton array items.
+  foreach ($nav_items_array as $item_key => $item_value) {
+    $css_font_weight = ($page_category_slug) == $item_key ? 'text-clashgrotesk-medium' : 'text-clashgrotesk-regular';
+    $css_string = $item_key . ' ' . $css_font_weight;
+    $nav_items_array[$item_key] =
+        '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
+      . '<span class="d-none d-md-block h5 p-0 m-0 ' . $css_string . '">'
+      . $item_value
       . '</span>'
       . '<span class="small d-md-none">'
-      . $value
+      . $item_value
       . '</span>'
       . '</li>'
       ;
   } // foreach
 
   /**************************************************************************************************/
-  // Set the footer string.
-  $footer_items_string = implode($footer_divider, $footer_items_array);
+  // Set the navigaton string.
+  $nav_items_string = implode($nav_item_divider, $nav_items_array);
 
 ?>
 
@@ -75,7 +106,7 @@
       <div class="h6 text-clashgrotesk-regular text-center p-0 m-0">
         <ul class="list-inline p-0 m-0">
           <?php
-            echo $footer_items_string;
+            echo $nav_items_string;
           ?>
         </ul>
       </div>
