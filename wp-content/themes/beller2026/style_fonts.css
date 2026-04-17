@@ -229,6 +229,14 @@
 }
 
 /******************************************************************************/
+/* Setting Boxing tags.
+/******************************************************************************/
+.text-boxing-regular {
+  font-family: Boxing-Regular, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
+}
+
+/******************************************************************************/
 /*  _____           _
 /* |  ___|__  _ __ | |_ ___
 /* | |_ / _ \| '_ \| __/ __|
@@ -379,144 +387,144 @@
 /******************************************************************************/
 @font-face {
   font-family: 'Literata-ExtraLight';
-  src: url('fonts/Literata/Literata-ExtraLight.woff2') format('woff2'),
-       url('fonts/Literata/Literata-ExtraLight.woff') format('woff'),
-       url('fonts/Literata/Literata-ExtraLight.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-ExtraLight.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraLight.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraLight.ttf') format('truetype');
   font-weight: 200;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-ExtraLightItalic';
-  src: url('fonts/Literata/Literata-ExtraLightItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-ExtraLightItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-ExtraLightItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-ExtraLightItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraLightItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraLightItalic.ttf') format('truetype');
   font-weight: 200;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-Light';
-  src: url('fonts/Literata/Literata-Light.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Light.woff') format('woff'),
-       url('fonts/Literata/Literata-Light.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Light.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Light.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Light.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-LightItalic';
-  src: url('fonts/Literata/Literata-LightItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-LightItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-LightItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-LightItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-LightItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-Regular';
-  src: url('fonts/Literata/Literata-Regular.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Regular.woff') format('woff'),
-       url('fonts/Literata/Literata-Regular.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Regular.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Regular.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-Italic';
-  src: url('fonts/Literata/Literata-Italic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Italic.woff') format('woff'),
-       url('fonts/Literata/Literata-Italic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Italic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Italic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Italic.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-Medium';
-  src: url('fonts/Literata/Literata-Medium.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Medium.woff') format('woff'),
-       url('fonts/Literata/Literata-Medium.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Medium.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Medium.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-MediumItalic';
-  src: url('fonts/Literata/Literata-MediumItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-MediumItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-MediumItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-MediumItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-MediumItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-SemiBold';
-  src: url('fonts/Literata/Literata-SemiBold.woff2') format('woff2'),
-       url('fonts/Literata/Literata-SemiBold.woff') format('woff'),
-       url('fonts/Literata/Literata-SemiBold.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-SemiBold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-SemiBold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-SemiBoldItalic';
-  src: url('fonts/Literata/Literata-SemiBoldItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-SemiBoldItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-SemiBoldItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-SemiBoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-Bold';
-  src: url('fonts/Literata/Literata-Bold.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Bold.woff') format('woff'),
-       url('fonts/Literata/Literata-Bold.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Bold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Bold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-BoldItalic';
-  src: url('fonts/Literata/Literata-BoldItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-BoldItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-BoldItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-BoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-BoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-BoldItalic.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-ExtraBold';
-  src: url('fonts/Literata/Literata-ExtraBold.woff2') format('woff2'),
-       url('fonts/Literata/Literata-ExtraBold.woff') format('woff'),
-       url('fonts/Literata/Literata-ExtraBold.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-ExtraBold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraBold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-ExtraBoldItalic';
-  src: url('fonts/Literata/Literata-ExtraBoldItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-ExtraBoldItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-ExtraBoldItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-display: swap;
   font-style: italic;
 }
 @font-face {
   font-family: 'Literata-Black';
-  src: url('fonts/Literata/Literata-Black.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Black.woff') format('woff'),
-       url('fonts/Literata/Literata-Black.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Black.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Black.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Black.ttf') format('truetype');
   font-weight: 900;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'Literata-BlackItalic';
-  src: url('fonts/Literata/Literata-BlackItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-BlackItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-BlackItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-BlackItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-BlackItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-display: swap;
   font-style: italic;
@@ -531,9 +539,9 @@
 */
 @font-face {
   font-family: 'Literata-Variable';
-  src: url('fonts/Literata/Literata-Variable.woff2') format('woff2'),
-       url('fonts/Literata/Literata-Variable.woff') format('woff'),
-       url('fonts/Literata/Literata-Variable.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-Variable.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Variable.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Variable.ttf') format('truetype');
   font-weight: 200 900;
   font-display: swap;
   font-style: normal;
@@ -548,9 +556,9 @@
 */
 @font-face {
   font-family: 'Literata-VariableItalic';
-  src: url('fonts/Literata/Literata-VariableItalic.woff2') format('woff2'),
-       url('fonts/Literata/Literata-VariableItalic.woff') format('woff'),
-       url('fonts/Literata/Literata-VariableItalic.ttf') format('truetype');
+  src: url('fonts/Literata_Web/Literata-VariableItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-VariableItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-VariableItalic.ttf') format('truetype');
   font-weight: 200 900;
   font-display: swap;
   font-style: italic;
@@ -561,54 +569,54 @@
 /******************************************************************************/
 @font-face {
   font-family: 'ClashGrotesk-Extralight';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Extralight.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Extralight.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Extralight.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Extralight.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Extralight.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Extralight.ttf') format('truetype');
   font-weight: 200;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'ClashGrotesk-Light';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Light.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Light.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Light.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Light.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Light.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Light.ttf') format('truetype');
   font-weight: 300;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'ClashGrotesk-Regular';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Regular.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Regular.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Regular.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Regular.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Regular.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'ClashGrotesk-Medium';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Medium.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Medium.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Medium.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Medium.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Medium.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Medium.ttf') format('truetype');
   font-weight: 500;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'ClashGrotesk-Semibold';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Semibold.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Semibold.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Semibold.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Semibold.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Semibold.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Semibold.ttf') format('truetype');
   font-weight: 600;
   font-display: swap;
   font-style: normal;
 }
 @font-face {
   font-family: 'ClashGrotesk-Bold';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Bold.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Bold.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Bold.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Bold.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Bold.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Bold.ttf') format('truetype');
   font-weight: 700;
   font-display: swap;
   font-style: normal;
@@ -623,9 +631,9 @@
 */
 @font-face {
   font-family: 'ClashGrotesk-Variable';
-  src: url('fonts/ClashGrotesk/ClashGrotesk-Variable.woff2') format('woff2'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Variable.woff') format('woff'),
-       url('fonts/ClashGrotesk/ClashGrotesk-Variable.ttf') format('truetype');
+  src: url('fonts/ClashGrotesk_WebClashGrotesk-Variable.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Variable.woff') format('woff'),
+       url('fonts/ClashGrotesk_WebClashGrotesk-Variable.ttf') format('truetype');
   font-weight: 200 700;
   font-display: swap;
   font-style: normal;
@@ -636,9 +644,9 @@
 /******************************************************************************/
 @font-face {
   font-family: 'Boxing-Regular';
-  src: url('fonts/Boxing/Boxing-Regular.woff2') format('woff2'),
-       url('fonts/Boxing/Boxing-Regular.woff') format('woff'),
-       url('fonts/Boxing/Boxing-Regular.ttf') format('truetype');
+  src: url('fonts/Boxing_Web/Boxing-Regular.woff2') format('woff2'),
+       url('fonts/Boxing_Web/Boxing-Regular.woff') format('woff'),
+       url('fonts/Boxing_Web/Boxing-Regular.ttf') format('truetype');
   font-weight: 400;
   font-display: swap;
   font-style: normal;
