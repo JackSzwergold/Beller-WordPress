@@ -233,25 +233,20 @@
 /******************************************************************************/
 .text-literata-regular {
   font-family: Literata-Regular, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 900 !important;
 }
 
 /******************************************************************************/
 /* Setting ClashGrotesk-Regular tags.
 /******************************************************************************/
 .text-clashgrotesk-regular {
-  font-family: ClashGrotesk-Regular, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 900 !important;
+  font-family: ClashGrotesk-Regular, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
 }
-
-
 
 /******************************************************************************/
 /* Setting Boxing tags.
 /******************************************************************************/
 .text-boxing-regular {
   font-family: Boxing-Regular, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 900 !important;
 }
 
 /******************************************************************************/
