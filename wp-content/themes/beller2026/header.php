@@ -206,22 +206,24 @@
 
 		/****************************************************************************************/
 		// Set the blog description.
-		$blog_description =
-			  '<div class="h4 text-georgia-regular p-0 m-0 d-none d-md-block">'
-			. '<a href="' . $url . '" class="text-offwhite">'
-			. '<span class="fst-italic">'
-			. $blog_description
-			. '</span>'
-			. '</a>'
-			. '</div>'
-			. '<div class="h5 text-georgia-regular p-0 m-0 d-md-none">'
-			. '<a href="' . $url . '" class="text-offwhite">'
-			. '<span class="small fst-italic">'
-			. $blog_description
-			. '</span>'
-			. '</a>'
-			. '</div>'
-			;
+		if (!empty($blog_description)) {
+			$blog_description =
+				  '<div class="h4 text-georgia-regular p-0 m-0 d-none d-md-block">'
+				. '<a href="' . $url . '" class="text-offwhite">'
+				. '<span class="fst-italic">'
+				. $blog_description
+				. '</span>'
+				. '</a>'
+				. '</div>'
+				. '<div class="h5 text-georgia-regular p-0 m-0 d-md-none">'
+				. '<a href="' . $url . '" class="text-offwhite">'
+				. '<span class="small fst-italic">'
+				. $blog_description
+				. '</span>'
+				. '</a>'
+				. '</div>'
+				;
+		} // if
 
 	?>
 </head>
@@ -233,11 +235,13 @@
 				echo $blog_name;
 			?>
 		</div>
-		<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-white z-0">
-			<?php
-				echo $blog_description;
-			?>
-		</div>
+		<?php
+			if (!empty($blog_description)) {
+				echo '<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-white z-0">';
+				echo $blog_description;	
+				echo '</div>';		
+			}
+		?>
 	</nav>
 
 	<?php
@@ -248,8 +252,8 @@
 
 	?>
 
-	<header class="sticky-top p-0 m-0 px-3 bg-white">
-		<div class="col col-12 p-0 m-0 px-2 py-31">
+	<header class="sticky-top p-0 m-0 bg-white">
+		<div class="col col-12 p-0 m-0">
 			<div class="text-center p-0 m-0">
 				<ul class="list-inline p-0 m-0">
 					<?php
