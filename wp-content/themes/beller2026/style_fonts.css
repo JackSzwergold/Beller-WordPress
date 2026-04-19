@@ -279,43 +279,21 @@
   font-family: Literata-BoldItalic, "New York", "Times New Roman", Times, serif !important;
 }
 
-/*
-@font-face {
-  font-family: 'Literata-ExtraBold';
-  src: url('fonts/Literata_Web/Literata-ExtraBold.woff2') format('woff2'),
-       url('fonts/Literata_Web/Literata-ExtraBold.woff') format('woff'),
-       url('fonts/Literata_Web/Literata-ExtraBold.ttf') format('truetype');
-  font-weight: 800;
-  font-display: swap;
-  font-style: normal;
+.text-literata-extrabold {
+  font-family: Literata-ExtraBold, "New York", "Times New Roman", Times, serif !important;
 }
-@font-face {
-  font-family: 'Literata-ExtraBoldItalic';
-  src: url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff2') format('woff2'),
-       url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff') format('woff'),
-       url('fonts/Literata_Web/Literata-ExtraBoldItalic.ttf') format('truetype');
-  font-weight: 800;
-  font-display: swap;
-  font-style: italic;
+
+.text-literata-extrabolditalic {
+  font-family: Literata-ExtraBoldItalic, "New York", "Times New Roman", Times, serif !important;
 }
-@font-face {
-  font-family: 'Literata-Black';
-  src: url('fonts/Literata_Web/Literata-Black.woff2') format('woff2'),
-       url('fonts/Literata_Web/Literata-Black.woff') format('woff'),
-       url('fonts/Literata_Web/Literata-Black.ttf') format('truetype');
-  font-weight: 900;
-  font-display: swap;
-  font-style: normal;
+
+.text-literata-black {
+  font-family: Literata-Black, "New York", "Times New Roman", Times, serif !important;
 }
-@font-face {
-  font-family: 'Literata-BlackItalic';
-  src: url('fonts/Literata_Web/Literata-BlackItalic.woff2') format('woff2'),
-       url('fonts/Literata_Web/Literata-BlackItalic.woff') format('woff'),
-       url('fonts/Literata_Web/Literata-BlackItalic.ttf') format('truetype');
-  font-weight: 900;
-  font-display: swap;
-  font-style: italic;
-}*/
+
+.text-literata-black {
+  font-family: Literata-BlackItalic, "New York", "Times New Roman", Times, serif !important;
+}
 
 /******************************************************************************/
 /* Setting ClashGrotesk tags.
