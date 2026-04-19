@@ -267,25 +267,15 @@
   font-family: Literata-SemiBold, "New York", "Times New Roman", Times, serif !important;
 }
 
+.text-literata-semibolditalic {
+  font-family: Literata-SemiBoldItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-bold {
+  font-family: Literata-Bold, "New York", "Times New Roman", Times, serif !important;
+}
+
 /*
-@font-face {
-  font-family: 'Literata-SemiBoldItalic';
-  src: url('fonts/Literata_Web/Literata-SemiBoldItalic.woff2') format('woff2'),
-       url('fonts/Literata_Web/Literata-SemiBoldItalic.woff') format('woff'),
-       url('fonts/Literata_Web/Literata-SemiBoldItalic.ttf') format('truetype');
-  font-weight: 600;
-  font-display: swap;
-  font-style: italic;
-}
-@font-face {
-  font-family: 'Literata-Bold';
-  src: url('fonts/Literata_Web/Literata-Bold.woff2') format('woff2'),
-       url('fonts/Literata_Web/Literata-Bold.woff') format('woff'),
-       url('fonts/Literata_Web/Literata-Bold.ttf') format('truetype');
-  font-weight: 700;
-  font-display: swap;
-  font-style: normal;
-}
 @font-face {
   font-family: 'Literata-BoldItalic';
   src: url('fonts/Literata_Web/Literata-BoldItalic.woff2') format('woff2'),
