@@ -231,6 +231,22 @@
 /******************************************************************************/
 /* Setting Literata-Regular tags.
 /******************************************************************************/
+.text-literata-extralight {
+  font-family: Literata-ExtraLight, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-extralightitalic {
+  font-family: Literata-ExtraLightItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-light {
+  font-family: Literata-Light, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-lightitalic {
+  font-family: Literata-LightItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
 .text-literata-regular {
   font-family: Literata-Regular, "New York", "Times New Roman", Times, serif !important;
 }
