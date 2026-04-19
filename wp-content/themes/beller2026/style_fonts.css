@@ -229,7 +229,7 @@
 }
 
 /******************************************************************************/
-/* Setting Literata-Regular tags.
+/* Setting Literata tags.
 /******************************************************************************/
 .text-literata-extralight {
   font-family: Literata-ExtraLight, "New York", "Times New Roman", Times, serif !important;
@@ -251,8 +251,89 @@
   font-family: Literata-Regular, "New York", "Times New Roman", Times, serif !important;
 }
 
+.text-literata-italic {
+  font-family: Literata-Italic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-medium {
+  font-family: Literata-Medium, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-mediumitalic {
+  font-family: Literata-MediumItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-semibold {
+  font-family: Literata-SemiBold, "New York", "Times New Roman", Times, serif !important;
+}
+
+/*
+@font-face {
+  font-family: 'Literata-SemiBoldItalic';
+  src: url('fonts/Literata_Web/Literata-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-SemiBoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Bold';
+  src: url('fonts/Literata_Web/Literata-Bold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Bold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-BoldItalic';
+  src: url('fonts/Literata_Web/Literata-BoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-BoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-ExtraBold';
+  src: url('fonts/Literata_Web/Literata-ExtraBold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraBold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-ExtraBoldItalic';
+  src: url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Black';
+  src: url('fonts/Literata_Web/Literata-Black.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Black.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-BlackItalic';
+  src: url('fonts/Literata_Web/Literata-BlackItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-BlackItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}*/
+
 /******************************************************************************/
-/* Setting ClashGrotesk-Regular tags.
+/* Setting ClashGrotesk tags.
 /******************************************************************************/
 .text-clashgrotesk-extralight {
   font-family: ClashGrotesk-ExtraLight, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
