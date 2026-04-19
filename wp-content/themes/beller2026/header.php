@@ -197,7 +197,7 @@
 		/****************************************************************************************/
 		// Set the blog name.
 		$blog_name =
-			  '<div class="h1 text-clashgrotesk-semibold p-0 m-0">'
+			  '<div class="h1 text-literata-black p-0 m-0">'
 			. '<a href="' . $url . '" class="text-dark">'
 			. $blog_name
 			. '</a>'
@@ -207,14 +207,14 @@
 		/****************************************************************************************/
 		// Set the blog description.
 		$blog_description =
-			  '<div class="h4 text-clashgrotesk-regular p-0 m-0 d-none d-md-block">'
+			  '<div class="h4 text-georgia-regular p-0 m-0 d-none d-md-block">'
 			. '<a href="' . $url . '" class="text-offwhite">'
 			. '<span class="fst-italic">'
 			. $blog_description
 			. '</span>'
 			. '</a>'
 			. '</div>'
-			. '<div class="h5 text-clashgrotesk-regular p-0 m-0 d-md-none">'
+			. '<div class="h5 text-georgia-regular p-0 m-0 d-md-none">'
 			. '<a href="' . $url . '" class="text-offwhite">'
 			. '<span class="small fst-italic">'
 			. $blog_description
@@ -250,7 +250,7 @@
 
 	<header class="sticky-top p-0 m-0 px-3 bg-white">
 		<div class="col col-12 p-0 m-0 px-2 py-31">
-			<div class="h6 text-clashgrotesk-regular text-center p-0 m-0">
+			<div class="text-center p-0 m-0">
 				<ul class="list-inline p-0 m-0">
 					<?php
 						echo $nav_items_string;

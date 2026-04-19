@@ -237,7 +237,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the title.
-	$header .= '<div class="h1 p-0 m-0 text-clashgrotesk-medium">'
+	$header .= '<div class="h2 p-0 m-0 text-literata-bold">'
 			 . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
 			 . $title
 			 . '</a>'
@@ -252,7 +252,7 @@ function single_post () {
 		// 		 . '</div>'
 		// 		 ;
 		if (!empty($update_date)) {
-			$header .= '<div class="h6 p-0 m-0 mt-1 text-clashgrotesk-regular">'
+			$header .= '<div class="h6 p-0 m-0 mt-2 text-clashgrotesk-regular">'
 					 . '<span class="me-2 fa fa-calendar"></span>'
 					 . $update_date
 					 ;
@@ -416,11 +416,11 @@ function render_navigation_items() {
 	/**************************************************************************/
 	// Set the navigaton array items.
 	foreach ($nav_items_array as $item_key => $item_value) {
-	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-clashgrotesk-medium' : 'text-clashgrotesk-regular';
+	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-georgia-bold' : 'text-georgia-regular';
 	$css_string = $item_key . ' ' . $css_font_weight;
 	$nav_items_array[$item_key] =
 	    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
-	  . '<span class="d-none d-md-block h5 p-0 m-0 ' . $css_string . '">'
+	  . '<span class="d-none d-md-block h6 p-0 m-0 ' . $css_string . '">'
 	  . $item_value
 	  . '</span>'
 	  . '<span class="small d-md-none">'
@@ -450,7 +450,7 @@ function szwergold_widgets_init() {
 		// 'before_widget' => '<div id="%1$s" class="widget %2$s sticky-top col col-12 p-0 m-0 mb-3 bg-warning">',
 		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="h4 text-clashgrotesk-medium col col-12 p-0 m-0">',
+		'before_title'  => '<div class="h4 text-literata-bold col col-12 p-0 m-0">',
 		'after_title'   => '</div>',
 	));
 } // szwergold_widgets_init
