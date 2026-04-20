@@ -10,9 +10,9 @@
 	Donate link: https://monzillamedia.com/donate.html
 	Requires at least: 4.7
 	Tested up to: 7.0
-	Stable tag: 20260205
-	Version:    20260205
-	Requires PHP: 7.1
+	Stable tag: 20260419
+	Version:    20260419
+	Requires PHP: 5.6.20
 	Text Domain: block-bad-queries
 	Domain Path: /languages
 	License: GPLv2 or later
@@ -35,7 +35,7 @@
 
 if (!defined('ABSPATH')) die();
 
-if (!defined('BBQ_VERSION'))   define('BBQ_VERSION', '20260205');
+if (!defined('BBQ_VERSION'))   define('BBQ_VERSION', '20260419');
 if (!defined('BBQ_FILE'))      define('BBQ_FILE', __FILE__);
 if (!defined('BBQ_BASE_FILE')) define('BBQ_BASE_FILE', plugin_basename(__FILE__));
 if (!defined('BBQ_DIR'))       define('BBQ_DIR', plugin_dir_path(__FILE__));
