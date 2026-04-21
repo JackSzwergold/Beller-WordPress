@@ -246,9 +246,11 @@
 
 	<header class="sticky-top p-0 m-0 bg-beige">
 		<div class="col col-12 p-0 m-0">
-			<div class="text-center p-0 m-0">
-				<?php __primaryMenu(); ?>
-			</div>
+			<nav class="navbar navbar-expand navbar-light bg-transparent p-0 m-0">
+				<?php
+					__primaryMenu();
+				?>
+			</nav>
 		</div>
 	</header>
 
