@@ -411,7 +411,7 @@ function render_navigation_items() {
 
 	/**************************************************************************/
 	// Set the navigaton divider item.
-	$nav_item_divider = '<span class="text-dark m-0 p-0 px-5">&nbsp;</span>';
+	$nav_item_divider = '<span class="text-dark m-0 p-0 px-3 px-md-5">&nbsp;</span>';
 
 	/**************************************************************************/
 	// Set the navigaton array items.
