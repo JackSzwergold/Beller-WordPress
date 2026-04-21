@@ -470,13 +470,13 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="sub-menu">';
+		$output .= "\n" . $indent . '<ul class="sub-menu bg-warning">';
 	} // start_lvl
 
 	/****************************************************************************/
 	// The 'end_lvl' method.
 	function end_lvl( &$output, $depth = 0, $args = null ) {
-		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
+		if (isset( $args->item_spacing ) && 'discard' === $args->item_spacing) {
 			$t = '';
 			$n = '';
 		} // if
@@ -540,7 +540,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	/****************************************************************************/
 	// The 'end_el' method.
-	function end_el( &$output, $data_object, $depth = 0, $args = null ) {
+	function end_el( &$output, $data_object, $depth = 0, $args = null) {
 		if (isset( $args->item_spacing ) && 'discard' === $args->item_spacing) {
 			$t = '';
 			$n = '';
