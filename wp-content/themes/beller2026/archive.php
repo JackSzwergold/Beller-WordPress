@@ -46,7 +46,7 @@
 	// Wrap the content.
 	$content = '<main class="col col-12 p-0 m-0 mb-3">'
 			 . '<article class="col col-12 p-0 m-0">'
-			 . '<div class="text-georgia-regular ' . $text_css . '">'
+			 . '<div class="text-georgia-regular lh-base ' . $text_css . '">'
 			 . $content
 			 . '<hr class="p-0 m-0 mt-2 border border-dark border-1 opacity-100">'
 			 . '</div>'
@@ -252,7 +252,7 @@
 			// Wrap the excerpt.
 			if (!empty($excerpt)) {
 				$excerpt =
-					  '<span class="text-georgia-regular small">'
+					  '<span class="text-georgia-regular lh-base small">'
 					. $excerpt
 					. '</span>'
 					;
