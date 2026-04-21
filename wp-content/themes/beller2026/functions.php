@@ -477,7 +477,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$classes[] = 'list-inline-item text-nowrap p-0 m-0';
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
-echo $class_names . '<br>';
+// echo $class_names . '<br>';
 		$output .=
 			  $indent
 			// . '<span class="text-dark m-0 p-0 px-3 px-md-5">&nbsp;</span>'
@@ -503,7 +503,10 @@ echo $class_names . '<br>';
 function custom_nav_class($classes, $item){
     $classes[] = "m-pageHeaderNavItem";
     if (in_array('current-menu-item', $classes) ){
-        $classes[] = 'is-active';
+        $classes[] = 'active text-helvetica-medium';
+    }
+    else {
+    	$classes[] = 'text-helvetica-light';
     }
     return $classes;
 }
