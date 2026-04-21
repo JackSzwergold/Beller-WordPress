@@ -549,7 +549,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 // 2026-04-21: Set a custom class for the selected menu item.
 function custom_nav_class($classes, $item){
     $classes[] = "m-pageHeaderNavItem";
-    if (in_array('current-menu-item', $classes) ){
+    if (in_array('current-menu-item', $classes) || in_array('current-post-parent', $classes)){
         $classes[] = 'active text-helvetica-bold';
     }
     else {
