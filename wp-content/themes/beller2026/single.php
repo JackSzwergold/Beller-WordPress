@@ -16,15 +16,15 @@
 			/**********************************************************************/
 			// Set the text CSS.
 			$text_css = null;
-			if (!empty($page_category_slug) && in_array($page_category_slug, array('notes'))) {
-				$text_css = 'fs-3 lh-base fst-italic';
-			} // if
+			// if (!empty($page_category_slug) && in_array($page_category_slug, array('notes'))) {
+			// 	$text_css = 'fs-3 lh-base fst-italic';
+			// } // if
 
 			/**********************************************************************/
 			// Wrap the header.
 			$header = '<header class="col col-12 p-0 m-0 pb-2">'
 					. $header
-					. '<hr class="p-0 m-0 my-2 border border-dark border-1 opacity-100">'
+					. '<hr class="p-0 m-0 mt-2 border border-dark border-1 opacity-100">'
 					. '</header>'
 					;
 
