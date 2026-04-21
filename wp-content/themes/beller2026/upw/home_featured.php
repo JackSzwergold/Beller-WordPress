@@ -102,7 +102,7 @@
             . '</a>'
             ;
           $content =
-              '<span class="text-georgia-regular lh-base small">'
+              '<span class="text-georgia-regular lh-base">'
             . $content
             . '</span>'
             ;

@@ -416,7 +416,7 @@ function render_navigation_items() {
 	/**************************************************************************/
 	// Set the navigaton array items.
 	foreach ($nav_items_array as $item_key => $item_value) {
-	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-helvetica-bold' : 'text-helvetica-light';
+	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-helvetica-medium' : 'text-helvetica-light';
 	$css_string = $item_key . ' ' . $css_font_weight;
 	$nav_items_array[$item_key] =
 	    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
@@ -448,9 +448,9 @@ function szwergold_widgets_init() {
 		'id'            => 'home-featured-1',
 		'description'   => __('Add widgets here to appear on your homepage.', 'szwergold'),
 		// 'before_widget' => '<div id="%1$s" class="widget %2$s sticky-top col col-12 p-0 m-0 mb-3 bg-warning">',
-		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-4">',
+		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-5">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="h5 text-helvetica-light col col-12 p-0 m-0 mb-1">',
+		'before_title'  => '<div class="h3 text-helvetica-light col col-12 p-0 m-0 mb-2">',
 		'after_title'   => '</div>',
 	));
 } // szwergold_widgets_init

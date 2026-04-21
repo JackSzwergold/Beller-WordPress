@@ -33,7 +33,7 @@
 
   ?>
 
-  <footer class="fixed-bottom p-0 m-0 mb-2 bg-white">
+  <footer class="fixed-bottom p-0 m-0 py-2 bg-white">
     <div class="col col-12 p-0 m-0">
       <div class="text-center p-0 m-0">
         <ul class="list-inline p-0 m-0">
