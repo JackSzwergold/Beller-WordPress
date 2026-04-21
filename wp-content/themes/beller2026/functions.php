@@ -237,7 +237,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the title.
-	$header .= '<div class="h2 text-boska-light p-0 m-0">'
+	$header .= '<div class="h3 text-helvetica-light p-0 m-0">'
 			 . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
 			 . $title
 			 . '</a>'

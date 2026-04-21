@@ -35,7 +35,6 @@
 	// Wrap the header.
 	$header = '<header class="col col-12 p-0 m-0 pb-2">'
 			. $header
-			. '<hr class="p-0 m-0 mt-2 border border-dark border-1 opacity-100">'
 			. '</header>'
 			;
 
@@ -45,10 +44,11 @@
 
 	/******************************************************************************/
 	// Wrap the content.
-	$content = '<main class="col col-12 p-0 m-0">'
+	$content = '<main class="col col-12 p-0 m-0 mb-3">'
 			 . '<article class="col col-12 p-0 m-0">'
 			 . '<div class="text-georgia-regular ' . $text_css . '">'
 			 . $content
+			 . '<hr class="p-0 m-0 mt-2 border border-dark border-1 opacity-100">'
 			 . '</div>'
 			 . '</article>'
 			 . '</main>'
@@ -230,7 +230,7 @@
 			// Set the title.
 			if (!empty($permalink) && !empty($title) && !empty($title_attribute)) {
 				$title =
-					  '<div class="h4 text-boska-light p-0 m-0 mb-2">'
+					  '<div class="h5 text-helvetica-light p-0 m-0 mb-2">'
 					. '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-decoration-none text-dark">'
 					. $title
 					. '</a>'
