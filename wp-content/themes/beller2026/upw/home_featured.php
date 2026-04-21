@@ -94,7 +94,7 @@
           } // if
           $excerpt_readmore = null;
           if ($instance['excerpt_readmore']) {
-            $excerpt_readmore = '<span class="text-clashgrotesk-medium m-0 p-0 ms-1">' . $instance['excerpt_readmore'] . '</span>';
+            $excerpt_readmore = '<span class="text-clashgrotesk-regular m-0 p-0 ms-1">' . $instance['excerpt_readmore'] . '</span>';
           } // if
           $content .=
               '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
