@@ -1,33 +1,4 @@
 /******************************************************************************/
-/* Setting WindsorPro tags.
-/******************************************************************************/
-.text-windsorpro-regular {
-  font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
-}
-
-.text-windsorpro-bold {
-  font-family: "WindsorProBold", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 700 !important;
-}
-
-/******************************************************************************/
-/* Setting ChunkFive tags.
-/******************************************************************************/
-.text-chunkfive {
-  font-family: "ChunkFive", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
-}
-
-/******************************************************************************/
-/* Setting RailroadGothic tags.
-/******************************************************************************/
-.text-railroadgothic {
-  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
-}
-
-/******************************************************************************/
 /* Setting Arial tags.
 /******************************************************************************/
 .text-arial-light {
