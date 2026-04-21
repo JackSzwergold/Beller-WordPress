@@ -471,7 +471,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	}
 
 	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
-		$indent = ($depth) ? str_repeat("\t", $depth) : '';
+		$indent = ($depth) ? str_repeat('\t', $depth) : '';
 
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
@@ -502,7 +502,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 function custom_nav_class($classes, $item){
     $classes[] = "m-pageHeaderNavItem";
     if (in_array('current-menu-item', $classes) ){
-        $classes[] = 'active text-helvetica-medium';
+        $classes[] = 'active text-helvetica-bold';
     }
     else {
     	$classes[] = 'text-helvetica-light';
