@@ -48,7 +48,7 @@
 			 . '<article class="col col-12 p-0 m-0">'
 			 . '<div class="text-georgia-regular lh-base ' . $text_css . '">'
 			 . $content
-			 . '<hr class="p-0 m-0 mt-2 border border-dark border-1 opacity-100">'
+			 . '<hr class="p-0 m-0 mt-5 border border-dark border-1 opacity-100">'
 			 . '</div>'
 			 . '</article>'
 			 . '</main>'
