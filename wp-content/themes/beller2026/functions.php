@@ -416,18 +416,18 @@ function render_navigation_items() {
 	/**************************************************************************/
 	// Set the navigaton array items.
 	foreach ($nav_items_array as $item_key => $item_value) {
-	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-helvetica-medium' : 'text-helvetica-light';
-	$css_string = $item_key . ' ' . $css_font_weight;
-	$nav_items_array[$item_key] =
-	    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
-	  . '<span class="d-none d-lg-block h6 p-0 m-0 ' . $css_string . '">'
-	  . $item_value
-	  . '</span>'
-	  . '<span class="small d-lg-none">'
-	  . $item_value
-	  . '</span>'
-	  . '</li>'
-	  ;
+		$css_font_weight = ($page_category_slug) == $item_key ? 'active text-helvetica-medium' : 'text-helvetica-light';
+		$css_string = $item_key . ' ' . $css_font_weight;
+		$nav_items_array[$item_key] =
+		    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
+		  . '<span class="d-none d-lg-block h6 p-0 m-0 ' . $css_string . '">'
+		  . $item_value
+		  . '</span>'
+		  . '<span class="small d-lg-none">'
+		  . $item_value
+		  . '</span>'
+		  . '</li>'
+		  ;
 	} // foreach
 
 	/**************************************************************************/
