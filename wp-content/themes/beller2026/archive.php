@@ -282,42 +282,49 @@
 	} // foreach
 
 	/******************************************************************************/
+	/******************************************************************************/
+	/******************************************************************************/
+
+	/******************************************************************************/
+	// Set the divider.
+	$final_single_divider = !empty($temp) ? '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">' : null;
+
+	/******************************************************************************/
 	// Wrap the header.
-	$single_header =
+	$final_single_content = null;	
+	$final_single_content .=
 	    '<header class="col col-12 p-0 m-0 pb-2">'
 	  . $single_header
 	  . '</header>'
 	  ;
 
 	/******************************************************************************/
-	// Set the divider.
-	$single_divider = !empty($temp) ? '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">' : null;
-
-	/******************************************************************************/
 	// Wrap the content.
-	$single_content =
+	$final_single_content .=
 		'<main class="col col-12 p-0 m-0 mb-5">'
 	  . '<article class="col col-12 p-0 m-0">'
 	  . '<div class="text-georgia-regular lh-base">'
 	  . $single_content
-	  . $single_divider
+	  . $final_single_divider
 	  . '</div>'
 	  . '</article>'
 	  . '</main>'
 	  ;
 
-	/******************************************************************************/
-	// Render the header and the content.
-	echo $single_header;
-	echo $single_content;
 
 	/******************************************************************************/
-	// Show the content.
-	echo '<div class="archive_content p-0 m-0">';
-	foreach ($final as $key => $value) {
-		echo $value;
-	} // foreach
-	echo '</div>';
+	// Set the final the content.
+	$final_archive_content = null;
+	$final_archive_content .= 
+		'<div class="archive_content p-0 m-0">'
+	  . implode('', $final)
+	  . '</div>'
+	  ;
+
+	/******************************************************************************/
+	// Show the final content.
+	echo $final_single_content;
+	echo $final_archive_content;
 
 	/******************************************************************************/
 	// Set the sidebar.
