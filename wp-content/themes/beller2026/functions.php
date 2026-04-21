@@ -466,11 +466,15 @@ function __primaryMenu (){
 // 2026-04-21: Adding menu support.
 class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
+	/****************************************************************************/
+	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
 		$output .= "\n$indent<ul class=\"sub-menu\">\n";
 	} // start_lvl
 
+	/****************************************************************************/
+	// The 'end_lvl' method.
 	function end_lvl( &$output, $depth = 0, $args = null ) {
 		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
 			$t = '';
@@ -484,6 +488,8 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$output .= "$indent</ul>{$n}";
 	} // end_lvl
 
+	/****************************************************************************/
+	// The 'start_el' method.
 	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 
 		/************************************************************************/
@@ -511,6 +517,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 			$output .=
 				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle' . $class_names . '" data-submenu="' . $item->ID . '">'
 				. $item->title
+				. '</a>'
 				;
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) { 
@@ -531,6 +538,8 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	} // start_el
 
+	/****************************************************************************/
+	// The 'end_el' method.
 	function end_el( &$output, $data_object, $depth = 0, $args = null ) {
 		if (isset( $args->item_spacing ) && 'discard' === $args->item_spacing) {
 			$t = '';
