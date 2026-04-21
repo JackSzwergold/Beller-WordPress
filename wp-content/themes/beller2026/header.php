@@ -209,14 +209,14 @@
 		if (!empty($blog_description)) {
 			$blog_description =
 				  '<div class="h4 text-georgia-regular p-0 m-0 d-none d-md-block">'
-				. '<a href="' . $url . '" class="text-offwhite">'
+				. '<a href="' . $url . '">'
 				. '<span class="fst-italic">'
 				. $blog_description
 				. '</span>'
 				. '</a>'
 				. '</div>'
 				. '<div class="h5 text-georgia-regular p-0 m-0 d-md-none">'
-				. '<a href="' . $url . '" class="text-offwhite">'
+				. '<a href="' . $url . '">'
 				. '<span class="small fst-italic">'
 				. $blog_description
 				. '</span>'
@@ -229,15 +229,15 @@
 </head>
 <body id="top" class="p-0 m-0 <?php echo $page_slugs_string; ?>">
 
-	<nav class="header text-center p-0 m-0 px-2 bg-white">
-		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-white z-1">
+	<nav class="header text-center p-0 m-0 px-2">
+		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 z-1">
 			<?php
 				echo $blog_name;
 			?>
 		</div>
 		<?php
 			if (!empty($blog_description)) {
-				echo '<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-white z-0">';
+				echo '<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 z-0">';
 				echo $blog_description;	
 				echo '</div>';		
 			}
@@ -252,7 +252,7 @@
 
 	?>
 
-	<header class="sticky-top p-0 m-0 bg-white">
+	<header class="sticky-top p-0 m-0">
 		<div class="col col-12 p-0 m-0">
 			<div class="text-center p-0 m-0">
 				<ul class="list-inline p-0 m-0">
@@ -267,7 +267,7 @@
 	<!-- Content Core BEGIN -->
 	<div class="container">
 		<div class="row">
-			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4 bg-white">
+			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4">
 
 				<div class="container">
 					<div class="row">
