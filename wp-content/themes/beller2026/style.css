@@ -27,27 +27,12 @@ div {
 
 /******************************************************************************/
 
-.bg-darkblue {
-  background-color: rgb(64, 63, 123) !important;
+.bg-beige {
+  background-color: rgb(243, 237, 225) !important;
 }
 
-.text-darkblue {
-  color: rgb(64, 63, 123) !important;
-}
-
-.border.border-darkblue,
-.border-bottom.border-darkblue {
-  border-color: rgb(64, 63, 123) !important;
-}
-
-/******************************************************************************/
-
-.bg-offwhite {
-  background-color: rgb(239, 232, 219) !important;
-}
-
-.text-offwhite {
-  color: rgb(239, 232, 219) !important;
+.text-beige {
+  color: rgb(243, 237, 225) !important;
 }
 
 /******************************************************************************/

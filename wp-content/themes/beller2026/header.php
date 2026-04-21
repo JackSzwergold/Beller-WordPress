@@ -230,14 +230,14 @@
 <body id="top" class="p-0 m-0 <?php echo $page_slugs_string; ?>">
 
 	<nav class="header text-center p-0 m-0 px-2">
-		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 z-1">
+		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 z-1 bg-beige">
 			<?php
 				echo $blog_name;
 			?>
 		</div>
 		<?php
 			if (!empty($blog_description)) {
-				echo '<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 z-0">';
+				echo '<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 z-0 bg-beige">';
 				echo $blog_description;	
 				echo '</div>';		
 			}
@@ -252,7 +252,7 @@
 
 	?>
 
-	<header class="sticky-top p-0 m-0">
+	<header class="sticky-top p-0 m-0 bg-beige">
 		<div class="col col-12 p-0 m-0">
 			<div class="text-center p-0 m-0">
 				<ul class="list-inline p-0 m-0">
