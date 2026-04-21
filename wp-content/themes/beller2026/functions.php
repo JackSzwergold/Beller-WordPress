@@ -367,9 +367,9 @@ function __primaryMenu (){
 		wp_nav_menu( array(
 			'menu'				=> 'primary',
 			'theme_location'	=> 'primary',
-			'container_class'	=> 'text-center p-0 m-0',
+			'container_class'	=> 'navbar navbar-expand navbar-light bg-light p-0 m-0',
 			'container_id'		=> 'main-nav',
-			'menu_class'		=> 'navbar navbar-expand-lg navbar-light bg-light p-0 m-0',
+			'menu_class'		=> 'collapse navbar-collapse p-0 m-0',
 			'depth'				=> 4,
 			'walker'			=> new Dropdown_Walker_Nav_Menu(),
 		) );
@@ -384,7 +384,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="sub-menu list-group p-0 m-0 text-left rounded-0 bg-info">';
+		$output .= "\n" . $indent . '<ul class="navbar-nav p-0 m-0 text-left rounded-0 bg-info">';
 	} // start_lvl
 
 	/****************************************************************************/
