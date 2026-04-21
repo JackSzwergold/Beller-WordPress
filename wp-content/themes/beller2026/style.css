@@ -36,6 +36,20 @@ div {
 }
 
 /******************************************************************************/
+
+hr.hr-double {
+  border-top: 3px double #8c8b8b;
+}
+
+hr.hr-dashed {
+  border-top: 1px dashed #8c8b8b;
+}
+
+hr.hr-dotted {
+  border-top: 2px dotted #8c8b8b;
+}
+
+/******************************************************************************/
 a,
 a:link,
 a:visited,
