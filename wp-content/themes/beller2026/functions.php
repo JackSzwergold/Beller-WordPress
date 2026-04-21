@@ -500,13 +500,13 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		if ($depth === 0 && $args->walker->has_children) {
-			$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5 bg-danger';
+			$classes[] = 'nav-item text-nowrap p-0 m-0 mx-5 bg-danger';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5 bg-info';
+			$classes[] = 'nav-item text-nowrap p-0 m-0 mx-5 bg-info';
 		} // else if
 		else {
-			$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5 bg-warning';
+			$classes[] = 'nav-item text-nowrap p-0 m-0 mx-5 bg-warning';
 		} // else
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
@@ -523,7 +523,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle' . $class_names . '" data-submenu="' . $item->ID . '">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '">'
 				. $item->title
 				. '</a>'
 				;
@@ -531,14 +531,14 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle' . $class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
 		} // else if
 		else {
 		    $output .= 
-				  '<a href="' . $item->url . '">'
+				  '<a href="' . $item->url . '" class="nav-link">'
 				. $item->title
 				. '</a>'
 				;
