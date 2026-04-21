@@ -50,23 +50,26 @@
   font-weight: 900 !important;
 }
 
-.text-arial-light {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+/******************************************************************************/
+/* Setting Helvetica tags.
+/******************************************************************************/
+.text-helvetica-light {
+  font-family: Helvetica, Verdana, sans-serif !important;
   font-weight: 100 !important;
 }
 
-.text-arial-regular {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+.text-helvetica-regular {
+  font-family: Helvetica, Verdana, sans-serif !important;
   font-weight: 400 !important;
 }
 
-.text-arial-bold {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+.text-helvetica-bold {
+  font-family: Helvetica, Verdana, sans-serif !important;
   font-weight: 700 !important;
 }
 
-.text-arial-black {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+.text-helvetica-black {
+  font-family: Helvetica, Verdana, sans-serif !important;
   font-weight: 900 !important;
 }
 

@@ -237,7 +237,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Show the title.
-	$header .= '<div class="h2 text-chunkfive p-0 m-0">'
+	$header .= '<div class="h2 text-boska-light p-0 m-0">'
 			 . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
 			 . $title
 			 . '</a>'
@@ -411,12 +411,12 @@ function render_navigation_items() {
 
 	/**************************************************************************/
 	// Set the navigaton divider item.
-	$nav_item_divider = '<span class="text-dark m-0 p-0 px-2">&bull;</span>';
+	$nav_item_divider = '<span class="text-dark m-0 p-0 px-5">&nbsp;</span>';
 
 	/**************************************************************************/
 	// Set the navigaton array items.
 	foreach ($nav_items_array as $item_key => $item_value) {
-	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-georgia-bold' : 'text-georgia-regular';
+	$css_font_weight = ($page_category_slug) == $item_key ? 'active text-helvetica-bold' : 'text-helvetica-light';
 	$css_string = $item_key . ' ' . $css_font_weight;
 	$nav_items_array[$item_key] =
 	    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
@@ -450,7 +450,7 @@ function szwergold_widgets_init() {
 		// 'before_widget' => '<div id="%1$s" class="widget %2$s sticky-top col col-12 p-0 m-0 mb-3 bg-warning">',
 		'before_widget' => '<div id="%1$s" class="widget %2$s col col-12 p-0 m-0 mb-3">',
 		'after_widget'  => '</div>',
-		'before_title'  => '<div class="h4 text-chunkfive col col-12 p-0 m-0">',
+		'before_title'  => '<div class="h4 text-helvetica-light col col-12 p-0 m-0 mb-2">',
 		'after_title'   => '</div>',
 	));
 } // szwergold_widgets_init
