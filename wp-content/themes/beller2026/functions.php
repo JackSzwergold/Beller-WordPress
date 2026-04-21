@@ -467,7 +467,7 @@ function __primaryMenu (){
 class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	function start_lvl(&$output, $depth = 0, $args = array()) {
-		$indent = str_repeat('\t', $depth);
+		$indent = str_repeat("\t", $depth);
 		$output .= "\n$indent<ul class=\"sub-menu\">\n";
 	} // start_lvl
 
@@ -475,7 +475,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 		/************************************************************************/
 		// Set the indent.
-		$indent = ($depth) ? str_repeat('\t', $depth) : '';
+		$indent = ($depth) ? str_repeat("\t", $depth) : '';
 
 		/************************************************************************/
 		// Set the classes.
