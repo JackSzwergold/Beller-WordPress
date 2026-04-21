@@ -470,7 +470,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="sub-menu bg-warning">';
+		$output .= "\n" . $indent . '<ul class="sub-menu list-group p-0 m-0">';
 	} // start_lvl
 
 	/****************************************************************************/
@@ -499,8 +499,15 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		/************************************************************************/
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
-		echo $depth;
-		$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
+		if ($depth === 0 && $args->walker->has_children) {
+			$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
+		} // if
+		else if ($depth > 0 && $args->walker->has_children) {
+			$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
+		} // else if
+		else {
+			$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
+		} // else
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
 
