@@ -471,6 +471,19 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$output .= "\n$indent<ul class=\"sub-menu\">\n";
 	} // start_lvl
 
+	function end_lvl( &$output, $depth = 0, $args = null ) {
+		if ( isset( $args->item_spacing ) && 'discard' === $args->item_spacing ) {
+			$t = '';
+			$n = '';
+		} // if
+		else {
+			$t = "\t";
+			$n = "\n";
+		} // else
+		$indent  = str_repeat( $t, $depth );
+		$output .= "$indent</ul>{$n}";
+	} // end_lvl
+
 	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
 
 		/************************************************************************/
@@ -518,16 +531,17 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	} // start_el
 
-	public function end_el( &$output, $data_object, $depth = 0, $args = null ) {
+	function end_el( &$output, $data_object, $depth = 0, $args = null ) {
 		if (isset( $args->item_spacing ) && 'discard' === $args->item_spacing) {
 			$t = '';
 			$n = '';
-		} else {
+		} // if
+		else {
 			$t = "\t";
 			$n = "\n";
-		}
+		} // else
 		$output .= "</li>{$n}";
-	} // start_el
+	} // end_el
     
 } // Dropdown_Walker_Nav_Menu
 
