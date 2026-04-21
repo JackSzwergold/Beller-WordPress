@@ -44,7 +44,7 @@
 
 	/******************************************************************************/
 	// Wrap the content.
-	$content = '<main class="col col-12 p-0 m-0 mb-3">'
+	$content = '<main class="col col-12 p-0 m-0 mb-5">'
 			 . '<article class="col col-12 p-0 m-0">'
 			 . '<div class="text-georgia-regular lh-base ' . $text_css . '">'
 			 . $content
