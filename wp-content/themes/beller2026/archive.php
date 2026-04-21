@@ -22,7 +22,7 @@
 
 	/******************************************************************************/
 	// Get the single post content.
-	list($header, $content, $page_category_slug) = single_post();
+	list($header, $content, $page_category_slug, $post_ID) = single_post();
 
 	/******************************************************************************/
 	// Set the text CSS.
@@ -192,6 +192,7 @@
 		// Set the query variables and merge the content.
 		$query_vars['orderby']['date'] = 'DESC';
 		$query_vars['orderby']['title'] = 'ASC';
+		$query_vars['post__not_in'] = array($post_ID);
 		$archive_content = render_archive_items($query_vars);
 		if (!empty($archive_content)) {
 			$content = array_replace($content, $archive_content);	

@@ -269,7 +269,7 @@ function single_post () {
 
     /**************************************************************************/
     // Return the final value.
-    return array($header, $content, $page_category_slug);
+    return array($header, $content, $page_category_slug, $the_ID);
 
 } // single_post
 

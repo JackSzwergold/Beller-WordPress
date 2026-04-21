@@ -11,7 +11,7 @@
 
 			/**********************************************************************/
 			// Get the single post content.
-			list($header, $content, $page_category_slug) = single_post();
+			list($header, $content, $page_category_slug, $post_ID) = single_post();
 
 			/**********************************************************************/
 			// Set the text CSS.
