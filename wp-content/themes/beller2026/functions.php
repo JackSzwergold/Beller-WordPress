@@ -440,6 +440,62 @@ function render_navigation_items() {
 
 } // render_navigation_items
 
+/********************************************************************************/
+// 2026-04-21: Adding menu support.
+register_nav_menus(array(
+	'primary' => __('Beller Primary Menu')
+));
+
+/********************************************************************************/
+// 2026-04-21: Adding menu support.
+function __primaryMenu (){
+	if (has_nav_menu('primary')){
+		wp_nav_menu( array(
+			'menu'           => 'primary',
+			'theme_location' => 'primary',
+			'container_class' => 'text-center p-0 m-0',
+			'container_id'    => 'main-nav',
+			'menu_class' => 'list-inline p-0 m-0',
+			'depth' => 4,
+			'walker' => new Dropdown_Walker_Nav_Menu(),
+		) );
+	}
+}
+
+/********************************************************************************/
+// 2026-04-21: Adding menu support.
+class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
+	function start_lvl(&$output, $depth = 0, $args = array()) {
+		$indent = str_repeat("\t", $depth);
+		$output .= "\n$indent<ul class=\"sub-menu\">\n";
+	}
+
+	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+		$indent = ($depth) ? str_repeat("\t", $depth) : '';
+
+		$classes = empty($item->classes) ? array() : (array) $item->classes;
+		$classes[] = 'list-inline-item text-nowrap p-0 m-0';
+		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
+		$class_names = $class_names ? ' class="' . esc_attr($class_names) . '"' : '';
+
+		$output .= $indent . '<li' . $class_names . '>';
+
+		if ($depth === 0 && $args->walker->has_children) {
+			$toggle_link = !empty($item->url) ? $item->url : '#';
+
+			$output .= '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">' . $item->title;
+		} else if ($depth > 0 && $args->walker->has_children) { 
+			$toggle_link = !empty($item->url) ? $item->url : '#';
+
+			$output .= '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">' . $item->title;
+		}
+		else {
+		    $output .= '<a href="' . $item->url . '">' . $item->title . '</a>';
+		}
+	}
+    
+} // Dropdown_Walker_Nav_Menu
+
 /******************************************************************************/
 // 2026-03-20: Adding widgets.
 function szwergold_widgets_init() {

@@ -252,14 +252,20 @@
 
 	?>
 
-	<header class="sticky-top p-0 m-0 bg-beige">
+<!-- 	<header class="sticky-top p-0 m-0 bg-beige">
 		<div class="col col-12 p-0 m-0">
 			<div class="text-center p-0 m-0">
 				<ul class="list-inline p-0 m-0">
-					<?php
-						echo $nav_items_string;
-					?>
+
 				</ul>
+			</div>
+		</div>
+	</header> -->
+
+	<header class="sticky-top p-0 m-0 bg-beige">
+		<div class="col col-12 p-0 m-0">
+			<div class="text-center p-0 m-0">
+				<?php __primaryMenu(); ?>
 			</div>
 		</div>
 	</header>
