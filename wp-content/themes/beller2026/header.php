@@ -244,14 +244,6 @@
 		?>
 	</nav>
 
-	<?php
-
-	  /**************************************************************************************************/
-	  // Set the navigaton string.
-	  $nav_items_string = render_navigation_items();
-
-	?>
-
 	<header class="sticky-top p-0 m-0 bg-beige">
 		<div class="col col-12 p-0 m-0">
 			<div class="text-center p-0 m-0">
