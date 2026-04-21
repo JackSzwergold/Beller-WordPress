@@ -498,6 +498,17 @@ echo $class_names . '<br>';
     
 } // Dropdown_Walker_Nav_Menu
 
+/********************************************************************************/
+// 2026-04-21: Set a custom class for the selected menu item.
+function custom_nav_class($classes, $item){
+    $classes[] = "m-pageHeaderNavItem";
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'is-active';
+    }
+    return $classes;
+}
+add_filter('nav_menu_css_class' , 'custom_nav_class' , 10 , 2);
+
 /******************************************************************************/
 // 2026-03-20: Adding widgets.
 function szwergold_widgets_init() {
