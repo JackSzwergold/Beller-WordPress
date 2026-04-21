@@ -465,35 +465,47 @@ function __primaryMenu (){
 /********************************************************************************/
 // 2026-04-21: Adding menu support.
 class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
+
 	function start_lvl(&$output, $depth = 0, $args = array()) {
-		$indent = str_repeat("\t", $depth);
+		$indent = str_repeat('\t', $depth);
 		$output .= "\n$indent<ul class=\"sub-menu\">\n";
-	}
+	} // start_lvl
 
 	function start_el(&$output, $item, $depth = 0, $args = array(), $id = 0) {
+
+		/************************************************************************/
+		// Set the indent.
 		$indent = ($depth) ? str_repeat('\t', $depth) : '';
 
+		/************************************************************************/
+		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
 
+		/************************************************************************/
+		// Set the output.
 		$output .=
 			  $indent
 			. '<li class="' . $class_names . '"">'
 			;
 
+		/************************************************************************/
+		// 2026-04-21: Set a custom class for the selected menu item.
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .= '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">' . $item->title;
-		} else if ($depth > 0 && $args->walker->has_children) { 
+		} // if
+		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .= '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">' . $item->title;
-		}
+		} // else if
 		else {
 		    $output .= '<a href="' . $item->url . '">' . $item->title . '</a>';
-		}
-	}
+		} // else
+
+	} // start_el
     
 } // Dropdown_Walker_Nav_Menu
 
