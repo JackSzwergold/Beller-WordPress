@@ -291,7 +291,7 @@
 
 	/******************************************************************************/
 	// Set the divider.
-	$single_divider = '<hr class="p-0 m-0 mt-5 border border-dark border-1 opacity-100">';
+	$single_divider = !empty($temp) ? '<hr class="p-0 m-0 mt-5 border border-dark border-1 opacity-100">' : null;
 
 	/******************************************************************************/
 	// Wrap the content.
