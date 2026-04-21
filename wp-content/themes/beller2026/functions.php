@@ -470,7 +470,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="sub-menu list-group p-0 m-0 rounded-0 bg-info">';
+		$output .= "\n" . $indent . '<ul class="sub-menu list-group p-0 m-0 text-left rounded-0 bg-info">';
 	} // start_lvl
 
 	/****************************************************************************/
