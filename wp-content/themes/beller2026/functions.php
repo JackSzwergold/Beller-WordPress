@@ -251,16 +251,16 @@ function single_post () {
 		// 		 . 'By ' . $the_author
 		// 		 . '</div>'
 		// 		 ;
-		if (!empty($update_date)) {
-			$header .= '<div class="h6 text-georgia-regular p-0 m-0 mt-1">'
-					 . '<span class="me-2 fa fa-calendar"></span>'
-					 . $update_date
-					 ;
-			// if (!empty($update_time)) {
-			// 	$header .= ' at ' . $update_time;
-			// } // if
-			$header .= '</div>';
-		} // if
+		// if (!empty($update_date)) {
+		// 	$header .= '<div class="h6 text-georgia-regular p-0 m-0 mt-1">'
+		// 			 . '<span class="me-2 fa fa-calendar"></span>'
+		// 			 . $update_date
+		// 			 ;
+		// 	// if (!empty($update_time)) {
+		// 	// 	$header .= ' at ' . $update_time;
+		// 	// } // if
+		// 	$header .= '</div>';
+		// } // if
 	} // if
 
 	/**************************************************************************/

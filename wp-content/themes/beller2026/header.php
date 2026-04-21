@@ -197,7 +197,7 @@
 		/****************************************************************************************/
 		// Set the blog name.
 		$blog_name =
-			  '<div class="h2 text-boska-light text-uppercase p-0 m-0 my-3">'
+			  '<div class="h1 text-boska-light p-0 m-0 mt-1 mb-4">'
 			. '<a href="' . $url . '" class="text-dark">'
 			. $blog_name
 			. '</a>'
