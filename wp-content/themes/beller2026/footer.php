@@ -25,14 +25,6 @@
   </div> -->
   <!-- Footer Content END -->
 
-  <?php
-
-    /**************************************************************************************************/
-    // Set the navigaton string.
-    $nav_items_string = render_navigation_items();
-
-  ?>
-
 </body>
 
 <?php
