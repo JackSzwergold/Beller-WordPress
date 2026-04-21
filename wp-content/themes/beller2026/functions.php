@@ -495,16 +495,38 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// 2026-04-21: Set a custom class for the selected menu item.
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
-			$output .= '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">' . $item->title;
+			$output .=
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">'
+				. $item->title
+				;
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
-			$output .= '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">' . $item->title;
+			$output .=
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle" data-submenu="' . $item->ID . '">'
+			. $item->title
+			. '</a>'
+			;
 		} // else if
 		else {
-		    $output .= '<a href="' . $item->url . '">' . $item->title . '</a>';
+		    $output .= 
+				  '<a href="' . $item->url . '" class="bg-warning">'
+				. $item->title
+				. '</a>'
+				;
 		} // else
 
+	} // start_el
+
+	public function end_el( &$output, $data_object, $depth = 0, $args = null ) {
+		if (isset( $args->item_spacing ) && 'discard' === $args->item_spacing) {
+			$t = '';
+			$n = '';
+		} else {
+			$t = "\t";
+			$n = "\n";
+		}
+		$output .= "</li>{$n}";
 	} // start_el
     
 } // Dropdown_Walker_Nav_Menu
