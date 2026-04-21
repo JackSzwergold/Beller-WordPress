@@ -329,13 +329,6 @@
   font-family: Boxing-Regular, "New York", "Times New Roman", Times, serif !important;
 }
 
-
-
-/**
-* Boska Variable (Variable font)
-* Boska VariableItalic (Variable font)
-
-*/
 /******************************************************************************/
 /* Setting Boska tags.
 /******************************************************************************/
@@ -387,7 +380,7 @@
   font-family: Boska-Variable, "New York", "Times New Roman", Times, serif !important;
 }
 
-.text-boska-variable {
+.text-boska-variableitalic {
   font-family: Boska-VariableItalic, "New York", "Times New Roman", Times, serif !important;
 }
 
