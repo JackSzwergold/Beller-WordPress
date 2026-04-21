@@ -367,9 +367,9 @@ function __primaryMenu (){
 		wp_nav_menu( array(
 			'menu'				=> 'primary',
 			'theme_location'	=> 'primary',
-			'container_class'	=> 'navbar navbar-expand navbar-light bg-light p-0 m-0',
+			'container_class'	=> 'navbar navbar-expand navbar-light bg-transparent p-0 m-0',
 			'container_id'		=> 'main-nav',
-			'menu_class'		=> 'collapse navbar-collapse p-0 m-0',
+			'menu_class'		=> 'navbar-nav p-0 m-0',
 			'depth'				=> 4,
 			'walker'			=> new Dropdown_Walker_Nav_Menu(),
 		) );
