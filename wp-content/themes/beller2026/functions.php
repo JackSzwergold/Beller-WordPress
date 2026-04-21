@@ -420,10 +420,10 @@ function render_navigation_items() {
 	$css_string = $item_key . ' ' . $css_font_weight;
 	$nav_items_array[$item_key] =
 	    '<li class="list-inline-item text-nowrap p-0 m-0 ' . $css_string . '">'
-	  . '<span class="d-none d-md-block h6 p-0 m-0 ' . $css_string . '">'
+	  . '<span class="d-none d-lg-block h6 p-0 m-0 ' . $css_string . '">'
 	  . $item_value
 	  . '</span>'
-	  . '<span class="small d-md-none">'
+	  . '<span class="small d-lg-none">'
 	  . $item_value
 	  . '</span>'
 	  . '</li>'
