@@ -499,6 +499,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		/************************************************************************/
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
+		echo $depth;
 		$classes[] = 'list-inline-item text-nowrap p-0 m-0 mx-5';
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
