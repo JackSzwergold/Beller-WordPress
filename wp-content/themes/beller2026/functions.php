@@ -384,7 +384,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="navbar-nav p-0 m-0 text-left rounded-0 bg-info">';
+		$output .= "\n" . $indent . '<ul class="dropdown-menu p-0 m-0 rounded-0 bg-info">';
 	} // start_lvl
 
 	/****************************************************************************/
@@ -445,14 +445,14 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item' . $class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
 		} // else if
 		else {
 		    $output .= 
-				  '<a href="' . $item->url . '" class="nav-link">'
+				  '<a href="' . $item->url . '" class="dropdown-item">'
 				. $item->title
 				. '</a>'
 				;
@@ -480,12 +480,12 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 // 2026-04-21: Set a custom class for the selected menu item.
 function custom_nav_class($classes, $item){
     $classes[] = "m-pageHeaderNavItem";
-    if (in_array('current-menu-item', $classes) || in_array('current-post-parent', $classes)){
+    if (in_array('current-menu-item', $classes) || in_array('current-post-parent', $classes)) {
         $classes[] = 'active text-helvetica-bold';
-    }
+    } // if
     else {
     	$classes[] = 'text-helvetica-light';
-    }
+    } // else
     return $classes;
 }
 add_filter('nav_menu_css_class' , 'custom_nav_class' , 10 , 2);
