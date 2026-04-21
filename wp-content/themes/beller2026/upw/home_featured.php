@@ -102,9 +102,9 @@
             . '</a>'
             ;
           $content =
-              '<span class="text-georgia-regular lh-base">'
+              '<div class="text-georgia-regular lh-base">'
             . $content
-            . '</span>'
+            . '</div>'
             ;
         } // if
 
@@ -157,6 +157,7 @@
             $before
           . '<div class="upw-posts hfeed row m-0 p-0">'
           . implode('', $final)
+          . '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">'
           . '</div>'
           . $after
           ;
