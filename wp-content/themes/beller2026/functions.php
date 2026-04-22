@@ -369,7 +369,7 @@ function __primaryMenu (){
 			'theme_location'	=> 'primary',
 			'container_class'	=> 'collapse navbar-collapse p-0 m-0',
 			'container_id'		=> 'main-nav',
-			'menu_class'		=> 'navbar-nav bg-dark p-0 m-0',
+			'menu_class'		=> 'navbar-nav bg-dark p-0 m-0 mx-auto',
 			'depth'				=> 4,
 			'walker'			=> new Dropdown_Walker_Nav_Menu(),
 		) );
