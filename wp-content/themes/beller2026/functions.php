@@ -384,7 +384,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="dropdown-menu p-0 m-0 mx-5 rounded-0 bg-beige border-0">';
+		$output .= "\n" . $indent . '<ul class="dropdown-menu bg-light shadow p-0 m-0 py-1 mx-5 rounded-0 border-0">';
 	} // start_lvl
 
 	/****************************************************************************/
@@ -420,7 +420,12 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 			$classes[] = 'nav-item text-nowrap p-0 m-0';
 		} // else if
 		else {
-			$classes[] = 'nav-item text-nowrap p-0 m-0';
+			if ($depth > 0) {
+				$classes[] = 'nav-item text-nowrap bg-light p-0 m-0 py-1 px-2';
+			} // if
+			else {
+				$classes[] = 'nav-item text-nowrap p-0 m-0';
+			} // else
 		} // else
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
