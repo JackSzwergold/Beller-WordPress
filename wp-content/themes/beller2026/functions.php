@@ -414,13 +414,13 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		if ($depth === 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item dropdown text-nowrap p-0 m-0 bg-danger_off';
+			$classes[] = 'nav-item dropdown text-nowrap p-0 m-0 bg-danger';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item text-nowrap p-0 m-0 bg-info_off';
+			$classes[] = 'nav-item text-nowrap p-0 m-0 bg-info';
 		} // else if
 		else {
-			$classes[] = 'nav-item text-nowrap p-0 m-0 bg-warning_off';
+			$classes[] = 'nav-item text-nowrap p-0 m-0 bg-warning';
 		} // else
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
@@ -437,7 +437,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 mx-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
@@ -445,7 +445,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 mx-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
@@ -460,7 +460,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 			} // if
 			else {
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 mx-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
