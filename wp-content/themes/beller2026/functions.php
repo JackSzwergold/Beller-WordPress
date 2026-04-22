@@ -362,7 +362,7 @@ register_nav_menus(array(
 
 /********************************************************************************/
 // 2026-04-21: Adding menu support.
-function __primaryMenu (){
+function primary_menu (){
 	if (has_nav_menu('primary')){
 		wp_nav_menu( array(
 			'menu'				=> 'primary',
