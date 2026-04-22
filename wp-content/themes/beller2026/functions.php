@@ -384,7 +384,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="dropdown-menu p-0 m-0 rounded-0 bg-beige border-0">';
+		$output .= "\n" . $indent . '<ul class="dropdown-menu p-0 m-0 mx-5 rounded-0 bg-beige border-0">';
 	} // start_lvl
 
 	/****************************************************************************/
@@ -414,13 +414,13 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		if ($depth === 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item dropdown text-nowrap p-0 m-0 bg-danger';
+			$classes[] = 'nav-item dropdown text-nowrap p-0 m-0';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item text-nowrap p-0 m-0 bg-info';
+			$classes[] = 'nav-item text-nowrap p-0 m-0';
 		} // else if
 		else {
-			$classes[] = 'nav-item text-nowrap p-0 m-0 bg-warning';
+			$classes[] = 'nav-item text-nowrap p-0 m-0';
 		} // else
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
@@ -437,7 +437,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 mx-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
@@ -445,7 +445,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 mx-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
