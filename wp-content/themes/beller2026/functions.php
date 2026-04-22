@@ -369,7 +369,7 @@ function __primaryMenu (){
 			'theme_location'	=> 'primary',
 			'container_class'	=> 'collapse navbar-collapse p-0 m-0',
 			'container_id'		=> 'main-nav',
-			'menu_class'		=> 'navbar-nav p-0 m-0',
+			'menu_class'		=> 'navbar-nav bg-dark p-0 m-0',
 			'depth'				=> 4,
 			'walker'			=> new Dropdown_Walker_Nav_Menu(),
 		) );
@@ -429,7 +429,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the output.
 		$output .=
 			  $indent
-			. '<li class="' . $class_names . '"">'
+			. '<li class="' . $class_names . '">'
 			;
 
 		/************************************************************************/
@@ -437,7 +437,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '">'
+				  '<a href="#" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '">'
 				. $item->title
 				. '</a>'
 				;
