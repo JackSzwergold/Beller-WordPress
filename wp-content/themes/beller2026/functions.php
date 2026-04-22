@@ -426,7 +426,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		} // else if
 		else {
 			if ($depth > 0) {
-				$li_classes[] = 'bg-light pb-2 px-2';
+				$li_classes[] = 'bg-light pb-1 px-2';
 			} // if
 			else {
 				$li_classes[] = '';
