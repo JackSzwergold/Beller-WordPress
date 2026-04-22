@@ -426,7 +426,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		} // else if
 		else {
 			if ($depth > 0) {
-				$li_classes[] = 'bg-light pb-1 px-2';
+				$li_classes[] = 'bg-light';
 			} // if
 			else {
 				$li_classes[] = '';
@@ -440,7 +440,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$ahref_classes = empty($item->classes) ? array() : (array) $item->classes;
 		$ahref_classes[] = 'p-0 m-0';
 		if ($depth > 0) {
-			$ahref_classes[] = 'bg-light';
+			$ahref_classes[] = 'bg-light pb-1 px-2';
 		} // if
 		else {
 			$ahref_classes[] = '';
