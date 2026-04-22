@@ -414,13 +414,13 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		if ($depth === 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item dropdown text-nowrap p-0 m-0 mx-5 bg-danger';
+			$classes[] = 'nav-item dropdown text-nowrap bg-danger';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item text-nowrap p-0 m-0 mx-5 bg-info';
+			$classes[] = 'nav-item text-nowrap bg-info';
 		} // else if
 		else {
-			$classes[] = 'nav-item text-nowrap p-0 m-0 mx-5 bg-warning';
+			$classes[] = 'nav-item text-nowrap bg-warning';
 		} // else
 		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
 		$class_names = $class_names ? esc_attr($class_names) : '';
