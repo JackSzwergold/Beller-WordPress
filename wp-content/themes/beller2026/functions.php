@@ -437,7 +437,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
@@ -445,14 +445,14 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
 		} // else if
 		else {
 		    $output .= 
-				  '<a href="' . $item->url . '" class="dropdown-item p-0 m-0 px-5 ' . $class_names . '">'
+				  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
 				. $item->title
 				. '</a>'
 				;
