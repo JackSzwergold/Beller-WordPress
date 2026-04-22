@@ -411,34 +411,46 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$indent = ($depth) ? str_repeat("\t", $depth) : '';
 
 		/************************************************************************/
-		// Set the classes.
-		$classes = empty($item->classes) ? array() : (array) $item->classes;
+		// Set the LI classes.
+		$li_classes = empty($item->classes) ? array() : (array) $item->classes;
 		if ($depth === 0 && $args->walker->has_children) {
-			$classes[] = 'dropdown';
-			// $classes[] = 'dropup';
-			// $classes[] = 'dropstart';
-			// $classes[] = 'dropend';
-			$classes[] = 'nav-item text-nowrap p-0 m-0';
+			$li_classes[] = 'dropdown';
+			// $li_classes[] = 'dropup';
+			// $li_classes[] = 'dropstart';
+			// $li_classes[] = 'dropend';
+			$li_classes[] = 'nav-item text-nowrap p-0 m-0';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item text-nowrap p-0 m-0';
+			$li_classes[] = 'nav-item text-nowrap p-0 m-0';
 		} // else if
 		else {
 			if ($depth > 0) {
-				$classes[] = 'nav-item text-nowrap bg-light p-0 m-0 py-1 px-2';
+				$li_classes[] = 'nav-item text-nowrap bg-light p-0 m-0 py-1 px-2';
 			} // if
 			else {
-				$classes[] = 'nav-item text-nowrap p-0 m-0';
+				$li_classes[] = 'nav-item text-nowrap p-0 m-0';
 			} // else
 		} // else
-		$class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($classes), $item, $args));
-		$class_names = $class_names ? esc_attr($class_names) : '';
+		$li_class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($li_classes), $item, $args));
+		$li_class_names = $li_class_names ? esc_attr($li_class_names) : '';
+
+		/************************************************************************/
+		// Set the A HREF classes.
+		$ahref_classes = empty($item->classes) ? array() : (array) $item->classes;
+		if ($depth > 0) {
+			$ahref_classes[] = 'text-nowrap bg-light p-0 m-0 py-1 px-2';
+		} // if
+		else {
+			$ahref_classes[] = 'text-nowrap p-0 m-0';
+		} // else
+		$a_class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($ahref_classes), $item, $args));
+		$a_class_names = $a_class_names ? esc_attr($a_class_names) : '';
 
 		/************************************************************************/
 		// Set the output.
 		$output .=
 			  $indent
-			. '<li class="' . $class_names . '">'
+			. '<li class="' . $li_class_names . '">'
 			;
 
 		/************************************************************************/
@@ -446,7 +458,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 px-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
@@ -454,7 +466,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 px-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 px-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
@@ -462,14 +474,14 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else {
 			if ($depth > 0) {
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
 			} // if
 			else {
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 mx-5 ' . $class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 mx-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
