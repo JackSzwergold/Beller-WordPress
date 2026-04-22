@@ -256,7 +256,7 @@
 		</div>
 	</header>
 
-	<header class="sticky-top p-0 m-0 bg-beige">
+	<!-- <header class="sticky-top p-0 m-0 bg-beige">
 		<div class="col col-12 p-0 m-0">
 			<nav class="navbar navbar-expand navbar-light bg-transparent p-0 m-0">
 			  <div class="container-fluid">
@@ -290,7 +290,7 @@
 			  </div>
 			</nav>
 		</div>
-	</header>
+	</header> -->
 
 	<!-- Content Core BEGIN -->
 	<div class="container">

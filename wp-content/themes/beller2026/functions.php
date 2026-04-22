@@ -437,7 +437,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link' . $class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
