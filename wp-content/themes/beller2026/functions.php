@@ -413,22 +413,24 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		/************************************************************************/
 		// Set the LI classes.
 		$li_classes = empty($item->classes) ? array() : (array) $item->classes;
+		$li_classes[] = 'p-0 m-0';
 		if ($depth === 0 && $args->walker->has_children) {
 			$li_classes[] = 'dropdown';
 			// $li_classes[] = 'dropup';
 			// $li_classes[] = 'dropstart';
 			// $li_classes[] = 'dropend';
-			$li_classes[] = 'nav-item text-nowrap p-0 m-0';
+			$li_classes[] = 'nav-item text-nowrap';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$li_classes[] = 'nav-item text-nowrap p-0 m-0';
+			$li_classes[] = 'nav-item text-nowrap';
 		} // else if
 		else {
+			$li_classes[] = 'nav-item text-nowrap';
 			if ($depth > 0) {
-				$li_classes[] = 'nav-item text-nowrap bg-light p-0 m-0 py-1 px-2';
+				$li_classes[] = 'bg-light py-1 px-2';
 			} // if
 			else {
-				$li_classes[] = 'nav-item text-nowrap p-0 m-0';
+				$li_classes[] = '';
 			} // else
 		} // else
 		$li_class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($li_classes), $item, $args));
