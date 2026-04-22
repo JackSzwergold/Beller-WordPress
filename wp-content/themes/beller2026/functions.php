@@ -384,7 +384,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
-		$output .= "\n" . $indent . '<ul class="dropdown-menu bg-light shadow p-0 m-0 py-1 mx-5 rounded-0 border-0">';
+		$output .= "\n" . $indent . '<ul class="dropdown-menu bg-light shadow p-0 m-0 pt-2 mx-5 rounded-0 border-0">';
 	} // start_lvl
 
 	/****************************************************************************/
@@ -414,20 +414,19 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the LI classes.
 		$li_classes = empty($item->classes) ? array() : (array) $item->classes;
 		$li_classes[] = 'p-0 m-0';
+		$li_classes[] = 'nav-item text-nowrap';
 		if ($depth === 0 && $args->walker->has_children) {
 			$li_classes[] = 'dropdown';
 			// $li_classes[] = 'dropup';
 			// $li_classes[] = 'dropstart';
 			// $li_classes[] = 'dropend';
-			$li_classes[] = 'nav-item text-nowrap';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
-			$li_classes[] = 'nav-item text-nowrap';
+			$li_classes[] = '';
 		} // else if
 		else {
-			$li_classes[] = 'nav-item text-nowrap';
 			if ($depth > 0) {
-				$li_classes[] = 'bg-light py-1 px-2';
+				$li_classes[] = 'bg-light pb-2 px-2';
 			} // if
 			else {
 				$li_classes[] = '';
@@ -441,7 +440,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$ahref_classes = empty($item->classes) ? array() : (array) $item->classes;
 		$ahref_classes[] = 'p-0 m-0';
 		if ($depth > 0) {
-			$ahref_classes[] = 'bg-light py-1 px-2';
+			$ahref_classes[] = 'bg-light';
 		} // if
 		else {
 			$ahref_classes[] = '';
