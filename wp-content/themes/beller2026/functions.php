@@ -479,9 +479,12 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 /********************************************************************************/
 // 2026-04-21: Set a custom class for the selected menu item.
 function custom_nav_class($classes, $item) {
-    if (in_array('current-menu-item', $classes) || in_array('current-post-parent', $classes)) {
-        $classes[] = 'active text-helvetica-bold bg-warning';
+    if (in_array('current-menu-item', $classes)) {
+        $classes[] = 'text-helvetica-bold';
     } // if
+    else if (in_array('current-post-parent', $classes)) {
+        $classes[] = 'text-helvetica-bold bg-warning';
+    } // else if
     else {
     	$classes[] = 'text-helvetica-light';
     } // else
