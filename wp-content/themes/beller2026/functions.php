@@ -437,11 +437,12 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		/************************************************************************/
 		// Set the A HREF classes.
 		$ahref_classes = empty($item->classes) ? array() : (array) $item->classes;
+		$ahref_classes[] = 'p-0 m-0';
 		if ($depth > 0) {
-			$ahref_classes[] = 'text-nowrap bg-light p-0 m-0 py-1 px-2';
+			$ahref_classes[] = 'bg-light py-1 px-2';
 		} // if
 		else {
-			$ahref_classes[] = 'text-nowrap p-0 m-0';
+			$ahref_classes[] = '';
 		} // else
 		$a_class_names = join(' ', apply_filters('nav_menu_css_class', array_filter($ahref_classes), $item, $args));
 		$a_class_names = $a_class_names ? esc_attr($a_class_names) : '';
