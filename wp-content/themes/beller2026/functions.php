@@ -452,7 +452,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		} // else if
 		else {
 		    $output .= 
-				  '<a href="' . $item->url . '" class="dropdown-item p-0 m-0 px-5">'
+				  '<a href="' . $item->url . '" class="dropdown-item p-0 m-0 px-5 ' . $class_names . '">'
 				. $item->title
 				. '</a>'
 				;
@@ -483,7 +483,7 @@ function custom_nav_class($classes, $item) {
         $classes[] = 'text-helvetica-bold';
     } // if
     else if (in_array('current-post-parent', $classes)) {
-        $classes[] = 'text-helvetica-bold bg-warning';
+        $classes[] = 'text-helvetica-bold';
     } // else if
     else {
     	$classes[] = 'text-helvetica-light';
