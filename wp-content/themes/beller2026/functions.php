@@ -414,7 +414,11 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// Set the classes.
 		$classes = empty($item->classes) ? array() : (array) $item->classes;
 		if ($depth === 0 && $args->walker->has_children) {
-			$classes[] = 'nav-item dropdown text-nowrap p-0 m-0';
+			$classes[] = 'dropdown';
+			// $classes[] = 'dropup';
+			// $classes[] = 'dropstart';
+			// $classes[] = 'dropend';
+			$classes[] = 'nav-item text-nowrap p-0 m-0';
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) {
 			$classes[] = 'nav-item text-nowrap p-0 m-0';
