@@ -160,9 +160,9 @@
     if (!empty($before) || !empty($final) || !empty($after)) {
         $ret = 
             $before
-          . '<div class="upw-posts hfeed row m-0 p-0 bg-warning">'
+          . '<div class="upw-posts hfeed row m-0 p-0">'
+          . '<hr class="p-0 m-0 mb-5 hr-dashed opacity-100">'
           . implode('', $final)
-          . '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">'
           . '</div>'
           . $after
           ;

@@ -18,10 +18,6 @@
 	list($single_header, $single_content, $page_category_slug, $post_ID) = single_post();
 
 	/******************************************************************************/
-	// Set the divider.
-	$final_single_divider = '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">';
-
-	/******************************************************************************/
 	// Wrap the header.
 	$final_single_content = null;	
 	$final_single_content .=
@@ -37,7 +33,6 @@
 	  . '<article class="col col-12 p-0 m-0">'
 	  . '<div class="text-georgia-regular lh-base">'
 	  . $single_content
-	  . $final_single_divider
 	  . '</div>'
 	  . '</article>'
 	  . '</main>'
