@@ -123,7 +123,7 @@
         /******************************************************************************/
         // Custom container begins.
         $final[] =
-            '<div class="col col-4 m-0 p-0 pe-md-5 pb-3 bg-warning">'
+            '<div class="col col-12 col-lg-4 m-0 p-0 pe-lg-5 pb-3">'
           . '<div class="container m-0 p-0">'
           . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
@@ -158,11 +158,15 @@
         } // if
 
     /*********************************************************************************/
-    // If we hvae stuff to output, set the final output value.
+    // Set the divider.
+    $divider = '<hr class="p-0 m-0 mb-5 hr-dashed opacity-100">';
+
+    /*********************************************************************************/
+    // If we have stuff to output, set the final output value.
     if (!empty($before) || !empty($final) || !empty($after)) {
         $ret = 
             $before
-          . '<hr class="p-0 m-0 mb-5 hr-dashed opacity-100">'
+          . $divider
           . '<div class="upw-posts hfeed row m-0 p-0">'
           . implode('', $final)
           . '</div>'
