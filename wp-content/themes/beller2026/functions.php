@@ -445,6 +445,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		$ahref_classes = empty($item->classes) ? array() : (array) $item->classes;
 		$ahref_classes[] = 'p-0 m-0';
 		if ($depth > 0) {
+			// For dropdown main menu items.
 			$ahref_classes[] = 'pb-1 px-2 ' . $this->bg_dropdown;
 		} // if
 		else {
