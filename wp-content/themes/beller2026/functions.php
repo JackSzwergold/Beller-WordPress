@@ -460,7 +460,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		if ($depth === 0 && $args->walker->has_children) {
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p-0 m-0 px-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
+				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link bg-beige p1-0 m1-0 ' . $a_class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
@@ -468,7 +468,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else if ($depth > 0 && $args->walker->has_children) { 
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-warning p-0 m-0 px-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item bg-beige p1-0 m1-0 px1-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
@@ -476,14 +476,14 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else {
 			if ($depth > 0) {
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p1-0 m1-0 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
 			} // if
 			else {
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p-0 m-0 mx-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . $item->url . '" class="dropdown-item bg-beige p1-0 m1-0 mx1-5 ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
