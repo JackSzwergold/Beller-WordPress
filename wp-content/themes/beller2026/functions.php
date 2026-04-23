@@ -535,8 +535,8 @@ function szwergold_widgets_init() {
 		'after_widget'  => '</div>',
 		'before_title'  => '<div class="h4 text-helvetica-light col col-12 p-0 m-0 mb-2">',
 		'after_title'   => '</div>',
-	),
-	array(
+	));
+	register_sidebar(array(
 		'name'          => __('Archives Content 1'),
 		'id'            => 'archives-content-1',
 		'description'   => __('Add widgets here to appear on your archive pages.', 'szwergold'),
