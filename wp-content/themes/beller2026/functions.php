@@ -464,17 +464,17 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		// 2026-04-21: Set a custom class for the selected menu item.
 		if ($depth === 0 && $args->walker->has_children) {
 			// For dropdown main menu items.
-			$toggle_link = !empty($item->url) ? $item->url : '#';
+			$menu_link = !empty($item->url) ? $item->url : null;
 			$output .=
-				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link px-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
+				  '<a href="' . esc_url($menu_link) . '" class="dropdown-toggle nav-link px-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
 				. $item->title
 				. '</a>'
 				;
 		} // if
 		else if ($depth > 0 && $args->walker->has_children) { 
-			$toggle_link = !empty($item->url) ? $item->url : '#';
+			$menu_link = !empty($item->url) ? $item->url : null;
 			$output .=
-			  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle dropdown-item px-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
+			  '<a href="' . esc_url($menu_link) . '" class="dropdown-toggle dropdown-item px-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 			. $item->title
 			. '</a>'
 			;
@@ -482,16 +482,18 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		else {
 			if ($depth > 0) {
 				// For dropdown items.
+				$menu_link = !empty($item->url) ? $item->url : null;
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . esc_url($menu_link) . '" class="dropdown-item ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
 			} // if
 			else {
 				// For main menu items.
+				$menu_link = !empty($item->url) ? $item->url : null;
 				$output .= 
-					  '<a href="' . $item->url . '" class="dropdown-item mx-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
+					  '<a href="' . esc_url($menu_link) . '" class="dropdown-item mx-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
 					. '</a>'
 					;				
