@@ -123,7 +123,7 @@
         /******************************************************************************/
         // Custom container begins.
         $final[] =
-            '<div class="col col-12 col-lg-4 m-0 p-0 pe-lg-5 pb-3">'
+            '<div class="col col-12 col-lg-4 m-0 p-0 pb-3">'
           . '<div class="container m-0 p-0">'
           . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
@@ -167,7 +167,7 @@
         $ret = 
             $before
           . $divider
-          . '<div class="upw-posts hfeed row m-0 p-0">'
+          . '<div class="upw-posts hfeed row m-0 p-0 d-grid gap-3">'
           . implode('', $final)
           . '</div>'
           . $after
