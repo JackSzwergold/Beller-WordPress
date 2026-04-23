@@ -509,6 +509,11 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 } // Dropdown_Walker_Nav_Menu
 
 /********************************************************************************/
+// 2026-04-23: Get the parent and child category.
+function get_parent_and_child_category() {
+} // get_parent_and_child_category
+
+/********************************************************************************/
 // 2026-04-21: Set a custom class for the selected menu item.
 function custom_nav_class($classes, $item) {
     if (in_array('current-menu-item', $classes)) {

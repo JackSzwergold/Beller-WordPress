@@ -25,45 +25,6 @@
 	list($single_header, $single_content, $page_category_slug, $post_ID) = single_post();
 
 	/******************************************************************************/
-	/******************************************************************************/
-	/******************************************************************************/
-
-	/******************************************************************************/
-	// Get the current selected parent category ID and slug.
-	$page_category_parent = get_category(get_query_var('cat'));
-
-	$page_category_id = null;
-	$page_category_slug = null;
-	if (isset($page_category_parent->cat_ID)) {
-		$page_category_id = $page_category_parent->cat_ID;
-	} // if
-	if (isset($page_category_parent->cat_ID)) {
-		$page_category_slug = $page_category_parent->slug;
-	} // if
-	if (!empty($page_category_parent->parent)) {
-		$page_category_parent = get_category($page_category_parent->parent);
-		if (empty($page_category_parent->parent)) {
-			$page_category_id = $page_category_parent->cat_ID;
-			$page_category_slug = $page_category_parent->slug;
-		} // if
-		else {
-			$page_category_grandparent = get_category($page_category_parent->parent);
-			if (empty($page_category_grandparent->parent)) {
-				$page_category_id = $page_category_grandparent->cat_ID;
-				$page_category_slug = $page_category_grandparent->slug;
-			} // if
-		} // else	
-	} // if
-
-	/******************************************************************************/
-	// Set the category.
-	$page_category_child = get_the_category();
-
-	/******************************************************************************/
-	/******************************************************************************/
-	/******************************************************************************/
-
-	/******************************************************************************/
 	// Set the divider.
 	$final_single_divider = '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">';
 
