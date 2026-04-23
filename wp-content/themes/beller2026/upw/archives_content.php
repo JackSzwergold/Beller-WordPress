@@ -168,8 +168,8 @@
         $ret = 
             $before
           . $divider
-          // . '<div class="upw-posts hfeed row m-0 p-0 gx-5">'
-          . '<div class="upw-posts hfeed row m-0 p-0">'
+          . '<div class="upw-posts hfeed row m-0 p-0 gx-5">'
+          // . '<div class="upw-posts hfeed row m-0 p-0">'
           . implode('', $final)
           . '</div>'
           . $after
