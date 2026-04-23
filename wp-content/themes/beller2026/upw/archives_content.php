@@ -16,7 +16,7 @@
     // Set the before stuff.
     if ($instance['before_posts']) {
       $before =
-          '<div class="upw-before m-0 p-0">'
+          '<div class="upw-before">'
         . wpautop($instance['before_posts'])
         . '</div>'
         ;
@@ -136,7 +136,7 @@
     else {
 
       $final[] =
-          '<div class="upw-not-found m-0 p-0">'
+          '<div class="upw-not-found">'
         . wpautop($instance['custom_empty'])
         . '</div>'
         ;
@@ -147,7 +147,7 @@
     // Set the after stuff.
     if ($instance['after_posts']) {
       $after =
-          '<div class="upw-after m-0 p-0">'
+          '<div class="upw-after">'
         . wpautop($instance['after_posts'])
         . '</div>'
         ;
