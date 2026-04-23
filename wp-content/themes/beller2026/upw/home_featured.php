@@ -75,6 +75,7 @@
 
         /******************************************************************************/
         // Header stuff.
+        $header = null;
         if (get_the_title() && $instance['show_title']) {
           $header .=
               '<div class="text-clashgrotesk-regular" id="home_featured_' . $the_ID . '">'
