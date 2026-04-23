@@ -117,7 +117,7 @@
         // } // if
 
         /******************************************************************************/
-        // Custom cointainer begins.
+        // Custom container begins.
         $final[] =
             '<div class="d-inline-block col col-12 p-0 m-0 mb-2 ' . implode(' ' , get_post_class($post_class))  . '">'
           . $header
@@ -154,7 +154,7 @@
     if (!empty($before) || !empty($final) || !empty($after)) {
         $ret = 
             $before
-          . '<div class="upw-posts hfeed row m-0 p-0">'
+          . '<div class="upw-posts hfeed row m-0 p-0 bg-warning">'
           . implode('', $final)
           . '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">'
           . '</div>'
