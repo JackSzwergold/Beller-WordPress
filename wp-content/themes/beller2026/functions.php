@@ -463,6 +463,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		/************************************************************************/
 		// 2026-04-21: Set a custom class for the selected menu item.
 		if ($depth === 0 && $args->walker->has_children) {
+			// For dropdown main menu items.
 			$toggle_link = !empty($item->url) ? $item->url : '#';
 			$output .=
 				  '<a href="' . esc_url($toggle_link) . '" class="dropdown-toggle nav-link px-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '" role="button" data-bs-toggle="dropdown" aria-expanded="false">'
