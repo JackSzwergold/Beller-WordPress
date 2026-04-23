@@ -321,6 +321,12 @@
 	  . '</div>'
 	  ;
 
+	/**********************************************************************/
+	// If we have a 'archives-content-1' widget, show the 'archives-content-1' widget.
+	if (is_active_sidebar('archives-content-1')) {
+		dynamic_sidebar('archives-content-1');
+	} // if
+
 	/******************************************************************************/
 	// Show the final content.
 	echo $final_single_content;
