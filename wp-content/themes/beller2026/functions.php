@@ -511,6 +511,46 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 /********************************************************************************/
 // 2026-04-23: Get the parent and child category.
 function get_parent_and_child_category() {
+
+	/****************************************************************************/
+	// Init variables.
+	$ret = array();
+
+	/****************************************************************************/
+	// Get the current selected parent category ID and slug.
+	$page_category_parent = get_category(get_query_var('cat'));
+
+	$page_category_id = null;
+	$page_category_slug = null;
+	if (isset($page_category_parent->cat_ID)) {
+		$page_category_id = $page_category_parent->cat_ID;
+	} // if
+	if (isset($page_category_parent->cat_ID)) {
+		$page_category_slug = $page_category_parent->slug;
+	} // if
+	if (!empty($page_category_parent->parent)) {
+		$page_category_parent = get_category($page_category_parent->parent);
+		if (empty($page_category_parent->parent)) {
+			$page_category_id = $page_category_parent->cat_ID;
+			$page_category_slug = $page_category_parent->slug;
+		} // if
+		else {
+			$page_category_grandparent = get_category($page_category_parent->parent);
+			if (empty($page_category_grandparent->parent)) {
+				$page_category_id = $page_category_grandparent->cat_ID;
+				$page_category_slug = $page_category_grandparent->slug;
+			} // if
+		} // else	
+	} // if
+
+	/****************************************************************************/
+	// Set the category.
+	$page_category_child = get_the_category();
+
+	/**************************************************************************/
+	// Return the final return value.
+	return $ret;
+
 } // get_parent_and_child_category
 
 /********************************************************************************/
