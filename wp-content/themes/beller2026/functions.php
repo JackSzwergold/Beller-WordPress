@@ -480,6 +480,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 		} // else if
 		else {
 			if ($depth > 0) {
+				// For dropdown items.
 				$output .= 
 					  '<a href="' . $item->url . '" class="dropdown-item ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
@@ -487,6 +488,7 @@ class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 					;				
 			} // if
 			else {
+				// For main menu items.
 				$output .= 
 					  '<a href="' . $item->url . '" class="dropdown-item mx-5 ' . $this->bg_menu . ' ' . $a_class_names . '" data-submenu="' . $item->ID . '">'
 					. $item->title
