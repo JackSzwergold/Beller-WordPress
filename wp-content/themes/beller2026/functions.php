@@ -381,6 +381,11 @@ function primary_menu (){
 class Dropdown_Walker_Nav_Menu extends Walker_Nav_Menu {
 
 	/****************************************************************************/
+	// Set some  variables.
+	private $bg_menu = 'bg-beige';
+	private $bg_dropdown = 'bg-light';
+
+	/****************************************************************************/
 	// The 'start_lvl' method.
 	function start_lvl(&$output, $depth = 0, $args = array()) {
 		$indent = str_repeat("\t", $depth);
