@@ -78,7 +78,7 @@
         $header = null;
         if (get_the_title() && $instance['show_title']) {
           $header .=
-              '<div class="text-clashgrotesk-regular" id="home_featured_' . $the_ID . '">'
+              '<div class="h4 text-clashgrotesk-light" id="home_featured_' . $the_ID . '">'
             . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $title
             . '</a>'
