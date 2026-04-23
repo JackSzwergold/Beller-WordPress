@@ -78,7 +78,7 @@
         $header = null;
         if (get_the_title() && $instance['show_title']) {
           $header .=
-              '<div class="h4 text-clashgrotesk-light" id="home_featured_' . $the_ID . '">'
+              '<div class="h4 text-helvetica-light p-0 m-0 mb-2" id="home_featured_' . $the_ID . '>'
             . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $title
             . '</a>'
@@ -103,7 +103,7 @@
             . '</a>'
             ;
           $content =
-              '<div class="text-georgia-regular lh-base">'
+              '<div class="text-georgia-regular lh-base small">'
             . $content
             . '</div>'
             ;
@@ -119,12 +119,10 @@
         /******************************************************************************/
         // Custom cointainer begins.
         $final[] =
-            '<div id="' . $category_slug . '" class="col col-12 m-0 p-0 pe-md-3 pe-xl-0">'
-          . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
+            '<div class="d-inline-block col col-12 p-0 m-0 mb-2 ' . implode(' ' , get_post_class($post_class))  . '">'
           . $header
           . $divider
           . $content
-          . '</div>'
           . '</div>'
           ;
 
