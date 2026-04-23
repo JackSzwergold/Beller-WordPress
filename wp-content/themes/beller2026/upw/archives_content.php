@@ -163,7 +163,7 @@
         $ret = 
             $before
           . $divider
-          . '<div class="upw-posts hfeed row m-0 p-0 gx-5 bg-info">'
+          . '<div class="upw-posts hfeed row gx-5">'
           . implode('', $final)
           . '</div>'
           . $after
