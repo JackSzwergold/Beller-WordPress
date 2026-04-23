@@ -119,10 +119,16 @@
         /******************************************************************************/
         // Custom container begins.
         $final[] =
-            '<div class="d-inline-block col col-12 p-0 m-0 mb-2 ' . implode(' ' , get_post_class($post_class))  . '">'
+            '<div class="col col-4 m-0 p-0 pe-md-3 pe-xl-0 pb-3">'
+          . '<div class="container m-0 p-0">'
+          . '<div class="row m-0 p-0">'
+          . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
           . $divider
           . $content
+          . '</div>'
+          . '</div>'
+          . '</div>'
           . '</div>'
           ;
 
