@@ -22,8 +22,12 @@
         ;
     } // if
 
+    /*********************************************************************************/
+    // If there are posts, do something.
     if ($upw_query->have_posts()) {
 
+      /*******************************************************************************/
+      // Loop through the posts.
       while ($upw_query->have_posts()) {
 
         $upw_query->the_post();
