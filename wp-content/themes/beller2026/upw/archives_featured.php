@@ -42,7 +42,8 @@
         $the_ID = get_the_ID();
         $display_date = get_the_time($instance['date_format']);
         $iso_8601_date = get_the_time('c');
-        $excerpt = get_the_excerpt();
+        // $excerpt = get_the_excerpt();
+        $content = get_the_content();
         $the_author = get_the_author();
         $the_author_url = get_author_posts_url(get_the_author_meta('ID'));
 

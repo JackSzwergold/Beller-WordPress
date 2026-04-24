@@ -199,6 +199,81 @@ function archive_page_header () {
 } // archive_page_header
 
 /******************************************************************************/
+// 2026-04-14: Setting a standalone 'single post' function for ease of reuse.
+function single_post () {
+
+    /**************************************************************************/
+    // Init variables.
+    $header = null;
+    $content = null;
+
+	/**************************************************************************/
+	// Get the post.
+	the_post();
+
+	global $authordata;
+
+	/**************************************************************************/
+	// Set the item info variables.
+	$the_ID = get_the_ID();
+	$permalink = get_the_permalink();
+	$title = get_the_title();
+	$title_attribute = the_title_attribute(array('echo' => false));
+	$excerpt = get_the_excerpt();
+	$the_author = $authordata->display_name;
+	$the_author_url = esc_url(get_author_posts_url($authordata->ID, $authordata->user_nicename));
+	$update_date = get_the_time('F j, Y');
+	$update_time = get_the_time('g:i:sa');
+
+	/**************************************************************************/
+	// Get the current selected category slug.
+	$page_category = get_the_category();
+	$page_category_shifted = null;
+	$page_category_slug = null;
+	if (!empty($page_category)) {
+		$page_category_shifted = array_shift($page_category);
+		$page_category_slug = $page_category_shifted->slug;				
+	} // if
+
+	/**************************************************************************/
+	// Show the title.
+	$header .= '<div class="h4 text-helvetica-light p-0 m-0">'
+			 . '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">'
+			 . $title
+			 . '</a>'
+			 . '</div>'
+			 ;
+
+	/**************************************************************************/
+	// Show the author, date and time.
+	if (!empty($the_author) || !empty($update_date)) {
+		// $header .= '<div class="h5 p-0 m-0 text-clashgrotesk-regular">'
+		// 		 . 'By ' . $the_author
+		// 		 . '</div>'
+		// 		 ;
+		// if (!empty($update_date)) {
+		// 	$header .= '<div class="h6 text-georgia-regular p-0 m-0 mt-1">'
+		// 			 . '<span class="me-2 fa fa-calendar"></span>'
+		// 			 . $update_date
+		// 			 ;
+		// 	// if (!empty($update_time)) {
+		// 	// 	$header .= ' at ' . $update_time;
+		// 	// } // if
+		// 	$header .= '</div>';
+		// } // if
+	} // if
+
+	/**************************************************************************/
+	// Get the content.
+	$content .= get_the_content();
+
+    /**************************************************************************/
+    // Return the final value.
+    return array($header, $content, $page_category_slug, $the_ID);
+
+} // single_post
+
+/******************************************************************************/
 // 2026-04-14: Setting a standalone 'render_archive_items' function to be neat.
 function render_archive_items($query_vars = array()) {
 
