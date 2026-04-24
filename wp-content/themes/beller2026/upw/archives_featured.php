@@ -163,7 +163,7 @@
     if (!empty($before) || !empty($final) || !empty($after)) {
         $ret = 
             $before
-          . $divider
+          // . $divider
           . '<div class="upw-posts hfeed row gx-5">'
           . implode('', $final)
           . '</div>'
