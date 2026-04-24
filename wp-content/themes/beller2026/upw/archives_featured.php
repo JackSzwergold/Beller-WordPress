@@ -124,7 +124,7 @@
         /******************************************************************************/
         // Custom container begins.
         $final[] =
-            '<div class="col col-12 col-lg-4 pb-3 ' . implode(' ' , get_post_class($post_class))  . '">'
+            '<div class="col col-12 col-lg-12 pb-3 ' . implode(' ' , get_post_class($post_class))  . '">'
           . $header
           . $divider
           . $content
