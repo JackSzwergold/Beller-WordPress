@@ -82,7 +82,7 @@
         $header = null;
         if (get_the_title() && $instance['show_title']) {
           $header .=
-              '<div class="h4 text-helvetica-light p-0 m-0 mb-2" id="home_featured_' . $the_ID . '>'
+              '<div class="h4 text-helvetica-light p-0 m-0 mb-2" id="home_featured_' . $the_ID . '">'
             . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $title
             . '</a>'
