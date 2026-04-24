@@ -14,33 +14,10 @@
 	// echo $archive_page_header;
 
 	/******************************************************************************/
-	// Get the single post content.
-	list($single_header, $single_content, $page_category_slug, $post_ID) = single_post();
-
-	/******************************************************************************/
-	// Wrap the header.
-	$final_single_content = null;	
-	$final_single_content .=
-	    '<header class="col col-12 p-0 m-0 pb-2">'
-	  . $single_header
-	  . '</header>'
-	  ;
-
-	/******************************************************************************/
-	// Wrap the content.
-	$final_single_content .=
-		'<main class="col col-12 p-0 m-0 mb-5">'
-	  . '<article class="col col-12 p-0 m-0">'
-	  . '<div class="text-georgia-regular lh-base">'
-	  . $single_content
-	  . '</div>'
-	  . '</article>'
-	  . '</main>'
-	  ;
-
-	/******************************************************************************/
-	// Show the final content.
-	echo $final_single_content;
+	// If we have a 'archives-featured-1' widget, show the 'archives-featured-1' widget.
+	if (is_active_sidebar('archives-featured-1')) {
+		dynamic_sidebar('archives-featured-1');
+	} // if
 
 	/******************************************************************************/
 	// If we have a 'archives-content-1' widget, show the 'archives-content-1' widget.
