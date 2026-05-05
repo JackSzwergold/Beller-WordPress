@@ -235,6 +235,20 @@ function single_post () {
 		$page_category_slug = $page_category_shifted->slug;				
 	} // if
 
+    /**************************************************************************/
+    // The article image stuff.
+    $article_image = null;
+	$article_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'medium');
+    if (isset($article_image) && !empty($article_image)) {
+      $article_image =
+          '<div class="col col-12 col-md-2 m-0 p-0 mb-2 ms-md-3 float-end">'
+        . '<a href="' . $permalink . '" title="' . $title . '" class="text-decoration-none text-dark">'
+        . '<img src="' . $article_image . '" alt="' . $title . '" class="img-fluid">'
+        . '</a>'
+        . '</div>'
+        ;
+    } // if
+
 	/**************************************************************************/
 	// Show the title.
 	$header .= '<div class="h4 text-helvetica-light p-0 m-0">'
@@ -265,6 +279,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Get the content.
+	$content .= $article_image;
 	$content .= get_the_content();
 
     /**************************************************************************/
