@@ -72,7 +72,7 @@
         } // if
 
         /******************************************************************************/
-        // The article image stuff.
+        // The post image stuff.
         $post_image = null;
         if ($instance['show_thumbnail']) {
           $post_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     

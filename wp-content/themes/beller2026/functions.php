@@ -236,7 +236,7 @@ function single_post () {
 	} // if
 
     /**************************************************************************/
-    // The article image stuff.
+    // The post image stuff.
 	$post_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'large');
     if (isset($post_image) && !empty($post_image)) {
       $post_image =
@@ -277,7 +277,7 @@ function single_post () {
 	} // if
 
 	/**************************************************************************/
-	// Set the article image.
+	// Set the post image.
 	$content .= $post_image;
 
 	/**************************************************************************/
