@@ -128,6 +128,7 @@
           . $header
           . $divider
           . $content
+          . $article_image
           . '</div>'
           ;
 
