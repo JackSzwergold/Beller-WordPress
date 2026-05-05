@@ -76,6 +76,15 @@
         if ($instance['show_thumbnail']) {
           $article_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
+        if (isset($article_image) && !empty($article_image)) {
+          $article_image =
+              '<div class="col col-12 col-md-5 m-0 p-0 mb-2 ms-md-3 float-end">'
+            . '<a href="' . $permalink . '" title="' . $title . '" class="text-decoration-none text-dark">'
+            . '<img src="' . $article_image . '" alt="' . $title . '" class="img-fluid">'
+            . '</a>'
+            . '</div>'
+            ;
+        } // if
 
         /******************************************************************************/
         // Header stuff.
@@ -126,8 +135,8 @@
             '<div class="col col-12 col-lg-4 pb-3 ' . implode(' ' , get_post_class($post_class))  . '">'
           . $header
           . $divider
-          . $content
           . $article_image
+          . $content
           . '</div>'
           ;
 
