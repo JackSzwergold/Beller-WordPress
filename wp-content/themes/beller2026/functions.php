@@ -237,12 +237,12 @@ function single_post () {
 
     /**************************************************************************/
     // The article image stuff.
-	$article_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'large');
-    if (isset($article_image) && !empty($article_image)) {
-      $article_image =
+	$post_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'large');
+    if (isset($post_image) && !empty($post_image)) {
+      $post_image =
           '<div class="col col-12 col-md-3 m-0 p-0 mb-2 ms-md-3 float-end">'
         . '<a href="' . $permalink . '" title="' . $title . '" class="text-decoration-none text-dark">'
-        . '<img src="' . $article_image . '" alt="' . $title . '" class="img-fluid">'
+        . '<img src="' . $post_image . '" alt="' . $title . '" class="img-fluid">'
         . '</a>'
         . '</div>'
         ;
@@ -278,7 +278,7 @@ function single_post () {
 
 	/**************************************************************************/
 	// Set the article image.
-	$content .= $article_image;
+	$content .= $post_image;
 
 	/**************************************************************************/
 	// Get the content.

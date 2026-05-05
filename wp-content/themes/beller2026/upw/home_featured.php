@@ -68,9 +68,9 @@
 
         /******************************************************************************/
         // The article image stuff.
-        $article_image = null;
+        $post_image = null;
         if ($instance['show_thumbnail']) {
-          $article_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
+          $post_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
 
         /******************************************************************************/
