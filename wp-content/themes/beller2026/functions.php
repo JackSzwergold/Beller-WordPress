@@ -237,7 +237,6 @@ function single_post () {
 
     /**************************************************************************/
     // The article image stuff.
-    $article_image = null;
 	$article_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'medium');
     if (isset($article_image) && !empty($article_image)) {
       $article_image =
@@ -278,8 +277,11 @@ function single_post () {
 	} // if
 
 	/**************************************************************************/
-	// Get the content.
+	// Set the article image.
 	$content .= $article_image;
+
+	/**************************************************************************/
+	// Get the content.
 	$content .= get_the_content();
 
     /**************************************************************************/
