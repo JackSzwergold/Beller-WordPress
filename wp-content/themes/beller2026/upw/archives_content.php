@@ -53,6 +53,13 @@
         $tags = get_the_term_list($post->ID, 'post_tag', '', ', ');
 
         /******************************************************************************/
+        // Get the custom ACF values.
+        $book_isbn = get_field('isbn');
+        $book_author = get_field('author');
+        $book_publisher = get_field('publisher');
+        $book_publication_date = get_field('publication_date');
+echo $book_isbn;
+        /******************************************************************************/
         // Get the category.
         $category_object = get_the_category($post->ID);
         $category = null;
