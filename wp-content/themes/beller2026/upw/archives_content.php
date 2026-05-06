@@ -99,7 +99,7 @@
         if (get_the_title() && $instance['show_title']) {
           $header .=
               '<div class="h4 text-helvetica-light p-0 m-0 mb-2" id="home_featured_' . $the_ID . '">'
-            . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
+            . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
             . $title
             . '</a>'
             . '</div>'
@@ -118,7 +118,7 @@
             $excerpt_readmore = '<span class="text-clashgrotesk-regular m-0 p-0 ms-1">' . $instance['excerpt_readmore'] . '</span>';
           } // if
           $content .=
-              '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
+              '<a href="' . $permalink . '" rel="bookmark" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
             . $excerpt . $excerpt_readmore
             . '</a>'
             ;
