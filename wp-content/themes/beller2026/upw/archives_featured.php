@@ -87,8 +87,8 @@
         if (isset($post_image) && !empty($post_image)) {
           $post_image =
               '<div class="col col-12 col-md-2 m-0 p-0 mb-2 ms-md-3 float-end">'
-            . '<a href="' . $permalink . '" title="' . $title . '" class="text-decoration-none text-dark">'
-            . '<img src="' . $post_image . '" alt="' . $title . '" class="img-fluid">'
+            . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
+            . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
             . '</a>'
             . '</div>'
             ;
