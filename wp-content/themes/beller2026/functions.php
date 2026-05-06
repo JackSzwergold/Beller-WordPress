@@ -236,6 +236,13 @@ function single_post () {
 	} // if
 
     /**************************************************************************/
+    // Get the custom ACF values.
+    $book_isbn = get_field('isbn');
+    $book_author = get_field('author');
+    $book_publisher = get_field('publisher');
+    $book_publication_date = get_field('publication_date');
+
+    /**************************************************************************/
     // The post image stuff.
 	$post_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'large');
     if (isset($post_image) && !empty($post_image)) {
