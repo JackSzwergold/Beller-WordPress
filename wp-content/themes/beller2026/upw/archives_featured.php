@@ -73,11 +73,9 @@
         $purchase_link = null;
         if (!empty($amazon_url)) {
           $purchase_link .=
-              '<div class="badge text-bg-warning p-0 m-0 px-2 py-1 mt-2 col col-12">'
-            . '<a href="' . $amazon_url . '" target="_blank">'
+              '<a href="' . $amazon_url . '" class="badge text-bg-warning p-0 m-0 px-2 py-1 mt-2 col col-12" target="_blank">'
             . 'Purchase'
             . '</a>'
-            . '</div>'
             ;
         } // if
 
