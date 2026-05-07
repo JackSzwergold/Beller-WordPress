@@ -251,6 +251,19 @@ function single_post () {
     } // if
 
     /**************************************************************************/
+    // Set the purchase link.
+    $purchase_link = null;
+    if (!empty($amazon_url)) {
+      $purchase_link .=
+          '<div class="badge text-bg-warning p-0 m-0 px-2 py-1 mt-2 col col-12">'
+        . '<a href="' . $amazon_url . '" target="_blank">'
+        . 'Purchase'
+        . '</a>'
+        . '</div>'
+        ;
+    } // if
+
+    /**************************************************************************/
     // The post image stuff.
 	$post_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'large');
     if (isset($post_image) && !empty($post_image)) {
@@ -259,6 +272,7 @@ function single_post () {
         . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
         . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
         . '</a>'
+        . $purchase_link
         . '</div>'
         ;
     } // if

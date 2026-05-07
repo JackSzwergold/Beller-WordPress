@@ -69,6 +69,19 @@
         } // if
 
         /******************************************************************************/
+        // Set the purchase link.
+        $purchase_link = null;
+        if (!empty($amazon_url)) {
+          $purchase_link .=
+              '<div class="badge text-bg-warning p-0 m-0 px-2 py-1 mt-2 col col-12">'
+            . '<a href="' . $amazon_url . '" target="_blank">'
+            . 'Purchase'
+            . '</a>'
+            . '</div>'
+            ;
+        } // if
+
+        /******************************************************************************/
         // Get the category.
         $category_object = get_the_category($post->ID);
         $category = null;
@@ -98,6 +111,7 @@
             . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
             . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
             . '</a>'
+            . $purchase_link
             . '</div>'
             ;
         } // if
