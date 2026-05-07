@@ -73,7 +73,7 @@
         $purchase_link = null;
         if (!empty($amazon_url)) {
           $purchase_link .=
-              '<a href="' . $amazon_url . '" class="badge text-arial-bold text-bg-warning p-0 m-0 px-2 py-1 mt-2 col col-12" target="_blank">'
+              '<a href="' . $amazon_url . '" class="badge text-arial-bold bg-warning-subtle text-warning-emphasis p-0 m-0 px-2 py-1 mt-2 col col-12" target="_blank">'
             . 'Purchase'
             . '</a>'
             ;
