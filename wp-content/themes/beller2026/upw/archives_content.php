@@ -68,6 +68,19 @@
         } // if
 
         /******************************************************************************/
+        // Set the purchase link.
+        $purchase_link = null;
+        if (!empty($amazon_url)) {
+          $purchase_link .=
+              '<div class="btn btn-warning p-0 m-0 px-2">'
+            . '<a href="' . $amazon_url . '" target="_blank">'
+            . 'Purchase'
+            . '</a>'
+            . '</div>'
+            ;
+        } // if
+
+        /******************************************************************************/
         // Get the category.
         $category_object = get_the_category($post->ID);
         $category = null;
@@ -151,6 +164,7 @@
           . $header
           . $divider
           . $post_image
+          . $purchase_link
           . $content
           . '</div>'
           ;
