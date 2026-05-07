@@ -56,9 +56,17 @@
         /******************************************************************************/
         // Get the custom ACF values.
         $book_isbn = get_field('isbn');
+        $book_asin = get_field('asin');
         $book_author = get_field('author');
         $book_publisher = get_field('publisher');
         $book_publication_date = get_field('publication_date');
+
+        /******************************************************************************/
+        // Set the Amazon URL.
+        $amazon_url = null;
+        if (isset($book_asin) && !empty($book_asin)) {
+          $amazon_url = 'https://www.amazon.com/dp/' . $book_asin;
+        } // if
 
         /******************************************************************************/
         // Get the category.
