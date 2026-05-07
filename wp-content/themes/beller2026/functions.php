@@ -256,7 +256,7 @@ function single_post () {
     if (!empty($amazon_url)) {
       $purchase_link .=
           '<div class="badge text-bg-warning p-0 m-0 px-2 py-1 mt-2 col col-12">'
-        . '<a href="' . $amazon_url . '" class="text-arial-bold text-decoration-none text-dark bg-transparent" target="_blank">'
+        . '<a href="' . $amazon_url . '" class="text-arial-bold text-decoration-none text-dark" target="_blank">'
         . 'Purchase'
         . '</a>'
         . '</div>'
