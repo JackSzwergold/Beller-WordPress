@@ -244,6 +244,13 @@ function single_post () {
     $book_publication_date = get_field('publication_date');
 
     /**************************************************************************/
+    // Set the Amazon URL.
+    $amazon_url = null;
+    if (isset($book_asin) && !empty($book_asin)) {
+      $amazon_url = 'https://www.amazon.com/dp/' . $book_asin;
+    } // if
+
+    /**************************************************************************/
     // The post image stuff.
 	$post_image = wp_get_attachment_image_url(get_post_thumbnail_id($the_ID), 'large');
     if (isset($post_image) && !empty($post_image)) {

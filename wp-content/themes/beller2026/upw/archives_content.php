@@ -61,6 +61,13 @@
         $book_publication_date = get_field('publication_date');
 
         /******************************************************************************/
+        // Set the Amazon URL.
+        $amazon_url = null;
+        if (isset($book_asin) && !empty($book_asin)) {
+          $amazon_url = 'https://www.amazon.com/dp/' . $book_asin;
+        } // if
+
+        /******************************************************************************/
         // Get the category.
         $category_object = get_the_category($post->ID);
         $category = null;
