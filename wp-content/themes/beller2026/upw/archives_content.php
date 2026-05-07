@@ -110,6 +110,7 @@
             . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
             . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
             . '</a>'
+            . $purchase_link
             . '</div>'
             ;
         } // if
@@ -164,7 +165,6 @@
           . $header
           . $divider
           . $post_image
-          . $purchase_link
           . $content
           . '</div>'
           ;
