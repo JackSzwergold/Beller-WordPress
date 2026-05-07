@@ -14,7 +14,7 @@
  */
 
 body {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif;
+  /*font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif;*/
   background-color: rgb(243, 237, 225) !important;
 }
 
@@ -196,7 +196,7 @@ main h6 a:active {
 
 /******************************************************************************/
 
-main a,
+/*main a,
 main a:link,
 main a:visited,
 main a:hover,
@@ -214,7 +214,7 @@ main article a:active {
   background-repeat: repeat-x;
   background-position: 0 90%;
   background-size: 1px 1px;
-}
+}*/
 
 /******************************************************************************/
 
