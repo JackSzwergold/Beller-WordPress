@@ -1,8 +1,8 @@
 # config valid only for current version of Capistrano
 lock ['>= 3.17.0', '<= 3.20.0']
 
-set :application, 'bellerbeller.dreamhosters.com'
-set :short_name, 'bellerbeller'
+set :application, 'bellerbeller'
+set :short_name, 'bellerbeller.dreamhosters.com'
 set :repo_url, 'git@github.com:JackSzwergold/Beller-WordPress.git'
 
 # Default value for :format is :pretty
