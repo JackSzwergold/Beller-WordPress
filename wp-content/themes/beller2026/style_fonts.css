@@ -1,78 +1,90 @@
 /******************************************************************************/
-/*
-/*  _____           _
-/* |  ___|__  _ __ | |_ ___
-/* | |_ / _ \| '_ \| __/ __|
-/* |  _| (_) | | | | |_\__ \
-/* |_|  \___/|_| |_|\__|___/
-/*
+/* Setting Arial tags.
 /******************************************************************************/
-@font-face {
-    font-family: 'WindsorProBold';
-    src: url('fonts/WindsorPro/WindsorProBold.woff2') format('woff2'),
-         url('fonts/WindsorPro/WindsorProBold.woff') format('woff'),
-         url('fonts/WindsorPro/WindsorProBold.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.text-arial-light {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 100 !important;
 }
 
-@font-face {
-    font-family: 'WindsorProElongated';
-    src: url('fonts/WindsorPro/WindsorProElongated.woff2') format('woff2'),
-         url('fonts/WindsorPro/WindsorProElongated.woff') format('woff'),
-         url('fonts/WindsorPro/WindsorProElongated.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.text-arial-regular {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 400 !important;
 }
 
-@font-face {
-    font-family: 'WindsorProRegular';
-    src: url('fonts/WindsorPro/WindsorProRg.woff2') format('woff2'),
-         url('fonts/WindsorPro/WindsorProRg.woff') format('woff'),
-         url('fonts/WindsorPro/WindsorProRg.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.text-arial-bold {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 700 !important;
 }
 
-@font-face {
-    font-family: 'WindsorProUltraHeavy';
-    src: url('fonts/WindsorPro/WindsorProUltHv.woff2') format('woff2'),
-         url('fonts/WindsorPro/WindsorProUltHv.woff') format('woff'),
-         url('fonts/WindsorPro/WindsorProUltHv.ttf') format('truetype');
-
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'WindsorProXBoldCn';
-    src: url('fonts/WindsorPro/WindsorProXBoldCn.woff2') format('woff2'),
-         url('fonts/WindsorPro/WindsorProXBoldCn.woff') format('woff'),
-         url('fonts/WindsorPro/WindsorProXBoldCn.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.text-arial-black {
+  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+  font-weight: 900 !important;
 }
 
 /******************************************************************************/
+/* Setting Helvetica tags.
+/******************************************************************************/
+.text-helvetica-light {
+  font-family: Helvetica, Verdana, sans-serif !important;
+  font-weight: 100 !important;
+}
 
-@font-face {
-    font-family: 'ChunkFive';
-    src: url('fonts/ChunkFive/chunkfive-webfont.woff2') format('woff2'),
-         url('fonts/ChunkFive/chunkfive-webfont.woff') format('woff'),
-         url('fonts/ChunkFive/chunkfive-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.text-helvetica-regular {
+  font-family: Helvetica, Verdana, sans-serif !important;
+  font-weight: 400 !important;
+}
+
+.text-helvetica-bold {
+  font-family: Helvetica, Verdana, sans-serif !important;
+  font-weight: 700 !important;
+}
+
+.text-helvetica-black {
+  font-family: Helvetica, Verdana, sans-serif !important;
+  font-weight: 900 !important;
 }
 
 /******************************************************************************/
+/* Setting Georgia tags.
+/******************************************************************************/
+.text-georgia-light {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 100 !important;
+}
 
-@font-face {
-    font-family: 'RailroadGothic';
-    src: url('fonts/RailroadGothic/railroadgothic-webfont.woff2') format('woff2'),
-         url('fonts/RailroadGothic/railroadgothic-webfont.woff') format('woff'),
-         url('fonts/RailroadGothic/railroadgothic-webfont.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
+.text-georgia-regular {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-georgia-bold {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+.text-georgia-black {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
+}
+
+.text-georgia-light {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 100 !important;
+}
+
+.text-georgia-regular {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 400 !important;
+}
+
+.text-georgia-bold {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 700 !important;
+}
+
+.text-georgia-black {
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
+  font-weight: 900 !important;
 }
 
 /******************************************************************************/
@@ -188,8 +200,165 @@
 .text-georgia-black {
   font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
   font-weight: 900 !important;
-}/******************************************************************************/
-/*
+}
+
+/******************************************************************************/
+/* Setting Literata tags.
+/******************************************************************************/
+.text-literata-extralight {
+  font-family: Literata-ExtraLight, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-extralightitalic {
+  font-family: Literata-ExtraLightItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-light {
+  font-family: Literata-Light, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-lightitalic {
+  font-family: Literata-LightItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-regular {
+  font-family: Literata-Regular, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-italic {
+  font-family: Literata-Italic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-medium {
+  font-family: Literata-Medium, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-mediumitalic {
+  font-family: Literata-MediumItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-semibold {
+  font-family: Literata-SemiBold, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-semibolditalic {
+  font-family: Literata-SemiBoldItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-bold {
+  font-family: Literata-Bold, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-bolditalic {
+  font-family: Literata-BoldItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-extrabold {
+  font-family: Literata-ExtraBold, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-extrabolditalic {
+  font-family: Literata-ExtraBoldItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-black {
+  font-family: Literata-Black, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-literata-blackitalic {
+  font-family: Literata-BlackItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+/******************************************************************************/
+/* Setting ClashGrotesk tags.
+/******************************************************************************/
+.text-clashgrotesk-extralight {
+  font-family: ClashGrotesk-ExtraLight, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-light {
+  font-family: ClashGrotesk-Light, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-regular {
+  font-family: ClashGrotesk-Regular, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-medium {
+  font-family: ClashGrotesk-Medium, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-semibold {
+  font-family: ClashGrotesk-Semibold, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+.text-clashgrotesk-bold {
+  font-family: ClashGrotesk-Bold, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
+}
+
+/******************************************************************************/
+/* Setting Boxing tags.
+/******************************************************************************/
+.text-boxing-regular {
+  font-family: Boxing-Regular, "New York", "Times New Roman", Times, serif !important;
+}
+
+/******************************************************************************/
+/* Setting Boska tags.
+/******************************************************************************/
+.text-boska-extralight {
+  font-family: Boska-Extralight, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-extralightitalic {
+  font-family: Boska-ExtralightItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-light {
+  font-family: Boska-Light, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-regular {
+  font-family: Boska-Regular, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-italic {
+  font-family: Boska-Italic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-medium {
+  font-family: Boska-Medium, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-mediumitalic {
+  font-family: boska-MediumItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-bold {
+  font-family: Boska-Bold, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-bolditalic {
+  font-family: Boska-BoldItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-black {
+  font-family: Boska-Black, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-blackitalic {
+  font-family: Boska-BlackItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-variable {
+  font-family: Boska-Variable, "New York", "Times New Roman", Times, serif !important;
+}
+
+.text-boska-variableitalic {
+  font-family: Boska-VariableItalic, "New York", "Times New Roman", Times, serif !important;
+}
+
+/******************************************************************************/
 /*  _____           _
 /* |  ___|__  _ __ | |_ ___
 /* | |_ / _ \| '_ \| __/ __|
@@ -266,116 +435,471 @@
 }
 
 /******************************************************************************/
-/* Setting WindsorPro tags.
-/******************************************************************************/
-.text-windsorpro-regular {
-  font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
+
+@font-face {
+    font-family: 'WindsorProBold';
+    src: url('fonts/WindsorPro/WindsorProBold.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProBold.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.text-windsorpro-bold {
-  font-family: "WindsorProBold", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 700 !important;
+@font-face {
+    font-family: 'WindsorProElongated';
+    src: url('fonts/WindsorPro/WindsorProElongated.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProElongated.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProElongated.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/******************************************************************************/
-/* Setting ChunkFive tags.
-/******************************************************************************/
-.text-chunkfive {
-  font-family: "ChunkFive", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
+@font-face {
+    font-family: 'WindsorProRegular';
+    src: url('fonts/WindsorPro/WindsorProRg.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProRg.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProRg.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-/******************************************************************************/
-/* Setting RailroadGothic tags.
-/******************************************************************************/
-.text-railroadgothic {
-  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
+@font-face {
+    font-family: 'WindsorProUltraHeavy';
+    src: url('fonts/WindsorPro/WindsorProUltHv.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProUltHv.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProUltHv.ttf') format('truetype');
+
+    font-weight: normal;
+    font-style: normal;
 }
 
-/******************************************************************************/
-/* Setting Arial tags.
-/******************************************************************************/
-.text-arial-light {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 100 !important;
-}
-
-.text-arial-regular {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 400 !important;
-}
-
-.text-arial-bold {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 700 !important;
-}
-
-.text-arial-black {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 900 !important;
-}
-
-.text-arial-light {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 100 !important;
-}
-
-.text-arial-regular {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 400 !important;
-}
-
-.text-arial-bold {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 700 !important;
-}
-
-.text-arial-black {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif !important;
-  font-weight: 900 !important;
+@font-face {
+    font-family: 'WindsorProXBoldCn';
+    src: url('fonts/WindsorPro/WindsorProXBoldCn.woff2') format('woff2'),
+         url('fonts/WindsorPro/WindsorProXBoldCn.woff') format('woff'),
+         url('fonts/WindsorPro/WindsorProXBoldCn.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 /******************************************************************************/
-/* Setting Georgia tags.
+
+@font-face {
+    font-family: 'ChunkFive';
+    src: url('fonts/ChunkFive/chunkfive-webfont.woff2') format('woff2'),
+         url('fonts/ChunkFive/chunkfive-webfont.woff') format('woff'),
+         url('fonts/ChunkFive/chunkfive-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /******************************************************************************/
-.text-georgia-light {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 100 !important;
+
+@font-face {
+    font-family: 'RailroadGothic';
+    src: url('fonts/RailroadGothic/railroadgothic-webfont.woff2') format('woff2'),
+         url('fonts/RailroadGothic/railroadgothic-webfont.woff') format('woff'),
+         url('fonts/RailroadGothic/railroadgothic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
-.text-georgia-regular {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
+/******************************************************************************/
+/* Setting Literata tags.
+/******************************************************************************/
+@font-face {
+  font-family: 'Literata-ExtraLight';
+  src: url('fonts/Literata_Web/Literata-ExtraLight.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraLight.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-ExtraLightItalic';
+  src: url('fonts/Literata_Web/Literata-ExtraLightItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraLightItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Light';
+  src: url('fonts/Literata_Web/Literata-Light.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Light.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-LightItalic';
+  src: url('fonts/Literata_Web/Literata-LightItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-LightItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Regular';
+  src: url('fonts/Literata_Web/Literata-Regular.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Regular.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-Italic';
+  src: url('fonts/Literata_Web/Literata-Italic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Italic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Medium';
+  src: url('fonts/Literata_Web/Literata-Medium.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Medium.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-MediumItalic';
+  src: url('fonts/Literata_Web/Literata-MediumItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-MediumItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-SemiBold';
+  src: url('fonts/Literata_Web/Literata-SemiBold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-SemiBold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-SemiBoldItalic';
+  src: url('fonts/Literata_Web/Literata-SemiBoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-SemiBoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Bold';
+  src: url('fonts/Literata_Web/Literata-Bold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Bold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-BoldItalic';
+  src: url('fonts/Literata_Web/Literata-BoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-BoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-ExtraBold';
+  src: url('fonts/Literata_Web/Literata-ExtraBold.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraBold.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-ExtraBoldItalic';
+  src: url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-ExtraBoldItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Literata-Black';
+  src: url('fonts/Literata_Web/Literata-Black.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Black.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Literata-BlackItalic';
+  src: url('fonts/Literata_Web/Literata-BlackItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-BlackItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0opsz 7.0;
+*
+* available axes:
+'wght' (range from 200.0 to 900.0'opsz' (range from 7.0 to 72.0
+*/
+@font-face {
+  font-family: 'Literata-Variable';
+  src: url('fonts/Literata_Web/Literata-Variable.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-Variable.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-Variable.ttf') format('truetype');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 900.0opsz 7.0;
+*
+* available axes:
+'wght' (range from 200.0 to 900.0'opsz' (range from 7.0 to 72.0
+*/
+@font-face {
+  font-family: 'Literata-VariableItalic';
+  src: url('fonts/Literata_Web/Literata-VariableItalic.woff2') format('woff2'),
+       url('fonts/Literata_Web/Literata-VariableItalic.woff') format('woff'),
+       url('fonts/Literata_Web/Literata-VariableItalic.ttf') format('truetype');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: italic;
 }
 
-.text-georgia-bold {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 700 !important;
+/******************************************************************************/
+/* Setting Clash Grotesk tags.
+/******************************************************************************/
+@font-face {
+  font-family: 'ClashGrotesk-Extralight';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Extralight.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Extralight.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashGrotesk-Light';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Light.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Light.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashGrotesk-Regular';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Regular.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Regular.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashGrotesk-Medium';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Medium.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Medium.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashGrotesk-Semibold';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Semibold.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Semibold.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'ClashGrotesk-Bold';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Bold.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Bold.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+/**
+* This is a variable font
+* You can control variable axes as shown below:
+* font-variation-settings: wght 700.0;
+*
+* available axes:
+'wght' (range from 200.0 to 700.0
+*/
+@font-face {
+  font-family: 'ClashGrotesk-Variable';
+  src: url('fonts/ClashGrotesk_Web/ClashGrotesk-Variable.woff2') format('woff2'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Variable.woff') format('woff'),
+       url('fonts/ClashGrotesk_Web/ClashGrotesk-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
 }
 
-.text-georgia-black {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 900 !important;
+/******************************************************************************/
+/* Setting Boxing tags.
+/******************************************************************************/
+@font-face {
+  font-family: 'Boxing-Regular';
+  src: url('fonts/Boxing_Web/Boxing-Regular.woff2') format('woff2'),
+       url('fonts/Boxing_Web/Boxing-Regular.woff') format('woff'),
+       url('fonts/Boxing_Web/Boxing-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
 }
 
-.text-georgia-light {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 100 !important;
+/******************************************************************************/
+/* Setting Boska tags.
+/******************************************************************************/
+@font-face {
+  font-family: 'Boska-Extralight';
+  src: url('fonts/Boska/Boska-Extralight.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Extralight.woff') format('woff'),
+       url('fonts/Boska/Boska-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
 }
-
-.text-georgia-regular {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 400 !important;
+@font-face {
+  font-family: 'Boska-ExtralightItalic';
+  src: url('fonts/Boska/Boska-ExtralightItalic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-ExtralightItalic.woff') format('woff'),
+       url('fonts/Boska/Boska-ExtralightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: italic;
 }
-
-.text-georgia-bold {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 700 !important;
+@font-face {
+  font-family: 'Boska-Light';
+  src: url('fonts/Boska/Boska-Light.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Light.woff') format('woff'),
+       url('fonts/Boska/Boska-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
 }
-
-.text-georgia-black {
-  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
-  font-weight: 900 !important;
+@font-face {
+  font-family: 'Boska-LightItalic';
+  src: url('fonts/Boska/Boska-LightItalic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-LightItalic.woff') format('woff'),
+       url('fonts/Boska/Boska-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Regular';
+  src: url('fonts/Boska/Boska-Regular.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Regular.woff') format('woff'),
+       url('fonts/Boska/Boska-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-Italic';
+  src: url('fonts/Boska/Boska-Italic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Italic.woff') format('woff'),
+       url('fonts/Boska/Boska-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Medium';
+  src: url('fonts/Boska/Boska-Medium.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Medium.woff') format('woff'),
+       url('fonts/Boska/Boska-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-MediumItalic';
+  src: url('fonts/Boska/Boska-MediumItalic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-MediumItalic.woff') format('woff'),
+       url('fonts/Boska/Boska-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Bold';
+  src: url('fonts/Boska/Boska-Bold.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Bold.woff') format('woff'),
+       url('fonts/Boska/Boska-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-BoldItalic';
+  src: url('fonts/Boska/Boska-BoldItalic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-BoldItalic.woff') format('woff'),
+       url('fonts/Boska/Boska-BoldItalic.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Black';
+  src: url('fonts/Boska/Boska-Black.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Black.woff') format('woff'),
+       url('fonts/Boska/Boska-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-BlackItalic';
+  src: url('fonts/Boska/Boska-BlackItalic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-BlackItalic.woff') format('woff'),
+       url('fonts/Boska/Boska-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-display: swap;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Boska-Variable';
+  src: url('fonts/Boska/Boska-Variable.woff2') format('woff2'),
+       url('fonts/Boska/Boska-Variable.woff') format('woff'),
+       url('fonts/Boska/Boska-Variable.ttf') format('truetype');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Boska-VariableItalic';
+  src: url('fonts/Boska/Boska-VariableItalic.woff2') format('woff2'),
+       url('fonts/Boska/Boska-VariableItalic.woff') format('woff'),
+       url('fonts/Boska/Boska-VariableItalic.ttf') format('truetype');
+  font-weight: 200 900;
+  font-display: swap;
+  font-style: italic;
 }

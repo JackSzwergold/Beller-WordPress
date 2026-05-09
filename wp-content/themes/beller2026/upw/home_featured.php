@@ -49,21 +49,40 @@
         $tags = get_the_term_list($post->ID, 'post_tag', '', ', ');
 
         /******************************************************************************/
-        // The article image stuff.
-        $article_image = null;
+        // Get the category.
+        $category_object = get_the_category($post->ID);
+        $category = null;
+        $category_slug = null;
+        $category_link = null;
+        if (!empty($category_object)) {
+          $category = array_shift($category_object);
+          $category_slug = $category->slug;
+          $category_link = get_category_link($category->term_id);
+        } // if
+
+        /******************************************************************************/
+        // Set the permalink to the category page if we are on the front page.
+        if (is_front_page() && !empty($category_link)) {
+          $permalink = $category_link;
+        } // if
+
+        /******************************************************************************/
+        // The post image stuff.
+        $post_image = null;
         if ($instance['show_thumbnail']) {
-          $article_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
+          $post_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
 
         /******************************************************************************/
         // Header stuff.
+        $header = null;
         if (get_the_title() && $instance['show_title']) {
-          $header =
-              '<span class="text-railroadgothic" id="home_featured_' . $the_ID . '">'
-            . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-darkblue">'
+          $header .=
+              '<div class="text-clashgrotesk-regular" id="home_featured_' . $the_ID . '">'
+            . '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
             . $title
             . '</a>'
-            . '</span>'
+            . '</div>'
             ;
         } // if
 
@@ -74,29 +93,33 @@
           if ($instance['show_readmore']) {
             $excerpt = substr($excerpt, 0, -3);
           } // if
+          $excerpt_readmore = null;
+          if ($instance['excerpt_readmore']) {
+            $excerpt_readmore = '<span class="text-clashgrotesk-regular m-0 p-0 ms-1">' . $instance['excerpt_readmore'] . '</span>';
+          } // if
           $content .=
-              '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-darkblue">'
-            . $excerpt
+              '<a href="' . $permalink . '" rel="bookmark" title="' . $title . '" class="text-decoration-none text-dark">'
+            . $excerpt . $excerpt_readmore
             . '</a>'
             ;
           $content =
-              '<span class="text-georgia-regular small">'
+              '<div class="text-georgia-regular lh-base">'
             . $content
-            . '</span>'
+            . '</div>'
             ;
         } // if
 
         /******************************************************************************/
         // Set the divider.
-        $divider = null;
-        if (!empty($title) && !empty($excerpt)) {
-          $divider = '<span class="text-railroadgothic">: </span>';
-        } // if
+        // $divider = null;
+        // if (!empty($title) && !empty($excerpt)) {
+        //   $divider = '<span class="text-georgia-regular">: </span>';
+        // } // if
 
         /******************************************************************************/
         // Custom cointainer begins.
         $final[] =
-            '<div class="col col-12 m-0 p-0 pe-md-3 pe-xl-0">'
+            '<div id="' . $category_slug . '" class="col col-12 m-0 p-0 pe-md-3 pe-xl-0">'
           . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
           . $divider
@@ -135,6 +158,7 @@
             $before
           . '<div class="upw-posts hfeed row m-0 p-0">'
           . implode('', $final)
+          . '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">'
           . '</div>'
           . $after
           ;

@@ -197,73 +197,103 @@
 		/****************************************************************************************/
 		// Set the blog name.
 		$blog_name =
-			  '<div class="h1 text-railroadgothic p-0 m-0">'
-			. '<a href="' . $url . '" class="text-offwhite">'
+			  '<div class="h1 text-windsorpro-regular p-0 m-0 mt-1 mb-3">'
+			. '<a href="' . $url . '" class="text-dark">'
 			. $blog_name
-			// . '<div class="spinner-border text-offwhite p-0 m-0 ms-2" role="status">'
-			// . '<span class="visually-hidden">Loading...</span>'
-			// . '</div>'
 			. '</a>'
 			. '</div>'
 			;
 
 		/****************************************************************************************/
 		// Set the blog description.
-		$blog_description =
-			  '<div class="h4 text-georgia-regular p-0 m-0 d-none d-md-block">'
-			. '<a href="' . $url . '" class="text-offwhite">'
-			. '<span class="fst-italic">'
-			. $blog_description
-			. '</span>'
-			. '</a>'
-			. '</div>'
-			. '<div class="h5 text-georgia-regular p-0 m-0 d-md-none">'
-			. '<a href="' . $url . '" class="text-offwhite">'
-			. '<span class="small fst-italic">'
-			. $blog_description
-			. '</span>'
-			. '</a>'
-			. '</div>'
-			;
+		if (!empty($blog_description)) {
+			$blog_description =
+				  '<div class="h4 text-georgia-regular p-0 m-0 d-none d-md-block">'
+				. '<a href="' . $url . '">'
+				. '<span class="fst-italic">'
+				. $blog_description
+				. '</span>'
+				. '</a>'
+				. '</div>'
+				. '<div class="h5 text-georgia-regular p-0 m-0 d-md-none">'
+				. '<a href="' . $url . '">'
+				. '<span class="small fst-italic">'
+				. $blog_description
+				. '</span>'
+				. '</a>'
+				. '</div>'
+				;
+		} // if
 
 	?>
 </head>
 <body id="top" class="p-0 m-0 <?php echo $page_slugs_string; ?>">
 
-	<nav class="header p-0 m-0 px-2 bg-darkblue">
-		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 bg-darkblue z-1">
+	<nav class="header text-center p-0 m-0 px-2">
+		<div class="sticky-top col col-12 p-0 m-0 pt-2 px-3 z-1 bg-beige">
 			<?php
 				echo $blog_name;
 			?>
 		</div>
-		<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 bg-darkblue z-0">
-			<?php
-				echo $blog_description;
-			?>
-		</div>
+		<?php
+			if (!empty($blog_description)) {
+				echo '<div class="sticky-top col col-12 p-0 m-0 pb-3 px-3 z-0 bg-beige">';
+				echo $blog_description;	
+				echo '</div>';		
+			}
+		?>
 	</nav>
+
+	<header class="sticky-top p-0 m-0">
+		<nav class="navbar navbar-expand col col-12 p-0 m-0">
+			<?php
+				primary_menu();
+			?>
+		</nav>
+	</header>
+
+	<!-- <header class="sticky-top p-0 m-0 bg-beige">
+		<div class="col col-12 p-0 m-0">
+			<nav class="navbar navbar-expand navbar-light bg-transparent p-0 m-0">
+			  <div class="container-fluid">
+
+			    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+			      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+			        <li class="nav-item dropdown">
+			          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+			            Dropdown
+			          </a>
+			          <ul class="dropdown-menu">
+			            <li><a class="dropdown-item" href="#">Action</a></li>
+			            <li><a class="dropdown-item" href="#">Another action</a></li>
+			            <li><hr class="dropdown-divider"></li>
+			            <li><a class="dropdown-item" href="#">Something else here</a></li>
+			          </ul>
+			        </li>
+
+			        <li class="nav-item">
+			          <a class="nav-link active" aria-current="page" href="#">Home</a>
+			        </li>
+			        <li class="nav-item">
+			          <a class="nav-link" href="#">Link</a>
+			        </li>
+			      </ul>
+
+			    </div>
+
+			  </div>
+			</nav>
+		</div>
+	</header> -->
 
 	<!-- Content Core BEGIN -->
 	<div class="container">
 		<div class="row">
-			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4 bg-offwhite border border-2 border-darkblue rounded-3">
+			<div class="col px-3 px-md-4 mx-3 mx-md-0 my-3 my-md-4">
 
 				<div class="container">
 					<div class="row">
 						<div class="col py-3 py-md-4 text-left">
 
-							<?php
-
-								/**********************************************************************************************/
-								// If we have a widget header, show the widget header.
-								if (is_active_sidebar('header-1')) {
-									dynamic_sidebar('header-1');
-								} // if
-
-								/**********************************************************************************************/
-								// If we have a widget header, show the widget header.
-								if (is_active_sidebar('header-2')) {
-									dynamic_sidebar('header-2');
-								} // if
-
-							?>

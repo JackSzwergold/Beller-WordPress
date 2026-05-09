@@ -6,7 +6,7 @@
 
   /**********************************************************************/
   // Set the post content if we have post content.
-  if (have_posts()) {
+  if (FALSE && have_posts()) {
     while (have_posts()) {
 
       /********************************************************************/
@@ -34,8 +34,8 @@
 
       /********************************************************************************/
       // Show the title.
-      echo '<div class="h1 p-0 m-0 text-railroadgothic">';
-      echo '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-darkblue text-decoration-none">';
+      echo '<div class="h1 p-0 m-0 text-georgia-regular">';
+      echo '<a href="' . $permalink . '" rel="bookmark" title="Go to &ldquo;' . $title_attribute . '.&rdquo;" class="text-dark text-decoration-none">';
       echo $title;
       echo '</a>';
       echo '</div>';
@@ -63,7 +63,7 @@
       //  echo '</div>';        
       // } // if
 
-      echo '<hr class="border border-darkblue border-1 opacity-100">';
+      echo '<hr class="border border-dark border-1 opacity-100">';
 
       /********************************************************************************/
       // End the header.
@@ -90,11 +90,17 @@
   } // if
   else {
 
-    echo '<div>';
-    echo "<p>Nothing.</p>";
-    echo '</div>';
+    // echo '<div>';
+    // echo "<p>Nothing.</p>";
+    // echo '</div>';
 
   } // else
+
+  /**********************************************************************/
+  // If we have a 'home-featured-1' widget, show the 'home-featured-1' widget.
+  if (is_active_sidebar('home-featured-1')) {
+    dynamic_sidebar('home-featured-1');
+  } // if
 
   /**********************************************************************/
   // Set the sidebar.

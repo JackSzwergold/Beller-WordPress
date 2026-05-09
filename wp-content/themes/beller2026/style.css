@@ -14,13 +14,8 @@
  */
 
 body {
-  font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif;
-  /*background-image: linear-gradient(-45deg, #ff5858 0%, #f09819 100%);*/
-  background-color: rgb(241, 223, 113) !important;
-}
-
-body > * {
-  color: rgb(64, 63, 123) !important;
+  /*font-family: Arial, "Arial Unicode MS", Helvetica, Verdana, sans-serif;*/
+  background-color: rgb(243, 237, 225) !important;
 }
 
 /******************************************************************************/
@@ -32,27 +27,26 @@ div {
 
 /******************************************************************************/
 
-.bg-darkblue {
-  background-color: rgb(64, 63, 123) !important;
+.bg-beige {
+  background-color: rgb(243, 237, 225) !important;
 }
 
-.text-darkblue {
-  color: rgb(64, 63, 123) !important;
-}
-
-.border.border-darkblue,
-.border-bottom.border-darkblue {
-  border-color: rgb(64, 63, 123) !important;
+.text-beige {
+  color: rgb(243, 237, 225) !important;
 }
 
 /******************************************************************************/
 
-.bg-offwhite {
-  background-color: rgb(239, 232, 219) !important;
+hr.hr-double {
+  border-top: 3px double #8c8b8b;
 }
 
-.text-offwhite {
-  color: rgb(239, 232, 219) !important;
+hr.hr-dashed {
+  border-top: 1px dashed #8c8b8b;
+}
+
+hr.hr-dotted {
+  border-top: 2px dotted #8c8b8b;
 }
 
 /******************************************************************************/
@@ -113,9 +107,9 @@ pre > code {
 /* Tab related stuff.
 /******************************************************************************/
 
-.nav-tabs .nav-link {
+/*.nav-tabs .nav-link {
   background-color: revert;
-}
+}*/
 
 /******************************************************************************/
 /* The background code stuff.
@@ -162,7 +156,8 @@ main h4,
 main h5,
 main h6 {
   /*font-family: "WindsorProRegular", Georgia, "New York", "Times New Roman", Times, serif;*/
-  font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
+  /*font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;*/
+  font-family: Georgia, "New York", "Times New Roman", Times, serif !important;
   color: rgb(64, 63, 123);
 }
 
@@ -201,7 +196,7 @@ main h6 a:active {
 
 /******************************************************************************/
 
-main a,
+/*main a,
 main a:link,
 main a:visited,
 main a:hover,
@@ -219,11 +214,11 @@ main article a:active {
   background-repeat: repeat-x;
   background-position: 0 90%;
   background-size: 1px 1px;
-}
+}*/
 
 /******************************************************************************/
 
-.nav-link {
+/*.nav-link {
   font-family: "RailroadGothic", Georgia, "New York", "Times New Roman", Times, serif !important;
   font-weight: 400 !important;
   color: rgb(239, 232, 219) !important;
@@ -233,7 +228,7 @@ main article a:active {
 .nav-link.active {
   color: rgb(64, 63, 123) !important;
   background-color: rgb(239, 232, 219) !important;
-}
+}*/
 
 /******************************************************************************/
 /* Setting columns for the category sidebar. */

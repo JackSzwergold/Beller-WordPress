@@ -6,13 +6,12 @@
 
 ?>
 <header class="col col-12 p-0 m-0 pb-2">
-	<div class="h1 p-0 m-0 text-windsorpro-bold">404: Not Found</div>
-		<div class="h2 p-0 m-0 text-railroadgothic">
+	<div class="h1 p-0 m-0 text-georgia-regular">404: Not Found</div>
+		<div class="h3 p-0 m-0 text-georgia-regular">
 			Something was not found. You sure you got the right URL?
 		</div>
 		<hr class="p-0 m-0 mt-2 mb-2 border border-darkblue border-1 opacity-100">
 </header>
-
 
 <main class="col col-12 p-0 m-0">
 	<article class="col col-12 p-0 m-0">
