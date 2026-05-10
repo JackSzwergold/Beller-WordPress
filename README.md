@@ -1,3 +1,3 @@
-# Beller-WordPress
+# ElizabethBeller-WordPress
 
-The repo for the Beller WordPress site.
+The repo for the Elizabeth Beller WordPress site.
