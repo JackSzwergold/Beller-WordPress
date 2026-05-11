@@ -42,11 +42,28 @@
         $the_ID = get_the_ID();
         $display_date = get_the_time($instance['date_format']);
         $iso_8601_date = get_the_time('c');
-        // $excerpt = get_the_excerpt();
-        $content = get_the_content();
+
+        /******************************************************************************/
+        // Set the author related stuff.
         $the_author = get_the_author();
         $the_author_url = get_author_posts_url(get_the_author_meta('ID'));
 
+        /******************************************************************************/
+        // Set the excerpt.
+        $excerpt = null;
+        if ($instance['show_excerpt']) {
+          $excerpt = get_the_excerpt();
+        } // if
+
+        /******************************************************************************/
+        // Set the content.
+        $content = null;
+        if ($instance['show_content']) {
+          $content = get_the_content();
+        } // if
+
+        /******************************************************************************/
+        // Set the comments stuff.
         $comments_link = get_comments_link();
         $comments_number = get_comments_number(__('No comments', 'upw'), __('One comment', 'upw'), __('% comments', 'upw'));
 
@@ -105,7 +122,7 @@
         } // if
         if (isset($post_image) && !empty($post_image)) {
           $post_image =
-              '<div class="col col-12 col-md-2 m-0 p-0 mb-2 ms-md-3 float-end">'
+              '<div class="col col-12 col-md-3 m-0 p-0 mb-2 ms-md-3 float-end">'
             . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
             . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
             . '</a>'
@@ -128,7 +145,7 @@
         } // if
 
         /******************************************************************************/
-        // Content stuff.
+        // Excerpt stuff.
         if ($instance['show_excerpt'] && !empty($excerpt)) {
           $content = null;
           if ($instance['show_readmore']) {
@@ -143,8 +160,13 @@
             . $excerpt . $excerpt_readmore
             . '</a>'
             ;
+        } // if
+
+        /******************************************************************************/
+        // Content stuff.
+        if ($instance['show_content'] && !empty($content)) {
           $content =
-              '<div class="text-georgia-regular lh-base small">'
+              '<div class="text-georgia-regular lh-base">'
             . $content
             . '</div>'
             ;

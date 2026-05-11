@@ -38,15 +38,61 @@
         $the_ID = get_the_ID();
         $display_date = get_the_time($instance['date_format']);
         $iso_8601_date = get_the_time('c');
-        $excerpt = get_the_excerpt();
+
+        /******************************************************************************/
+        // Set the author related stuff.
         $the_author = get_the_author();
         $the_author_url = get_author_posts_url(get_the_author_meta('ID'));
 
+        /******************************************************************************/
+        // Set the excerpt.
+        $excerpt = null;
+        if ($instance['show_excerpt']) {
+          $excerpt = get_the_excerpt();
+        } // if
+
+        /******************************************************************************/
+        // Set the content.
+        $content = null;
+        if ($instance['show_content']) {
+          $content = get_the_content();
+        } // if
+
+        /******************************************************************************/
+        // Set the comments stuff.
         $comments_link = get_comments_link();
         $comments_number = get_comments_number(__('No comments', 'upw'), __('One comment', 'upw'), __('% comments', 'upw'));
 
+        /******************************************************************************/
+        // Set the categories and tags.
         $categories = get_the_term_list($post->ID, 'category', '', ', ');
         $tags = get_the_term_list($post->ID, 'post_tag', '', ', ');
+
+        /******************************************************************************/
+        // Get the custom ACF values.
+        $book_isbn = get_field('isbn');
+        $book_asin = get_field('asin');
+        $book_author = get_field('author');
+        $book_publisher = get_field('publisher');
+        $book_publication_date = get_field('publication_date');
+
+        /******************************************************************************/
+        // Set the Amazon URL.
+        $amazon_url = null;
+        if (isset($book_asin) && !empty($book_asin)) {
+          $amazon_url = 'https://www.amazon.com/dp/' . $book_asin;
+        } // if
+
+        /******************************************************************************/
+        // Set the purchase link.
+        $purchase_link = null;
+        if (!empty($amazon_url)) {
+          $purchase_link .=
+              '<a href="' . $amazon_url . '" class="badge text-arial-bold bg-warning-subtle text-warning-emphasis p-0 m-0 px-2 py-1 mt-2 col col-12" target="_blank">'
+            . 'Purchase'
+            . '</a>'
+            ;
+        } // if
 
         /******************************************************************************/
         // Get the category.
@@ -72,6 +118,16 @@
         if ($instance['show_thumbnail']) {
           $post_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
+        if (isset($post_image) && !empty($post_image)) {
+          $post_image =
+              '<div class="col col-12 col-md-3 m-0 p-0 mb-2 ms-md-3 float-end">'
+            . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
+            . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
+            . '</a>'
+            . $purchase_link
+            . '</div>'
+            ;
+        } // if
 
         /******************************************************************************/
         // Header stuff.
@@ -87,7 +143,7 @@
         } // if
 
         /******************************************************************************/
-        // Content stuff.
+        // Excerpt stuff.
         if ($instance['show_excerpt'] && !empty($excerpt)) {
           $content = null;
           if ($instance['show_readmore']) {
@@ -102,6 +158,11 @@
             . $excerpt . $excerpt_readmore
             . '</a>'
             ;
+        } // if
+
+        /******************************************************************************/
+        // Content stuff.
+        if ($instance['show_content'] && !empty($content)) {
           $content =
               '<div class="text-georgia-regular lh-base">'
             . $content
@@ -119,12 +180,11 @@
         /******************************************************************************/
         // Custom cointainer begins.
         $final[] =
-            '<div id="' . $category_slug . '" class="col col-12 m-0 p-0 pe-md-3 pe-xl-0">'
-          . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
+            '<div id="' . $category_slug . '" class="col col-12 col-lg-12 pb-3 ' . implode(' ' , get_post_class($post_class))  . '">'
           . $header
           . $divider
+          . $post_image
           . $content
-          . '</div>'
           . '</div>'
           ;
 
@@ -156,7 +216,7 @@
     if (!empty($before) || !empty($final) || !empty($after)) {
         $ret = 
             $before
-          . '<div class="upw-posts hfeed row m-0 p-0">'
+          . '<div class="upw-posts hfeed row gx-5">'
           . implode('', $final)
           . '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">'
           . '</div>'
