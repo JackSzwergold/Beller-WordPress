@@ -180,7 +180,7 @@
         /******************************************************************************/
         // Custom cointainer begins.
         $final[] =
-            '<div id="' . $category_slug . '" class="col col-12 col-lg-12 p-0 m-0 pb-3 ' . implode(' ' , get_post_class($post_class))  . '">'
+            '<div id="' . $category_slug . '" class="col col-12 col-lg-12 pb-3 ' . implode(' ' , get_post_class($post_class))  . '">'
           . $header
           . $divider
           . $post_image
@@ -216,7 +216,7 @@
     if (!empty($before) || !empty($final) || !empty($after)) {
         $ret = 
             $before
-          . '<div class="upw-posts hfeed row p-0 m-0">'
+          . '<div class="upw-posts hfeed row gx-5">'
           . implode('', $final)
           . '<hr class="p-0 m-0 mt-5 hr-dashed opacity-100">'
           . '</div>'
