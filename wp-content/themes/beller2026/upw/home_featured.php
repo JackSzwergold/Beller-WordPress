@@ -180,7 +180,7 @@
         /******************************************************************************/
         // Custom cointainer begins.
         $final[] =
-            '<div id="' . $category_slug . '" class="col col-12 m-0 p-0 pe-md-3 pe-xl-0">'
+            '<div id="' . $category_slug . '" class="col col-12 m-0 p-0">'
           . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
           . $divider
