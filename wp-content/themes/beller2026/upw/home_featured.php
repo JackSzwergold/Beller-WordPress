@@ -72,7 +72,7 @@
         if ($instance['show_thumbnail']) {
           $post_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
-
+echo $post_image;
         /******************************************************************************/
         // Header stuff.
         $header = null;
