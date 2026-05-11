@@ -161,7 +161,7 @@
         } // if
 
         /******************************************************************************/
-        // Excerpt stuff.
+        // Content stuff.
         if ($instance['show_content'] && !empty($content)) {
           $content =
               '<div class="text-georgia-regular lh-base">'
