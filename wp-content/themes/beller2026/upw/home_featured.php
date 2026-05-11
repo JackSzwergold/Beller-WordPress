@@ -49,6 +49,32 @@
         $tags = get_the_term_list($post->ID, 'post_tag', '', ', ');
 
         /******************************************************************************/
+        // Get the custom ACF values.
+        $book_isbn = get_field('isbn');
+        $book_asin = get_field('asin');
+        $book_author = get_field('author');
+        $book_publisher = get_field('publisher');
+        $book_publication_date = get_field('publication_date');
+
+        /******************************************************************************/
+        // Set the Amazon URL.
+        $amazon_url = null;
+        if (isset($book_asin) && !empty($book_asin)) {
+          $amazon_url = 'https://www.amazon.com/dp/' . $book_asin;
+        } // if
+
+        /******************************************************************************/
+        // Set the purchase link.
+        $purchase_link = null;
+        if (!empty($amazon_url)) {
+          $purchase_link .=
+              '<a href="' . $amazon_url . '" class="badge text-arial-bold bg-warning-subtle text-warning-emphasis p-0 m-0 px-2 py-1 mt-2 col col-12" target="_blank">'
+            . 'Purchase'
+            . '</a>'
+            ;
+        } // if
+
+        /******************************************************************************/
         // Get the category.
         $category_object = get_the_category($post->ID);
         $category = null;
@@ -72,7 +98,17 @@
         if ($instance['show_thumbnail']) {
           $post_image = wp_get_attachment_image_url(get_post_thumbnail_id($post->ID), $instance['thumb_size']);     
         } // if
-echo $post_image;
+        if (isset($post_image) && !empty($post_image)) {
+          $post_image =
+              '<div class="col col-12 col-md-2 m-0 p-0 mb-2 ms-md-3 float-end">'
+            . '<a href="' . $permalink . '" title="' . $title . ' (' . $book_isbn . ')" class="text-decoration-none text-dark">'
+            . '<img src="' . $post_image . '" alt="' . $title . ' (' . $book_isbn . ')" class="img-fluid">'
+            . '</a>'
+            . $purchase_link
+            . '</div>'
+            ;
+        } // if
+
         /******************************************************************************/
         // Header stuff.
         $header = null;
@@ -123,6 +159,7 @@ echo $post_image;
           . '<div class="' . implode(' ' , get_post_class($post_class))  . ' p-0 m-0">'
           . $header
           . $divider
+          . $post_image
           . $content
           . '</div>'
           . '</div>'
