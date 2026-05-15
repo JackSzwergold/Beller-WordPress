@@ -245,7 +245,7 @@
 	</nav>
 
 	<header class="sticky-top p-0 m-0">
-		<nav class="navbar navbar-expand col col-12 p-0 m-0">
+		<nav class="navbar navbar-expand col col-12 p-0 m-0 bg-beige">
 			<?php
 				primary_menu();
 			?>
